@@ -1,29 +1,3 @@
-# README #
+# SISOCS APP #
 
-This README would normally document whatever steps are necessary to get your application up and running.
-
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+SISOCS APP es una herramienta de divulgación digital para las Asociaciones Público Privadas (APP). SISOCS APP fue desarrollado por el Gobierno de Honduras y el Grupo del Banco Mundial entre 2017 y 2018. Este sistema fue diseñado siguiendo el marco de divulgación recomendado para Honduras, basado en las recomendaciones del Informe de Diagnóstico de Divulgación en el que CoST Honduras jugó un papel importante como socio en este proyecto. Este sistema es utilizado por las 2 entidades públicas encargadas de identificar, seleccionar, estructurar, contratar y supervisar las APP en Honduras. El sistema cumple con el Marco de Divulgación del Banco Mundial, el Estándar de Datos de Infraestructura de CoST y la Extensión del Estándar de Datos de Contrataciones Abiertas para el perfil de Asociaciones Público Privadas.
