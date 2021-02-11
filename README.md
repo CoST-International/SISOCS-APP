@@ -9,9 +9,10 @@
     - [Arquitectura](#arquitectura)
     - [Uso del sistema](#uso-del-sistema)
   - [Guía de instalación](#Guía-de-instalación)
-    - [Agregar información al esquema de MongoDB](#Agregar-información-al-esquema-de-MongoDB)
-    - [Archivo config.json para el módulo SISOCS](#Archivo-configjson-para-el-módulo-SISOCS)
-    - [Archivo config.json para el servidor](#Archivo-configjson-para-el-servidor)
+    - [Instalación del componenete OCDS](#Instalación-del-componenete-OCDS)
+       - [Agregar información al esquema de MongoDB](#Agregar-información-al-esquema-de-MongoDB)
+       - [Archivo config.json para el módulo SISOCS](#Archivo-configjson-para-el-módulo-SISOCS)
+       - [Archivo config.json para el servidor](#Archivo-configjson-para-el-servidor)
   - [Cómo contribuir](#Cómo-contribuir)
     - [Atribuciones](#atribuciones)
   - [Código de conducta](#código-de-conducta)
@@ -33,6 +34,7 @@ SISOCS APP es una herramienta de divulgación digital para las Asociaciones Púb
 
 ## Guía del usuario
 SISOCS APP es un portal que permite conocer acerca de los proyectos de las Alianzas Público Privadas. Actualmente el aplicativo se encuentra ejecutando en el link: https://app.sisocs.org/
+
 El componenete [SISOCS – OCDS](https://app.sisocs.org/protected/ocdsShow/) fue construido en NodeJS, en su versión LTS a la fecha (v8.9). 
 Dicho servidor de aplicaciones nos permite montar un API Server el cual es usado por SISOCS – PHP para almacenar la información de los proyectos en MongoDB. 
 
@@ -52,21 +54,32 @@ Existen dos formas para ingresar al sistema, en la primera debe de buscar en su 
 
 #### A) Barra de menú
 
-<p align="center"><img src="https://ibb.co/s997tZy"></p>
-
 La barra de menú contiene las siguientes opciones:
+
+<p align="center"><img src="https://infras-hn.org/images/sisocsapp/sisocsapp-menu.png"></p>
 
 1.	Inicio: Permite que el usuario pueda regresar a la pantalla inicial del sistema.
 2.	Mapas del proyecto: Muestra la ubicación geográfica donde se están desarrollando los proyectos de infraestructura.
 3.	Informes: Incluye dos opciones, en la primera podrá visualizar o descargar en pdf el “Informe de diagnóstico de divulgación: Honduras” , este informe tiene el objetivo de ayudar a los formuladores de políticas y a los profesionales de las APP a evaluar el estado de la divulgación de la APP en la jurisdicción, y a identificar soluciones personalizadas para todos los tipos de APP con el fin de permitir mayor divulgación de información sobre las APP. En la Segunda opción puede descargar los datos de todos los proyectos divulgados en formato XLS.
 4.	OCDS (Open Contracting Data Standard): Esta pestaña permite visualizar el módulo donde se encuentran los datos de los proyectos bajo el Estándar de Datos para las Contrataciones Abiertas (OCDS). Este estándar permite la divulgación de datos y documentos de todas las etapas del proceso de contratación mediante la definición de un modelo de datos común 
 
+<p align="center"><img src="https://infras-hn.org/images/sisocsapp/Sisocsapp-ocds.png"></p>
+
 #### B) Sección Proyectos 
 Esta sección muestra una lista de los proyectos publicados en el sistema e indica el número total de proyetos divulgados y la inversión total en lempiras y en dólares americanos. Además presenta opciones de búsqueda de proyectos a través una barra de búsqueda la cual se puede refinar con diferentes filtros ubicados al lado izquierdo de la lista de proyectos. 
 
-La ultima sección de la pantalla de inicio presenta dos gráficos que miden dos indicadores construidos a partir de la data ingresada en el sistema:
+<p align="center"><img src="https://infras-hn.org/images/sisocsapp/Sisocsapp-proyectos.png"></p>
+
+Seguido de la lista de proyectos se presentan dos gráficos que miden dos indicadores construidos a partir de la data ingresada en el sistema:
 a.	La cantidad de proyectos según el subsector de infraestructura, representado con un gráfico de barras.  
 b.	El porcentaje de avance total según la etapa del proyecto, representado por un gráfico de pastel.
+
+<p align="center"><img src="https://infras-hn.org/images/sisocsapp/sisocsapp1.png"></p>
+
+La última sección de la pantalla de inicio presenta un resumen de todos los proyectos y un apartado con los anuncios de los últimos cambios y noticias sobre los proyectos publicados. 
+
+<p align="center"><img src="https://infras-hn.org/images/sisocsapp/sisocsapp2.png"></p>
+
 
 #### Busqueda de proyectos
 
@@ -83,10 +96,12 @@ Pasos:
   1.	Seleccionar el departamento donde se desarrolla el proyecto de interés
   2.	Buscar en la lista el proyecto de interés para ver a detalle 
   3. Si desea buscar en más departamentos debe asegurarse de eliminar en “filtros activos” el departamento seleccionado anteriormente, otra opción es hacer clic encima del departamento seleccionado anteriormente.
+  
+  <p align="left"><img src="https://infras-hn.org/images/sisocsapp/sisocsapp4.png" height="223" width="650"></p>
 
 #### Información detallada de los proyectos
 
-La información se presenta de forma ordena en 6 diferentes partes: 
+La información está estructurada de acuerdo a las etapas del ciclo de los proyectos APP: 
 * Información Básica del Proyecto
 * Proceso de Contratación
 * Información Financiera
@@ -96,8 +111,11 @@ La información se presenta de forma ordena en 6 diferentes partes:
     
 Además, tiene dos apartados adicionales donde se muestra los Hitos o acontecimientos significativos que suceden durante el desarrollo del proyecto y un resumen del proyecto. 
 
+<p align="left"><img src="https://infras-hn.org/images/sisocsapp/sisocsapp3.png"></p>
 
 ## Guía de instalación
+
+### Instalación del componenete OCDS
 
 Se debe proceder a instalar los siguientes programas y módulos con el fin de preparar el ambiente de desarrollo:
 
@@ -117,7 +135,7 @@ Para levantar el api server utilizar el comando:
 ```
 npm start
 ```
-### Agregar información al esquema de MongoDB 
+#### Agregar información al esquema de MongoDB 
 
 En la carpeta “schema” se encuentran los esquemas que se almacenan en MongoDB y luego son
 mostrados en formato OCID PPP.
@@ -139,7 +157,7 @@ El objeto que retorne esta función debe de cumplir con el esquema de Contract y
 Contracts.
 Si se agrega un nuevo elemento al esquema de Contracts también deberá de agregarse a esta función para que se almacena de manera correcta.
 
-### Archivo config.json para el módulo SISOCS
+#### Archivo config.json para el módulo SISOCS
 
 * Metadata del package OCID PPP a exponer
 * Extensions contiene las extensiones del package.
@@ -148,7 +166,7 @@ Si se agrega un nuevo elemento al esquema de Contracts también deberá de agreg
 
 <img src="https://infras-hn.org/images/sisocsapp/config.png">
 
-### Archivo config.json para el servidor
+#### Archivo config.json para el servidor
 ```
 DBCONFIG -> MONGO -> [APPTYPE] -> URL
 Contiene la URL en formato MongoDB://USER:PASSWORD@IP/DB
@@ -188,7 +206,7 @@ Si se desea o no exponer en HTTPS
 ```
 <img src="https://infras-hn.org/images/sisocsapp/config.png">
 
-### Archivo Json del OCDS 
+#### Archivo Json del OCDS 
 
 El resultado del Json en formato OCDS del aplicativo es el siguiente:
 
