@@ -39,9 +39,9 @@ El componenete [SISOCS – OCDS](https://app.sisocs.org/protected/ocdsShow/) fue
 Dicho servidor de aplicaciones nos permite montar un API Server el cual es usado por SISOCS – PHP para almacenar la información de los proyectos en MongoDB. 
 
 SISOCS – PHP
-* [Descargar](https://engineersagainstpoverty-my.sharepoint.com/:f:/g/personal/opencode_infrastructuretransparency_org/El3iGdykD75GoEttwljs178BVxZssm6FM7wxQvlPUW4Dww?e=9N5grv) - Codigo Fuente( PHP-MySQL)
+[Código Fuente PHP-MySQL](SISOCS-FRONTEND)
 
-### Arquitectura
+### Arquitectura 
 
 <p align="center"><img src="https://infras-hn.org/images/Arquitectura%20SISCOS%20APP.png"></p>
 
