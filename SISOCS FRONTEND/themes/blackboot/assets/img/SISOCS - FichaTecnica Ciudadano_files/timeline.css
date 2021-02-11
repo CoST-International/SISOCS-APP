@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700");
+body {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.timeline-item h1,.timeline-item h2,.timeline-item h3,.timeline-item h4,.timeline-item h5,.timeline-item h6 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.timeline-item h1 {
+  font-size: 1.4em;
+  margin-bottom: .5em;
+}
+
+.timeline-item p {
+  font-family: 'Roboto', sans-serif;
+  font-size: .8rem;
+}
+
+.containerTimeline {
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 20px;
+  border-radius: 10px;
+}
+
+.timeline-item {
+  padding: 3em 2em 2em;
+  position: relative;
+  color: rgba(0, 0, 0, 0.7);
+  border-left: 2px solid rgba(0, 0, 0, 0.3);
+}
+.timeline-item p {
+  font-size: 1rem;
+}
+.timeline-item::before {
+  content: attr(date-is);
+  position: absolute;
+  left: 2em;
+  font-weight: bold;
+  top: 1em;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+.timeline-item::after {
+  width: 30px;
+  height: 30px;
+  display: block;
+  top: 1em;
+  position: absolute;
+  left: -17px;
+  border-radius: 17px;
+  content: '';
+  border: 2px solid #29a4dd;
+  background: #29a4dd;
+}
+.timeline-item:last-child {
+  -o-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, transparent) 1 100%;
+     border-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3) 60%, transparent) 1 100%;
+     border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, transparent) 1 100%;
+}
+.timeline-item h1{
+  background: #F8F8F8;
+}

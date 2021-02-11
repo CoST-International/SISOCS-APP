@@ -1,0 +1,512 @@
+@font-face {
+	font-family: 'icomoon';
+	src: url('../fonts/icomoon.eot');
+	src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'), url('../fonts/icomoon.woff') format('woff'), url('../fonts/icomoon.ttf') format('truetype'), url('../fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Windows Chrome ugly fix http://stackoverflow.com/questions/13674808/chrome-svg-font-rendering-breaks-layout/14345363#14345363 */
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+		font-family: 'icomoon';
+		src: url('../fonts/icomoon.svg#icomoon') format('svg');
+	}
+	;
+}
+
+.clearfix {
+	background: #f5f5f5;
+	text-align: center;
+}
+
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.icon-team, .icon-blog, .icon-file-text2, .icon-portfolio, .icon-services, .icon-contact, .icon-menu, .icon-library {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.icon-start-half:before {
+	content: "\e9d8";
+}
+
+.icon-file-text2:before {
+	content: "\e926";
+}
+
+.icon-calendar:before {
+	content: "\e953";
+}
+
+.icon-stats-bars:before {
+	content: "\e99c";
+}
+
+.icon-newspaper:before {
+	content: "\e904";
+}
+
+.icon-map:before {
+	content: "\e94c";
+}
+
+.icon-library:before {
+	content: "\e921";
+}
+
+.icon-coin-dollar {
+	content: "\e93b"
+}
+
+.icon-flag {
+	content: "\e9cc"
+}
+
+.icon-checkmark {
+	content: "\ea11"
+}
+
+a, li {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* Global CSS that are applied for all screen sizes */
+
+#menu {
+	text-align: center;
+}
+
+#menu #sNav {
+	max-width: 90%;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	font-size: 1em;
+	font-weight: 300;
+}
+
+#menu li span {
+	display: block;
+}
+
+#menu a {
+	display: block;
+	color: rgba(249, 249, 249, .9);
+	text-decoration: none;
+	-webkit-transition: color .5s, background .5s, height .5s;
+	-moz-transition: color .5s, background .5s, height .5s;
+	-o-transition: color .5s, background .5s, height .5s;
+	-ms-transition: color .5s, background .5s, height .5s;
+	transition: color .5s, background .5s, height .5s;
+}
+
+#menu i {
+	/* Make the font smoother for Chrome */
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+/* Remove the blue Webkit background when element is tapped */
+
+a, button {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* Hover effect for the whole navigation to make the hovered item stand out */
+
+.no-touch #menu ul:hover a {
+	color: rgba(249, 249, 249, .5);
+}
+
+.no-touch #menu ul:hover a:hover {
+	color: rgba(249, 249, 249, 0.99);
+}
+
+/* Adding some background color to the different menu items */
+
+.iconText {
+	color: #282828;
+}
+
+#menu li {
+	border-right: solid 1px #29a4dd;
+	border-radius: 2px;
+}
+
+#menu li:nth-child(7n+1) {
+	background: #fff;
+}
+
+#menu li:nth-child(7n+2) {
+	background: #fff;
+}
+
+#menu li:nth-child(7n+3) {
+	background: #fff;
+}
+
+#menu li:nth-child(7n+4) {
+	background: #fff;
+}
+
+#menu li:nth-child(7n+5) {
+	background: #fff;
+}
+
+#menu li:nth-child(7n+6) {
+	background: #fff;
+}
+
+#menu li:nth-child(7n+7) {
+	background: #fff;
+}
+
+#menu li i {
+	color: #29a4dd;
+}
+
+/* For screen bigger than 800px */
+
+@media (min-width: 50em) {
+	/* Transforms the list into a horizontal navigation */
+	#menu li i {
+		color: #29a4dd;
+	}
+	#menu li {
+		float: left;
+		width: 19.8%;
+		text-align: center;
+		-webkit-transition: border .5s;
+		-moz-transition: border .5s;
+		-o-transition: border .5s;
+		-ms-transition: border .5s;
+		transition: border .5s;
+		color: #29a4dd;
+	}
+	#menu a {
+		display: block;
+		width: auto;
+	}
+	/* hover, focused and active effects that add a little colored border to the different items */
+	.no-touch #menu li:nth-child(7n+1) a:hover, .no-touch #menu li:nth-child(7n+1) a:active, .no-touch #menu li:nth-child(7n+1) a:focus {
+		border-bottom: 4px solid #29a4dd;
+	}
+	.no-touch #menu li:nth-child(7n+2) a:hover, .no-touch #menu li:nth-child(7n+2) a:active, .no-touch #menu li:nth-child(7n+2) a:focus {
+		border-bottom: 4px solid #29a4dd;
+	}
+	.no-touch #menu li:nth-child(7n+3) a:hover, .no-touch #menu li:nth-child(7n+3) a:active, .no-touch #menu li:nth-child(7n+3) a:focus {
+		border-bottom: 4px solid #29a4dd;
+	}
+	.no-touch #menu li:nth-child(7n+4) a:hover, .no-touch #menu li:nth-child(7n+4) a:active, .no-touch #menu li:nth-child(7n+4) a:focus {
+		border-bottom: 4px solid #29a4dd;
+	}
+	.no-touch #menu li:nth-child(7n+5) a:hover, .no-touch #menu li:nth-child(7n+5) a:active, .no-touch #menu li:nth-child(7n+5) a:focus {
+		border-bottom: 4px solid #29a4dd;
+	}
+	.no-touch #menu li:nth-child(7n+6) a:hover, .no-touch #menu li:nth-child(7n+6) a:active, .no-touch #menu li:nth-child(7n+6) a:focus {
+		border-bottom: 4px solid #29a4dd;
+	}
+	/* Placing the icon */
+	.icon {
+		/*color: #feca06;*/
+		color: #29a4dd;
+		padding-top: 1.4em;
+	}
+	.icon+span {
+		margin-top: 1em;
+		-webkit-transition: margin .5s;
+		-moz-transition: margin .5s;
+		-o-transition: margin .5s;
+		-ms-transition: margin .5s;
+		transition: margin .5s;
+	}
+	/* Animating the height of the element*/
+	#menu a {
+		height: 9em;
+	}
+	.no-touch #menu a:hover, #menu a:active, #menu a:focus {
+		height: 10em;
+	}
+	/* Making the text follow the height animation */
+	.no-touch #menu a:hover .icon+span {
+		margin-top: 2em;
+		-webkit-transition: margin .5s;
+		-moz-transition: margin .5s;
+		-o-transition: margin .5s;
+		-ms-transition: margin .5s;
+		transition: margin .5s;
+	}
+	/* Positioning the icons and preparing for the animation*/
+	#menu i {
+		position: relative;
+		display: inline-block;
+		margin: 0 auto;
+		padding: 0.4em;
+		border-radius: 50%;
+		font-size: 1.8em;
+		box-shadow: 0 0 0 30px transparent;
+		background: rgba(255, 255, 255, 0.1);
+		-webkit-transform: translate3d(0, 0, 0);
+		-moz-transform: translate3d(0, 0, 0);
+		-o-transform: translate3d(0, 0, 0);
+		-ms-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		-webkit-transition: box-shadow .6s ease-in-out;
+		-moz-transition: box-shadow .6s ease-in-out;
+		-o-transition: box-shadow .6s ease-in-out;
+		-ms-transition: box-shadow .6s ease-in-out;
+		transition: box-shadow .6s ease-in-out;
+	}
+	/* Animate the box-shadow to create the effect */
+	.no-touch #menu a:hover i, .no-touch #menu a:active i, .no-touch #menu a:focus i {
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2);
+		-webkit-transition: box-shadow .4s ease-in-out;
+		-moz-transition: box-shadow .4s ease-in-out;
+		-o-transition: box-shadow .4s ease-in-out;
+		-ms-transition: box-shadow .4s ease-in-out;
+		transition: box-shadow .4s ease-in-out;
+	}
+}
+
+@media (min-width: 50em) and (max-width: 61.250em) {
+	/* Size and font adjustments to make it fit into the screen*/
+	#menu ul {
+		font-size: 1.2em;
+		min-height: 95px;
+	}
+	#menu li {
+		color: #29a4dd;
+	}
+	#menu li i {
+		color: #29a4dd;
+	}
+}
+
+/* The "tablet" and "mobile" version */
+
+@media (max-width: 49.938em) {
+	#menu li i {
+		color: #29a4dd;
+	}
+	/* Instead of adding a border, we transition the background color */
+	.no-touch #menu ul li:nth-child(7n+1) a:hover, .no-touch #menu ul li:nth-child(7n+1) a:active, .no-touch #menu ul li:nth-child(7n+1) a:focus {
+		background: #fff;
+		border-bottom: solid 1px #29a4dd;
+	}
+	.no-touch #menu li:nth-child(7n+2) a:hover, .no-touch #menu li:nth-child(7n+2) a:active, .no-touch #menu li:nth-child(7n+2) a:focus {
+		background: #fff;
+		border-bottom: solid 1px #29a4dd;
+	}
+	.no-touch #menu li:nth-child(7n+3) a:hover, .no-touch #menu li:nth-child(7n+3) a:active, .no-touch #menu li:nth-child(7n+3) a:focus {
+		background: #fff;
+		border-bottom: solid 1px #29a4dd;
+	}
+	.no-touch #menu li:nth-child(7n+4) a:hover, .no-touch #menu li:nth-child(7n+4) a:active, .no-touch #menu li:nth-child(7n+4) a:focus {
+		background: #fff;
+		border-bottom: solid 1px #29a4dd;
+	}
+	.no-touch #menu li:nth-child(7n+5) a:hover, .no-touch #menu li:nth-child(7n+5) a:active, .no-touch #menu li:nth-child(7n+5) a:focus {
+		background: #fff;
+		border-bottom: solid 1px #29a4dd;
+	}
+	.no-touch #menu li:nth-child(7n+6) a:hover, .no-touch #menu li:nth-child(7n+6) a:active, .no-touch #menu li:nth-child(7n+6) a:focus {
+		background: #fff;
+		border-bottom: solid 1px #29a4dd;
+	}
+	.no-touch #menu li:nth-child(7n+7) a:hover, .no-touch #menu li:nth-child(7n+7) a:active, .no-touch #menu li:nth-child(7n+7) a:focus {
+		background: #fff;
+		border-bottom: solid 1px #29a4dd;
+	}
+	#menu ul li {
+		-webkit-transition: background 0.5s;
+		-moz-transition: background 0.5s;
+		-o-transition: background 0.5s;
+		-ms-transition: background 0.5s;
+		transition: background 0.5s;
+	}
+	#menu li {
+		color: #29a4dd;
+	}
+}
+
+/* CSS specific to the 2x3 columns version */
+
+@media (min-width:32.5em) and (max-width: 49.938em) {
+	/* Creating the 2 column layout using floating elements once again */
+	#menu li {
+		display: block;
+		float: left;
+		width: 50%;
+	}
+	/* Adding some padding to make the elements look nicer*/
+	#menu a {
+		padding: 0.8em;
+	}
+	/* Displaying the icons on the left, and the text on the right side using inlin-block*/
+	#menu li span, #menu li span.icon {
+		display: inline-block;
+	}
+	#menu li span.icon {
+		width: 50%;
+	}
+	#menu li .icon+span {
+		font-size: 1em;
+	}
+	.icon+span {
+		position: relative;
+		top: -0.2em;
+	}
+	/* Adaptating to the icons to animate the size and border of the rounded background in a more discreet way */
+	#menu li i {
+		display: inline-block;
+		padding: 8% 9%;
+		border: 4px solid transparent;
+		border-radius: 50%;
+		font-size: 1em;
+		background: rgba(255, 255, 255, 0.1);
+		-webkit-transition: border .5s;
+		-moz-transition: border .5s;
+		-o-transition: border .5s;
+		-ms-transition: border .5s;
+		transition: border .5s;
+		color: #29a4dd;
+	}
+	/* Transition effect on the border color */
+	.no-touch #menu li:hover i, .no-touch #menu li:active i, .no-touch #menu li:focus i {
+		border: 4px solid rgba(255, 255, 255, 0.1);
+	}
+}
+
+/* Adapting the font size and width for smaller screns*/
+
+@media (min-width: 32.5em) and (max-width: 38.688em) {
+	#menu li {
+		color: #29a4dd;
+	}
+	#menu li span.icon {
+		width: 50%;
+	}
+	#menu li .icon+span {
+		font-size: 0.9em;
+	}
+	#menu li i {
+		color: #29a4dd;
+	}
+}
+
+/* Styling the toggle menu link and hiding it */
+
+#menu .navtoogle {
+	display: none;
+	width: 100%;
+	padding: 0.5em 0.5em 0.8em;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	font-weight: normal;
+	text-align: left;
+	color: rgb(7, 16, 15);
+	font-size: 1.2em;
+	background: none;
+	border: none;
+	border-bottom: 4px solid rgb(221, 221, 221);
+	cursor: pointer;
+}
+
+.navtoogle i {
+	z-index: -1;
+}
+
+.icon-menu {
+	position: relative;
+	top: 3px;
+	line-height: 0;
+	font-size: 1.3em;
+}
+
+@media (max-width: 32.438em) {
+	#menu li i {
+		color: #29a4dd;
+	}
+	#menu li {
+		color: #29a4dd;
+		border-left: 8px solid #29a4dd;
+	}
+	/* Unhiding the styled menu link */
+	#menu .navtoogle {
+		margin: 0;
+		display: block;
+	}
+	/* Animating the height of the navigation when the button is clicked */
+	/* When JavaScript is disabled, we hide the menu */
+	.no-js #menu ul {
+		max-height: 40em;
+		overflow: hidden
+	}
+	/* When JavaScript is enabled, we hide the menu */
+	.js #menu ul {
+		max-height: 0em;
+		overflow: hidden;
+	}
+	/* Displaying the menu when the user has clicked on the button*/
+	.js #menu .active+ul {
+		max-height: 40em;
+		overflow: hidden;
+		-webkit-transition: max-height .4s;
+		-moz-transition: max-height .4s;
+		-o-transition: max-height .4s;
+		-ms-transition: max-height .4s;
+		transition: max-height .4s;
+	}
+	/* Adapting the layout of the menu for smaller screens : icon on the left and text on the right*/
+	#menu li span {
+		display: inline-block;
+		height: 100%;
+	}
+	#menu a {
+		padding: 0.5em;
+	}
+	.icon+span {
+		margin-left: 1em;
+		font-size: 0.8em;
+	}
+	/* Adding a left border of 8 px with a different color for each menu item*/
+	#menu li:nth-child(7n+1) {
+		border-left: 8px solid #29a4dd;
+	}
+	#menu li:nth-child(7n+2) {
+		border-left: 8px solid #29a4dd;
+	}
+	#menu li:nth-child(7n+3) {
+		border-left: 8px solid #29a4dd;
+	}
+	#menu li:nth-child(7n+4) {
+		border-left: 8px solid #29a4dd;
+	}
+	#menu li:nth-child(7n+5) {
+		border-left: 8px solid #29a4dd;
+	}
+	#menu li:nth-child(7n+6) {
+		border-left: 8px solid #29a4dd;
+	}
+	/* make the nav bigger on touch screens */
+	.touch #menu a {
+		padding: 0.8em;
+	}
+}

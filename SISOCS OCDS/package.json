@@ -1,0 +1,61 @@
+{
+  "name": "mini-core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "chalk": "^2.1.0",
+    "chart.js": "^2.7.0",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "deep-extend": "^0.5.0",
+    "express": "^4.15.4",
+    "express-session": "^1.15.6",
+    "express-validator": "^4.2.1",
+    "flat": "^4.0.0",
+    "font-awesome": "^4.7.0",
+    "fs": "0.0.1-security",
+    "generic-pool": "^3.1.7",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "https": "^1.0.0",
+    "jquery": "^3.2.1",
+    "jsonfile": "^4.0.0",
+    "mongoose": "^4.13.2",
+    "mysql": "^2.15.0",
+    "nodemon": "^1.12.1",
+    "oclazyload": "^1.1.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "popper.js": "^1.12.5",
+    "request": "^2.81.0",
+    "require-dir": "^0.3.2",
+    "run-sequence": "^2.2.0",
+    "shelljs": "^0.7.8",
+    "simple-line-icons": "^2.4.1",
+    "soap": "^0.20.0",
+    "sybase": "^1.2.1",
+    "tmp": "0.0.33",
+    "toastr": "^2.1.2",
+    "util": "^0.10.3",
+    "winston": "^3.0.0-rc1"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "components/sisoc/files/*"
+    ]
+  }
+}

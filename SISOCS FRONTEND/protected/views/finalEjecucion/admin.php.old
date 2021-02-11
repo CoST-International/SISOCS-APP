@@ -1,0 +1,65 @@
+<?php
+/* @var $this FinalEjecucionController */
+/* @var $model FinalEjecucion */
+
+$this->breadcrumbs=array(
+	'Final de Implementacion'=>array('index'),
+	'Crear',
+);
+
+$this->menu=array(
+	        array('label'=>'Listar Contratos no finalizados', 'url'=>array('GestionFinales/admin')),
+	        array('label'=>'Lista de finalizaciones (Publicadas)', 'url'=>array('GestionFinales/publicadas')),
+            array('label'=>'Gestionar finalizaciones', 'url'=>array('admin')),
+        );
+
+?>
+
+<h1>Administrar Finales de Implementación</h1>
+
+<p>
+Tambi&eacuten puede escribir un operador de comparaci&oacuten (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
+o <b>=</b>) al principio de cada uno de los valores de b&uacutesqueda para especificar c&oacutemo se debe hacer la comparaci&oacuten.
+</p>
+
+<div class="search-form" style="display:none">
+</div><!-- search-form -->
+
+<?php 
+$this->widget('zii.widgets.grid.CGridView',
+              array('dataProvider' => $model->notFinalized(),
+                    'filter' => $model,
+                    'pager' => array('cssFile' => Yii::app()->baseUrl . '/css/gridViewStyle/gridView.css'),
+                    'cssFile' => Yii::app()->baseUrl . '/css/gridViewStyle/gridView.css',
+                    'summaryText' => 'Mostrando {start} - {end} de {count} registros',
+                    'htmlOptions' => array('class' => 'grid-view rounded'),
+										'ajaxUpdate'=>false,
+                    'columns' => array(
+                                        array('header' => 'idInicioEjecucion',
+                                              'name'   => 'idInicioEjecucion'),
+                                        array('header' => 'idContratacion',
+                                              'name'   => 'idContratacion'),
+                                        array('header' => 'idContratacion',
+                                              'name' => 'idContratacion0.idContratacion',
+                                              'value'  => '$data->idContratacion0["titulocontrato"]',
+                                              'filter' => CHtml::activeTextField( $model, 'titulo_contrato' )),
+                                        array('header' => 'Fecha de inicio',
+                                              'name'   => 'fecha_inicio',
+                                              'value'  => 'Yii::app()->dateFormatter->format("d/M/y",strtotime($data->fecha_inicio))'),
+                                        array('htmlOptions'=>array('width'=>'140',
+                                                                   'style'=>'text-align:center'),
+                                              'header' => 'Acciones',
+                                              'class' => 'CButtonColumn',
+                                              'deleteConfirmation'=>"js:'¿Desea eliminar el registro con código : '+$(this).parent().parent().children(':nth-child(1)').text()+'?'",
+                                              'template' => '{avances}',
+                                              'buttons' => array('avances' => array('label' => '<span class="btn btn-success">Finalizar</span>',
+                                                                                    'url' => 'Yii::app()->createUrl("/FinalEjecucion/create", array("id"=>$data->idInicioEjecucion))',
+                                                                                    'options'=>array('title'=>'Finalizar Ejecución'),
+                                                                                    'imageUrl' => false)
+
+                                                            ),
+                                        ),
+                                 ),
+              )
+);
+ ?>

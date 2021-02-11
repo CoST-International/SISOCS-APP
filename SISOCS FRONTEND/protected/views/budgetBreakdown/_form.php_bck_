@@ -1,0 +1,124 @@
+<head>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+</head>
+<div class="form">
+<?php //$model=new BudgetBreakdown(); ?>
+  <?php $form=$this->beginWidget('CActiveForm', array(
+    'id'=>'proyecto-dialog-form',
+    // Please note: When you enable ajax validation, make sure the corresponding
+    // controller action is handling ajax validation correctly.
+    // There is a call to performAjaxValidation() commented in generated controller code.
+    // See class documentation of CActiveForm for details on this.
+    'enableAjaxValidation'=>false,
+  )); ?>
+
+    <p class="note">Campos con <span class="required" style="color:red; font-size:18px;">*</span>&nbsp;  son requeridos.</p>
+
+    <?php echo $form->errorSummary($model); ?>
+
+  <div class="row">
+    <?php echo $form->hiddenField($model, 'idProyecto', array('value'=>$idProyecto)); ?>
+  </div>
+
+
+
+
+      <?php
+        if (empty($idProyecto)) {
+          $budgetBreakdownValues="";
+        }
+
+          echo '<div class="row col-md-8"';
+          echo $form->labelEx($model,'description');
+          echo '</div>';
+          echo '<div class="row col-md-8">';
+          echo $form->textArea($model,'description',array('size'=>60,'maxlength'=>255));
+          echo '</div>';
+          echo $form->error($model,'description');
+
+          echo '<div class="row col-md-8">';
+          echo $form->labelEx($model,'sourceParty_id');
+          echo '</div>';
+          echo '<div class="row col-md-8">';
+          echo  $form->dropDownList($model,'sourceParty_id',Yii::app()->Controller->listaParties(),array('prompt'=>'--Seleccione un Valor--'));
+          echo '</div>';
+          echo $form->error($model,'sourceParty_id');
+
+          echo '<div class="row col-md-8"';
+          echo $form->labelEx($model,'amount');
+          echo '</div>';
+          echo '<div class="row col-md-8">';
+          echo $form->textField($model,'amount');
+          echo '</div>';
+          echo $form->error($model,'amount');
+
+          echo '<div class="row col-md-8">';
+          echo $form->labelEx($model,'currency');
+          echo '</div>';
+          echo '<div class="row col-md-8">';
+          echo  $form->dropDownList($model,'currency',Yii::app()->controller->listaMonedas(),array('prompt'=>'--Seleccione un valor--'));
+          echo '</div>';
+          echo $form->error($model,'currency');
+
+          echo '<div class="row col-md-8">';
+          echo $form->labelEx($model,'startDate');
+          echo '</div>';
+          echo '<div class="row col-md-8">';
+          echo $form->textField($model,'startDate',array('size'=>20,'maxlength'=>20,'placeholder'=>'AAAA/MM/DD','readonly'=>false ));
+          echo '</div>';
+          echo $form->error($model,'startDate');
+
+
+          echo '<div class="row col-md-8">';
+          echo $form->labelEx($model,'endDate');
+          echo '</div>';
+          echo '<div class="row col-md-8">';
+          echo $form->textField($model,'endDate',array('size'=>20,'maxlength'=>20,'placeholder'=>'AAAA/MM/DD','readonly'=>false ));
+          echo '</div>';
+          echo $form->error($model,'endDate');
+
+          $this->widget('zii.widgets.jui.CJuiDatePicker',array(
+    'name'=>'endDate',
+    // additional javascript options for the date picker plugin
+    'options'=>array(
+        'showAnim'=>'fold',
+    ),
+    'htmlOptions'=>array(
+        'style'=>'height:20px;'
+    ),
+));
+
+
+
+
+       ?>
+
+
+
+    <?php echo CHtml::hiddenField('eje' , 1, array('id' => 'eje')); ?>
+
+
+    <div class="row buttons col-md-8">
+
+    </div>
+    <div class="row col-md-8"><br>
+    <?php //echo CHtml::submitButton($model->isNewRecord ? 'Crear' : 'Save'); ?>
+            <?php  //echo CHtml::Button('Guardar',array('id'=>'enviar','onclick'=>'send_desembolsos(); dialogoDeUpdate.dialog("close"); return false;'));  ?>
+
+      <?php if ($model->isNewRecord==false) {
+
+
+           echo CHtml::Button('Guardar',array('id'=>'enviar','onclick'=>'update_documents(\'budget\','.$model->id.');'));
+         echo CHtml::button('Cerrar', array('onclick' => 'dialogoDeUpdate.dialog("close"); return false;'));
+      }else{
+            echo CHtml::Button('Guardar',array('id'=>'enviar','onclick'=>'send_documents(\'budget\');'));
+        }
+
+      ?>
+    </div>
+  <?php $this->endWidget(); ?>
+
+</div><!-- form -->

@@ -1,0 +1,13 @@
+{
+    "version":"1.1",
+    "ocid_url":"http://localhost:8080/sisocs/",
+    "document_url":"http://app.sisocs.org/",
+    "preOCID":"ocds-mfx54g",
+    "license":"https://opendatacommons.org/licenses/pddl/1.0/",
+    "publisher": {
+        "name": "Comisión para la formación de la alianza público-privada (COALIANZA)"
+    },
+    "extensions": [
+        "http://standard.open-contracting.org/profiles/ppp/extension/1__0__0__beta/extension.json"
+    ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "sisocs-platform",
+  "private_key_id": "32d84e0d4190cff4f29a9f8398a2a18f5729edb1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDla9v5jDWizIHF\n6rwG3KMzzkv5vi9UkWvlS4i/hn6zMYCKX/c2EcWcoeBD9gO4Z9Z3/3qRRxE1LUIY\naP9JYIuJDXBAG2+0f2fuNrkagt80944z3u07FC4zZioki8EPCrKHuW2gsPaLwMne\nPniAZNnB03dwH+GqoQlOivU8IYqrQc6WRMnbZB64gAWAI+ODBA8axAB091W8vbD5\nvEw5U/02rDoHynuCtDcLz7lffzi1S47RoDYMltAgHKC4BOHdEX16edSRB1a0ZvAv\n1hn75oB4ylem8lZEbbizAA+KajOAZwZaVr1xjjsuoPwQwtY208LbmDB6GIX/uDml\n3x+AkU4TAgMBAAECggEACarBUqMTUYBPiZDqCln6sIClV+kpImWcR8Wmhfd7WD6i\nPXJsvsUB8CcsBYEUyAzsDxNfTUbS1UxKaC/obeWZC5Xa4ICndNIXhYSdyR2xnRA/\nWDUxBtfDWJwZ839GC8W2Hxzznx1Fzj654tj8B+D4AgBQnJNjVWbCtyII0ldRegTP\n64YPIvYToB6Wbf4JvCGnftnp8J9TtT1tZ7bWLwzMAEtTb5Cn1Kmt9ajEsJqlrYUJ\nB2VOLXGgwY/HRT3mrPMlU8LCGDSqWleUbU+tNFsIgWhkp678PkU1Qix0+rmbgBjh\ni8BjFVMp9sAWGtCuUdAOPMzEgzr8M8QAJ+GZU4Zc0QKBgQD3mcZ4X0xiX5rtJrVb\nsuUHZvJOwwlhTsSXwS1p4p4lQNfoWcFnI9bxLmAXZcQ9fzhx2ngT6jq1du+9ddYN\nWcK/bA/mjBYhd8mJje5GPkj4uANxamD01wdFqmbgFjTbOKAlZIO93oqt80Spu3wX\n1d0ZY30Qjvvk1cCJRQ1mMT8GQwKBgQDtNDXDXmhtBX0T2Ifo/yHMpmKzi7YGLRF3\nTTVjfB4tJWb0SppPEYyEXKZvL5sob1hzXwvOQtLuYKHBd2DxorRF6+uWsjoROIrJ\n+VyJ/gWmHmqnYG5YdTEYkPHjX8JfNtK7Q5vDNG8DqxA5xqA8dKyuHiMRdPY11jD8\nozetniXj8QKBgFw8nuDsr2neL7q0ts7oP8WYJiANLAth6n6V6jMNxtgd5dCazx97\nDHFgU0+kC4zVPdO8DQtuMFy1Z+3uXcUvcQsaWHoMKZpiI2PoyaDFRy3QbwfrFx9e\nk0jyh8xmuV4JJC+J2EH9CzBt9WA9habjdrAkjcyDV3cR4d3BKZKuOco9AoGAUa+e\nKCaV3Z17Ql9aBoH9+MT/zob5a00P6765+QWgOrnbp5sdYsdPVbG2WynQy+70Td7Y\naPKYQyEh80cSKoR2gnHJUr8TwiRvnzhxhs/k0B0/a16JAYtyGdyogD3U6QcvMPAK\nbwHajS/WyZ6+RbOEV/3m47ccptOZURdAMFj7AXECgYBTFAqD4PpdE8+UsipsdR9P\nhuetRaFT0uXEpjLnJsjUizGusm3Kzdp/Oc4WtojhcP0loo1e2YcmRAAcEBxPjxNn\nQsQb0/XyTnLpI10PH2l+X+lX6ORwb8iJ2FzlVQIg789Zh6c67UZwnlRYTMj8rAJh\nL2a9lwOhAMx+oeaRt6SG/g==\n-----END PRIVATE KEY-----\n",
+  "client_email": "analytics-sisocs@sisocs-platform.iam.gserviceaccount.com",
+  "client_id": "115327969981588800908",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/analytics-sisocs%40sisocs-platform.iam.gserviceaccount.com"
+}

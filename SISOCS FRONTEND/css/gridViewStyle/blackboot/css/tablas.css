@@ -1,0 +1,67 @@
+﻿.tabla {
+	color:black;
+}
+td	{
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	text-align:justify;
+	vertical-align:bottom;
+	border:none;
+	white-space:nowrap;
+}
+.encabezado	{	
+	color:black;
+	font-size:11.0pt;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+		
+	font-weight:700;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #DBDBDB;
+	border-bottom:none;
+	border-left:.5pt solid #DBDBDB;
+	background:#EAB200;
+	white-space:normal;
+}
+.fila_blanco {
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+		
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #DBDBDB;
+	border-bottom:none;
+	border-left:.5pt solid #DBDBDB;
+	white-space:normal;
+}
+.fila_azul	{
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+		
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #DBDBDB;
+	border-bottom:none;
+	border-left:.5pt solid #DBDBDB;
+	background:#E7E7FF;
+	white-space:normal;
+}

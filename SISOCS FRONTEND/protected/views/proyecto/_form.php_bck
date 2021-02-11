@@ -1,0 +1,957 @@
+
+<br><br>
+
+<div class="container">
+
+		<div class="tab-content">
+      <ul class="nav nav-pills nav-fill" role="tablist">
+        <li class="nav-item "><a class="nav-link active" data-toggle="tab" href="#home">Proyecto</a></li>
+        <li class="nav-item "><a class="nav-link" data-toggle="tab" href="#menu1">Budget Breakdown</a></li>
+        <li class="nav-item "><a class="nav-link" data-toggle="tab" href="#menu2">Pre Qualification</a></li>
+        <li class="nav-item "><a class="nav-link" data-toggle="tab" href="#menu3">Funding Source</a></li>
+        <li class="nav-item "><a class="nav-link" data-toggle="tab" href="#menu4">Beneficiaries</a></li>
+        <li class="nav-item "><a class="nav-link" data-toggle="tab" href="#menu5">Planning Milestone</a></li>
+
+      </ul>
+		  <div id="home" class="tab-pane fade in active">
+		    <h3>Proyecto</h3>
+
+
+					<div class="row col-md-12" style="overflow: hidden;">
+						<?php $form=$this->beginWidget('CActiveForm', array(
+							'id'=>'proyecto-form',
+							// Please note: When you enable ajax validation, make sure the corresponding
+							// controller action is handling ajax validation correctly.
+							// There is a call to performAjaxValidation() commented in generated controller code.
+							// See class documentation of CActiveForm for details on this.
+							'enableAjaxValidation' => true,
+						        'htmlOptions' => array('enctype' => 'multipart/form-data'),
+						)); ?>
+
+						<?php
+						    if(is_null($model->idProyecto)){
+
+						    }else{
+
+						?>
+						<table width="50%" border="0" align="right">
+							  <tr>
+							    <td width="9%">&nbsp;</td>
+						            <td width="51%"><b>Proyectos</b></td>
+							    <td width="40%"></td>
+						      </tr>
+							  <tr>
+							    <td>&nbsp;</td>
+							    <td align="right">
+
+						                <style type="text/css">
+						                    .button {
+						                            background-color: #4CAF50; /* Green */
+						                            border: none;
+						                            color: white;
+						                            padding: 0px 24px;
+						                            text-align: center;
+						                            text-decoration: none;
+						                            display: inline-block;
+						                            font-size: 16px;
+						                            margin: 2px 1px;
+						                            -webkit-transition-duration: 0.4s; /* Safari */
+						                            transition-duration: 0.4s;
+						                            cursor: pointer;
+																}
+						                    .button5 {
+						                        background-color: white;
+						                        color: black;
+						                        border: 2px solid #555555;
+						                    }
+
+						                    .button5:hover {
+						                        background-color: #555555;
+						                        color: white;
+						                    }
+						                </style>
+						                <script type="text/javascript">
+						            function myFunction() {
+						                var x = document.getElementById("mySelect").value;
+						                //document.getElementById("demo").innerHTML = "You selected: " + x;
+						                 if(x=="create3"){
+						                     document.getElementById("demo").href="index.php?r=calificacion/create3&idCreate="+<?php echo $model->idProyecto; ?>;
+
+						                }
+						                else if(x=="opcion"){
+						                    document.getElementById("demo").href="#";
+						                }
+						                else{
+						                    //alert(x);
+						                 document.getElementById("demo").href="index.php?r=calificacion/view&id="+x;
+
+						                }
+						                //
+						                ////else{
+						                    //document.getElementById("demo").href="index.php?r=calificacion/"+x;
+						                //}
+
+						            }
+						            </script>
+						             <select id="mySelect" onchange="myFunction()">
+						            <?php
+						            $calicicacionCrear="create3";
+
+						            $listaCali=$model->listaCalificaciones($model->idProyecto);
+						            echo '<option value="opcion">Seleccione una Opcion</option>';
+						            echo '<option value="'.$calicicacionCrear.'">Nuevo</option>';
+						            foreach($listaCali as $ids=>$nameCali){
+						                echo "<option value=".$ids.">".$nameCali."</option>";
+						            }
+
+						            ?>
+								<!--<option value="TH">Thailand</option>
+								<option value="EN">English</option>
+								<option value="US">United States</option>-->
+							</select>
+						        <a st="st" id="demo" class="button button5" href="#">Ir</a> <br></td>
+							    <td align="left">&nbsp;</td>
+						      </tr>
+						  </table><?php }  //$id = 212; echo '<h1>'; echo Yii::app()->Controller->GetPath('webroot.adjuntos', 1, $id); echo '</h1>'; ?>
+							<br>
+							<p class="note">Campos con<span class="required" style="color:red;font-size:18px;">*</span> son obligatorios.</p>
+
+						  <p><?php echo $form->errorSummary($model); ?></p>
+						  <p><span class="row"><?php echo $form->hiddenField($model,'idProyecto',array('size'=>20,'maxlength'=>20,'class'=>'idcod')); ?></span></p>
+							<div class="container" style="margin-top:-39px;">
+								<div class="row col-md-8">
+									<?php echo $form->labelEx($model,'codigo'); ?>
+								</div>
+								<div class="row col-md-8">
+									<?php echo $form->textField($model,'codigo',array('size'=>30,'maxlength'=>30,'style'=>'width: 100%;')); ?><?php echo $form->error($model,'codigo'); ?>
+								</div>
+
+								<div class="row col-md-8">
+									<?php echo $form->labelEx($model,'Proposito'); ?>
+								</div>
+
+                <div class="row col-md-8" style="margin-top:12px;">
+									<?php echo $form->labelEx($model,'codsefin'); ?>
+								</div>
+
+								<div class="row col-md-8">
+									<?php echo $form->textField($model,'codsefin',array('size'=>20,'maxlength'=>20)); ?> <?php echo $form->error($model,'codsefin'); ?>
+								</div>
+
+								<div class="row col-md-8" style="margin-top:12px;">
+									<?php echo $form->labelEx($model,'nombre_proyecto'); ?>
+								</div>
+
+								<div class="row col-md-8">
+									<?php echo $form->textArea($model,'nombre_proyecto',array('size'=>60,'maxlength'=>2000,'rows'=>5,'cols'=>60)); ?><?php echo $form->error($model,'nombre_proyecto'); ?>
+								</div>
+
+								<div class="row col-md-8" style="margin-top:12px;">
+									<?php echo $form->labelEx($model,'descrip'); ?>
+								</div>
+
+								<div class="row col-md-8">
+									<?php echo $form->textArea($model,'descrip',array('rows'=>5, 'cols'=>60)); ?> <?php echo $form->error($model,'descrip'); ?>
+								</div>
+
+                <div class="row col-md-8">
+									<?php echo $form->textArea($model,'Proposito',array('size'=>60,'maxlength'=>255,'rows'=>5,'cols'=>60)); ?>
+									<?php echo $form->error($model,'Proposito'); ?>
+								</div>
+
+                <div class="container col-md-5">
+
+  								<div class="row col-md-12" style="margin-top:12px;">
+  									<?php echo $form->labelEx($model,'idSector'); ?>
+  								</div>
+
+  								<div class="row col-md-12">
+  									<?php echo $form->dropDownList($model,'idSector',
+  				                        CHtml::listData(Sector::model()->findAll(),'idSector','sector'),
+  				                        array(
+  				                            'ajax'=>array(
+  				                                'type'=>'POST',
+  				                                'url'=>CController::createUrl('Proyecto/Selectdos'),
+  				                                'update'=>'#'.CHtml::activeId($model,'idSubSector'),
+  				                            ),'prompt'=>'--Seleccione un valor--'
+
+  				                        )
+  				                        ); ?> <?php echo $form->error($model,'idSector'); ?>
+  								</div>
+                </div>
+
+                <div class="container col-md-5">
+                  <div class="row col-md-12" style="margin-top:12px;">
+  									<?php echo $form->labelEx($model,'idSubSector'); ?>
+  								</div>
+  								<div class="row col-md-12">
+  									<?php if($model->isNewRecord){
+  										echo $form->dropDownList($model,'idSubSector',array(),array('prompt'=>'--Seleccione un valor--'));
+  									}else{
+  										echo $form->dropDownList($model,'idSubSector',$model->listaSubSector(),array('prompt'=>'--Seleccione un valor--'));
+  									}
+
+  									?> <?php echo $form->error($model,'idSubSector'); ?>
+  								</div>
+                </div>
+
+                <div class="container col-md-5" style="margin-top:-1em;">
+
+  								<div class="row col-md-12" style="margin-top:12px;">
+  									<?php echo $form->labelEx($model,'idEnte'); ?>
+  								</div>
+
+  								<div class="row col-md-12">
+                    <?php echo  $form->dropDownList($model,'idEnte',
+                          CHtml::listData(Entes::model()->findAll(array("order"=>"descripcion asc")),'idEnte','descripcion'),array(
+                                      'ajax'=>array(
+                                          'type'=>'POST',
+                                          'url'=>CController::createUrl('Proyecto/Selectunidad'),
+                                          'update'=>'#'.CHtml::activeId($model,'idUnidad'),
+                                      ),'prompt'=>'--Seleccione un valor--',
+
+                                  )
+                                  ); ?> <?php echo $form->error($model,'idEnte'); ?>
+  								</div>
+
+                </div>
+
+                <div class="container col-md-5" style="margin-top:-1em;">
+
+  								<div class="row col-md-12" style="margin-top:12px;">
+  									<?php echo $form->labelEx($model,'idUnidad'); ?>
+  								</div>
+
+  								<div class="row col-md-12">
+                    <?php
+              			if($model->isNewRecord){
+              			echo  $form->dropDownList($model,'idUnidad',array(),array('prompt'=>'--Seleccione un valor--'));
+              			}else{
+              				echo  $form->dropDownList($model,'idUnidad',$model->listaUnidad(),array('prompt'=>'--Seleccione un valor--'));
+              				//echo $form->dropDownList($model,'idSubSector',$model->listaSectores(),array('prompt'=>'--Seleccione un valor--'));
+              			}
+              			//echo  $form->dropDownList($model,'idUnidad',array(),array('prompt'=>'--Seleccione un valor--'));?>
+              			<?php echo $form->error($model,'idUnidad'); ?>
+  								</div>
+
+                </div>
+
+                <div class="container col-md-5" style="margin-top:-1em;">
+
+  								<div class="row col-md-12" style="margin-top:12px;">
+  									<?php echo $form->labelEx($model,'idFuncionario'); ?>
+  								</div>
+
+  								<div class="row col-md-12">
+                    <?php echo  $form->dropDownList($model,'idFuncionario',$model->listaFuncionarios($model->idEnte),array('prompt'=>'--Seleccione un valor--'));?> <?php echo $form->error($model,'idFuncionario'); ?>
+  								</div>
+
+                </div>
+
+                <div class="container col-md-5" style="margin-top:-1em;">
+
+  								<div class="row col-md-12" style="margin-top:12px;">
+  									<?php echo $form->labelEx($model,'idRol'); ?>
+  								</div>
+
+  								<div class="row col-md-12">
+                    <?php echo  $form->dropDownList($model,'idRol',$model->listaRoles($model->idRol),array('prompt'=>'--Seleccione un valor--'));//echo $form->textArea($model,'idRol',array('size'=>20,'maxlength'=>20)); ?><?php echo $form->error($model,'idRol'); ?>
+  								</div>
+
+                </div>
+
+                <div class="container col-md-5" style="margin-top:-1em;">
+
+  								<div class="row col-md-12" style="margin-top:12px;">
+  									<?php echo $form->labelEx($model,'presupuesto'); ?>
+  								</div>
+
+  								<div class="row col-md-12">
+                    <?php echo $form->textField($model,'presupuesto'); ?> <?php echo $form->error($model,'presupuesto'); ?>
+  								</div>
+
+                </div>
+
+                <div class="container col-md-5" style="margin-top:-1em;">
+
+  								<div class="row col-md-12" style="margin-top:12px;">
+  									<?php echo $form->labelEx($model,'fechaaprob'); ?>
+  								</div>
+
+  								<div class="row col-md-12">
+                    <?php
+
+        			  //echo $form->textField($model,'fechaaprob');
+        			  if ($model->fechaaprob!='') {
+                                        $model->fechaaprob=date('Y-m-d',strtotime($model->fechaaprob));
+                        }
+                                    $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+                                    'model'=>$model,
+                                    'attribute'=>'fechaaprob',
+                                    'value'=>$model->fechaaprob,
+                                    'language' => 'es',
+                                    'htmlOptions' => array('readonly'=>"readonly"),
+                                    'options'=>array(
+                                    'autoSize'=>true,
+                                    'defaultDate'=>$model->fechaaprob,
+                                    'dateFormat'=>'yy-mm-dd',
+                                    'buttonImage'=>Yii::app()->baseUrl.'/images/calendar.gif',
+                                    'buttonImageOnly'=>true,
+                                    'buttonText'=>' Click aqui',
+                                    'selectOtherMonths'=>true,
+                                    'showAnim'=>'slide',
+                                    'showButtonPanel'=>true,
+                                    'showOn'=>'button',
+        							'yearRange'=>'1980:2099',
+                                    'showOtherMonths'=>true,
+                                    'changeMonth' => 'true',
+                                    'changeYear' => 'true',
+        														'yearRange' => '1990:2020',
+                                    ),
+                                ));
+        						/*
+        			  		 $this->widget('zii.widgets.jui.CJuiDatePicker',
+        							array('language' => 'es',
+        								'model' => $model,
+        								'attribute' => 'fechaaprob',
+        								'options' => array( 'firstDay'=>1,'buttonImage'=>"images/calendar.gif",'buttonImageOnly' => true,'constrainInput' => true,'currentText' => 'Now',
+        													'dateFormat' => 'dd/mm/yy','changeMonth' => 'true','changeYear' => 'true','duration' => 'fast','showAnim' => 'fold',),
+        								'htmlOptions' => array('class' => 'shadowdatepicker')
+        							)
+        			  );*/
+        		?>
+
+                    <?php echo $form->error($model,'fechaaprob'); ?>
+  								</div>
+
+                </div>
+
+                <div class="row col-md-8">
+									<?php echo $form->labelEx($model,'descambiental'); ?>
+								</div>
+								<div class="row col-md-8">
+									<?php echo $form->textArea($model,'descambiental',array('rows'=>5,'cols'=>60)); ?> <?php echo $form->error($model,'descambiental'); ?>
+								</div>
+
+                <div class="row col-md-8" style="margin-top:3em;">
+									<?php echo $form->labelEx($model,'descreasentamiento'); ?>
+								</div>
+								<div class="row col-md-8">
+									<?php echo $form->textArea($model,'descreasentamiento',array('rows'=>5,'cols'=>60)); ?> <?php echo $form->error($model,'descreasentamiento'); ?>
+								</div>
+
+                <div class="container col-md-5" style="margin-top: 2em;">
+
+  								<div class="row col-md-12" style="margin-top:12px;">
+  									<?php echo $form->labelEx($model,'lat1'); ?>
+  								</div>
+
+  								<div class="row col-md-12">
+                    <?php if (!is_numeric($model->lat1)){$model->lat1='0';} echo $form->textField($model,'lat1',array('size'=>20,'maxlength'=>20)); ?> <?php echo $form->error($model,'lat1'); ?>
+  								</div>
+
+                </div>
+                <div class="container col-md-5" style="margin-top: 2em;">
+
+  								<div class="row col-md-12" style="margin-top:12px;">
+  									<?php echo $form->labelEx($model,'lon1'); ?>
+  								</div>
+
+  								<div class="row col-md-12">
+                    <?php if (!is_numeric($model->lon1)){$model->lon1='0';} echo $form->textField($model,'lon1',array('size'=>20,'maxlength'=>20)); ?> <?php echo $form->error($model,'lon1'); ?>
+  								</div>
+
+                </div>
+
+                <div class="container col-md-5" style="margin-top: -2em;">
+
+  								<div class="row col-md-12" style="margin-top:12px;">
+  									<?php echo $form->labelEx($model,'lat2'); ?>
+  								</div>
+
+  								<div class="row col-md-12">
+                    <?php if (!is_numeric($model->lat1)){$model->lat1='0';} echo $form->textField($model,'lat2',array('size'=>20,'maxlength'=>20)); ?> <?php echo $form->error($model,'lat2'); ?>
+  								</div>
+
+                </div>
+                <div class="container col-md-5" style="margin-top: -2em;">
+
+  								<div class="row col-md-12" style="margin-top:12px;">
+  									<?php echo $form->labelEx($model,'lon2'); ?>
+  								</div>
+
+  								<div class="row col-md-12">
+                    <?php if (!is_numeric($model->lon1)){$model->lon1='0';} echo $form->textField($model,'lon2',array('size'=>20,'maxlength'=>20)); ?> <?php echo $form->error($model,'lon2'); ?>
+  								</div>
+
+                </div>
+
+                <div class="row col-md-8" style="margin-top: -2em;">
+                  <?php echo $form->labelEx($model,'estado'); ?>
+                </div>
+                <div class="row col-md-8">
+                  <?php echo  $form->dropDownList($model,'estado',$model->listaEstados(),array('prompt'=>'--Seleccione un valor--'))?> <?php echo $form->error($model,'estado'); ?>
+                </div>
+
+                <div class="row col-md-12" style="margin-top: 5em; margin-left:-2em;">
+                  <?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Guardar',array('class'=>'specialLinks'));   ?>
+                </div>
+
+							</div>
+
+						<?php $this->endWidget(); ?>
+					</div>
+
+		    </div>
+
+      <div id="menu1" class="tab-pane fade" style="overflow:hidden;">
+        <?php if(Yii::app()->request->getQuery('id')){
+          $iDP=Yii::app()->request->getQuery('id');
+					?>
+					<div class="container">
+  		    <h3>BudgetBreakdown</h3>
+
+					<div class="row">
+
+						<br><br>
+
+						<?php
+											if ($model->isNewRecord) {
+													echo '<p style="color:Red;">Guarde para poder agregar presupuesto</p>';
+											} else {
+
+
+
+
+													echo CHtml::ajaxLink(Yii::t('job', 'Agregar presupuesto'),
+																							$this->createUrl('BudgetBreakdown/create', array('idProyecto'=>$model->idProyecto)),
+																							array(    'success'=>'js:function(data) {
+																															$("#budgetbreakdown-dialog-form").dialog("open");
+																															document.getElementById("ContenidoBudgetbreakdown").innerHTML=data;
+																													}',
+																											'update' => '#filas_budgetBreakdown'
+																							)
+																			);
+
+													$this->beginWidget('zii.widgets.jui.CJuiDialog',
+																							array(    'id'=>'budgetbreakdown-dialog-form',
+																											'options'=>array(
+																																			'title'=>Yii::t('job', 'Agregar Presupuesto'),
+																																											'autoOpen'=>false,
+																																											'modal'=>'true',
+																																											'resizeable'=>true,
+																																											'show' => 'fold',
+																																											'hide' => 'drop',
+																																											'width'=>600,
+																																											'height'=>650,
+																																											'overlay'=>array('backgroundColor'=>'#000','opacity'=>'3.5'),
+																																	),
+																							)
+																	);
+
+													echo "<div id='ContenidoBudgetbreakdown'></div>";
+
+													if (Yii::app()->user->hasFlash('Error')) {
+															echo '<div class="flash-success">';
+															echo Yii::app()->user->getFlash('Error');
+															echo '</div>';
+													}
+
+													$this->endWidget('zii.widgets.jui.CJuiDialog');
+
+													$this->beginWidget( 'zii.widgets.jui.CJuiDialog', array(
+													    'id' => 'updateBudgetBreakdown-dialog',
+													    'options' => array(
+													        'title' => 'Dialog',
+													        'closeOnEscape' => false,
+													        //'position' => 'top',
+													        'autoOpen' => false,
+													        'modal' => true,
+													        'width' => 600,
+													        'height'=>400,
+													        'resizable' => true,
+													    ),
+													));
+													    echo '<div class="update-dialog-budgetbreakdown-content"></div>';
+													$this->endWidget();
+
+											} ?>
+					</div>
+					<div class="row">
+							<div id="filas_budgetBreakdown">Hola</div>
+
+					</div>
+					<div class="row" style="margin-top:10px;">
+
+
+
+<script type="text/javascript">
+
+  function cargaBudgetBreakdown(){
+    $('#filas_budgetBreakdown').load('<?php echo CController::createUrl("/Proyecto/ViewDetBudgetBreakdown", array("id"=>$iDP, "event"=>"Update")); ?>');
+
+  }
+
+  function send_BudgetBreakdown(){
+    var data=$("#budget-breakdown-form").serialize();
+
+    $.ajax({
+        type: 'POST',
+        url: '<?php echo CController::createUrl("budgetBreakdown/create", array("idProyecto"=>$model->idProyecto)); ?>',
+        data:data,
+        success:function(data){
+            alert("Datos agregados correctamente!");
+            cargaBudgetBreakdown();
+            updateDialogBudgetBreakdown.dialog("close");
+            //$('#fuentesfinan-dialog-form').dialog("close");
+        },
+        error: function(data) { // if error occured
+            alert("Error! presupuesto ya existe!");
+            alert("Error: " + JSON.stringify(data));
+        },
+        dataType:'html'
+    });
+  }
+
+  function update_BudgetBreakdown(idProyecto, id){
+        var data=$("#budget-breakdown-form").serialize();
+
+        $.ajax({
+              type: 'POST',
+              url: '<?php echo CController::createUrl("budgetBreakdown/update"); ?>'+'&idProyecto='+idProyecto+'&id='+id,
+              data:data,
+              success:function(data){
+                  alert("Datos Actualizados correctamente!");
+                  cargaBudgetBreakdown();
+                  updateDialogBudgetBreakdown.dialog("close");
+              },
+              error: function(data) { // if error occured
+                  alert("Error al actulizar desembolso!");
+                  alert("Error: " + JSON.stringify(data));
+              },
+              dataType:'html'
+        });
+  }
+
+  function get_data_updateBudgetBreakdown(idProyecto){
+      $.ajax({
+              type: 'GET',
+              url: '<?php echo CController::createUrl("budgetBreakdown/update"); ?>'+'&idProyecto='+idProyecto,
+
+              success:function(data){
+                updateDialogBudgetBreakdown.dialog("open");
+                document.getElementById("ContenidoBudgetbreakdown").innerHTML=data;
+              },
+              error: function(data) { // if error occured
+                  alert("Error al actulizar presupuesto!");
+                  alert("Error: " + JSON.stringify(data));
+              },
+              dataType:'html'
+          });
+  }
+
+  var updateDialogBudgetBreakdown;
+  $(document).ready(function(){
+          updateDialogBudgetBreakdown = $("#budgetbreakdown-dialog-form").dialog({
+          autoOpen: false,
+          modal: true,
+          width: 550,
+          height:650,
+          title: 'Details'
+      });
+          console.log(updateDialogBudgetBreakdown)
+  });
+
+  <?php
+    if (!$model->isNewRecord) {
+      echo 'cargaBudgetBreakdown();';
+    }
+  ?>
+
+</script>
+				</div>
+			</div>
+			<?php }else{ echo '<span style="color: red">Guarde el proyecto para poder agregar esta sección.</span>';} ?>
+		  </div>
+
+
+
+		  <div id="menu2" class="tab-pane fade" style="overflow:hidden;">
+        <?php if(Yii::app()->request->getQuery('id')){
+          $iDP=Yii::app()->request->getQuery('id');
+					?>
+					<div class="container">
+  		    <h3>Pre Calificación</h3>
+
+					<div class="row">
+
+						<br><br>
+
+						<?php
+											if ($model->isNewRecord) {
+													echo '<p style="color:Red;">Guarde para poder agregar presupuesto</p>';
+											} else {
+
+
+
+
+													echo CHtml::ajaxLink(Yii::t('job', 'Agregar Pre-calificación'),
+																							$this->createUrl('Prequalification/create', array('idProyecto'=>$model->idProyecto)),
+																							array(    'success'=>'js:function(data) {
+																															$("#prequalification-dialog-form").dialog("open");
+																															document.getElementById("ContenidoPrequalification").innerHTML=data;
+																													}',
+																											'update' => '#filas_prequalification'
+																							)
+																			);
+
+													$this->beginWidget('zii.widgets.jui.CJuiDialog',
+																							array(    'id'=>'prequalification-dialog-form',
+																											'options'=>array(
+																																			'title'=>Yii::t('job', 'Agregar Pre-calificación'),
+																																											'autoOpen'=>false,
+																																											'modal'=>'true',
+																																											'resizeable'=>true,
+																																											'show' => 'fold',
+																																											'hide' => 'drop',
+																																											'width'=>600,
+																																											'height'=>650,
+																																											'overlay'=>array('backgroundColor'=>'#000','opacity'=>'3.5'),
+																																	),
+																							)
+																	);
+
+													echo "<div id='ContenidoPrequalification'></div>";
+
+													if (Yii::app()->user->hasFlash('Error')) {
+															echo '<div class="flash-success">';
+															echo Yii::app()->user->getFlash('Error');
+															echo '</div>';
+													}
+
+													$this->endWidget('zii.widgets.jui.CJuiDialog');
+
+													$this->beginWidget( 'zii.widgets.jui.CJuiDialog', array(
+													    'id' => 'updatePrequalification-dialog',
+													    'options' => array(
+													        'title' => 'Dialog',
+													        'closeOnEscape' => false,
+													        //'position' => 'top',
+													        'autoOpen' => false,
+													        'modal' => true,
+													        'width' => 600,
+													        'height'=>400,
+													        'resizable' => true,
+													    ),
+													));
+													    echo '<div class="update-dialog-prequalification-content"></div>';
+													$this->endWidget();
+
+											} ?>
+					</div>
+					<div class="row">
+							<div id="filas_prequalification"></div>
+
+					</div>
+					<div class="row" style="margin-top:10px;">
+
+
+
+<script type="text/javascript">
+
+  function cargaPrequalification(){
+    $('#filas_prequalification').load('<?php echo CController::createUrl("/Proyecto/ViewDetPrequalification", array("id"=>$iDP, "event"=>"Update")); ?>');
+
+  }
+
+  function send_Prequalification(){
+    var data=$("#prequalification-form").serialize();
+
+    $.ajax({
+        type: 'POST',
+        url: '<?php echo CController::createUrl("prequalification/create", array("idProyecto"=>$model->idProyecto)); ?>',
+        data:data,
+        success:function(data){
+            alert("Datos agregados correctamente!");
+            cargaPrequalification();
+            updateDialogPrequalification.dialog("close");
+            //$('#fuentesfinan-dialog-form').dialog("close");
+        },
+        error: function(data) { // if error occured
+            alert("Error! presupuesto ya existe!");
+            alert("Error: " + JSON.stringify(data));
+        },
+        dataType:'html'
+    });
+  }
+
+  function update_Prequalification(idProyecto, id){
+        var data=$("#prequalification-form").serialize();
+
+        $.ajax({
+              type: 'POST',
+              url: '<?php echo CController::createUrl("budgetBreakdown/update"); ?>'+'&idProyecto='+idProyecto+'&id='+id,
+              data:data,
+              success:function(data){
+                  alert("Datos Actualizados correctamente!");
+                  cargaPrequalification();
+                  updateDialogPrequalification.dialog("close");
+              },
+              error: function(data) { // if error occured
+                  alert("Error al actulizar desembolso!");
+                  alert("Error: " + JSON.stringify(data));
+              },
+              dataType:'html'
+        });
+  }
+
+  function get_data_updatePrequalification(idProyecto){
+      $.ajax({
+              type: 'GET',
+              url: '<?php echo CController::createUrl("prequalification/update"); ?>'+'&idProyecto='+idProyecto,
+
+              success:function(data){
+                updateDialogPrequalification.dialog("open");
+                document.getElementById("ContenidoPrequalification").innerHTML=data;
+              },
+              error: function(data) { // if error occured
+                  alert("Error al actulizar pre-calificación!");
+                  alert("Error: " + JSON.stringify(data));
+              },
+              dataType:'html'
+          });
+  }
+
+  var updateDialogPrequalification;
+  $(document).ready(function(){
+          updateDialogPrequalification = $("#prequalification-dialog-form").dialog({
+          autoOpen: false,
+          modal: true,
+          width: 550,
+          height:650,
+          title: 'Details'
+      });
+          console.log(updateDialogPrequalification)
+  });
+
+  <?php
+    if (!$model->isNewRecord) {
+      echo 'cargaPrequalification();';
+    }
+  ?>
+
+</script>
+				</div>
+			</div>
+			<?php }else{ echo '<span style="color: red">Guarde el proyecto para poder agregar esta sección.</span>';} ?>
+		  </div>
+      <div id="menu3" class="tab-pane fade">
+        <?php if(Yii::app()->request->getQuery('id')){
+
+					?>
+					<div class="container">
+  		    <h3>Funding Source</h3>
+					<div class="row" style="display: none;" id="fuentesDiv">
+						<?php
+						echo '<div class="row col-md-8">';
+						echo $form->labelEx($modelFuentesfinan,'fuente');
+						echo '</div>';
+						echo '<div class="row col-md-8">';
+						echo  $form->dropDownList($modelFuentesfinan,'fuente',$modelFuentesfinan->listaFuentesFinan($iDP),array('prompt'=>'--Seleccione un Valor--'));
+						echo '</div>';
+						echo $form->error($modelFuentesfinan,'fuente'); ?>
+						<div class="row col-md-8" style="padding-top:10px;padding-bottom:10px;">
+							<?php echo CHtml::submitButton($modelPrequalification->isNewRecord ? 'Guardar' : 'Guardars');   ?>
+						</div>
+
+					</div>
+					<div class="row">
+
+						<br><br>
+
+						<?php
+											if ($model->isNewRecord) {
+													echo '<p style="color:Red;">Guarde para poder agregar Desembolsos</p>';
+											} else {
+													echo CHtml::ajaxLink(Yii::t('job', 'Agregar Fuente de Financiamiento'),
+																							$this->createUrl('proyectoFuente/create2', array('id'=>$model->idProyecto)),
+																							array(    'success'=>'js:function(data) {
+																															$("#fuentesfinan-dialog-form").dialog("open");
+																															document.getElementById("ContenidoAgregarDesembolsos").innerHTML=data;
+																													}',
+																											'update' => '#filas_proyectoFuentes'
+																							)
+																			);
+
+													$this->beginWidget('zii.widgets.jui.CJuiDialog',
+																							array(    'id'=>'fuentesfinan-dialog-form',
+																											'options'=>array(
+																																			'title'=>Yii::t('job', 'Agregar Fuente de Financiamiento'),
+																																											'autoOpen'=>false,
+																																											'modal'=>'true',
+																																											'resizeable'=>true,
+																																											'show' => 'fold',
+																																											'hide' => 'drop',
+																																											'width'=>600,
+																																											'height'=>650,
+																																											'overlay'=>array('backgroundColor'=>'#000','opacity'=>'3.5'),
+																																	),
+																							)
+																	);
+
+													echo "<div id='ContenidoAgregarDesembolsos'></div>";
+
+													if (Yii::app()->user->hasFlash('Error')) {
+															echo '<div class="flash-success">';
+															echo Yii::app()->user->getFlash('Error');
+															echo '</div>';
+													}
+
+													$this->endWidget('zii.widgets.jui.CJuiDialog');
+
+													$this->beginWidget( 'zii.widgets.jui.CJuiDialog', array(
+													    'id' => 'update-dialog',
+													    'options' => array(
+													        'title' => 'Dialog',
+													        'closeOnEscape' => false,
+													        //'position' => 'top',
+													        'autoOpen' => false,
+													        'modal' => true,
+													        'width' => 600,
+													        'height'=>400,
+													        'resizable' => true,
+													    ),
+													));
+													    echo '<div class="update-dialog-content"></div>';
+													$this->endWidget();
+
+											} ?>
+					</div>
+					<div class="row">
+							<div id="filas_proyectoFuentes"></div>
+					</div>
+					<div class="row" style="margin-top:10px;">
+
+
+
+<script type="text/javascript">
+
+  function cargaProyectoFuentes(){
+    $('#filas_proyectoFuentes').load('<?php echo CController::createUrl("/Proyecto/ViewDetFuentesFinanciamiento", array("id"=>$iDP, "event"=>"Update")); ?>');
+  }
+
+  function send_proyectoFuentes(){
+    var data=$("#proyecto-fuente-form").serialize();
+
+    $.ajax({
+        type: 'POST',
+        url: '<?php echo CController::createUrl("ProyectoFuente/create", array("id"=>$model->idProyecto)); ?>',
+        data:data,
+        success:function(data){
+            alert("Datos agregados correctamente!");
+            cargaProyectoFuentes();
+            updateDialog.dialog("close");
+            //$('#fuentesfinan-dialog-form').dialog("close");
+        },
+        error: function(data) { // if error occured
+            alert("Error el desembolso ya existe!");
+            alert("Error: " + JSON.stringify(data));
+        },
+        dataType:'html'
+    });
+  }
+
+  function update_fuentesFinanciamiento(idProyecto, idFuente){
+        var data=$("#proyecto-fuente-form").serialize();
+
+        $.ajax({
+              type: 'POST',
+              url: '<?php echo CController::createUrl("proyectoFuente/update"); ?>'+'&idProyecto='+idProyecto+'&idFuente='+idFuente,
+              data:data,
+              success:function(data){
+                  alert("Datos Actualizados correctamente!");
+                  cargaProyectoFuentes();
+                  updateDialog.dialog("close");
+              },
+              error: function(data) { // if error occured
+                  alert("Error al actulizar desembolso!");
+                  alert("Error: " + JSON.stringify(data));
+              },
+              dataType:'html'
+        });
+  }
+
+  function get_data_update(idProyecto){
+      $.ajax({
+              type: 'GET',
+              url: '<?php echo CController::createUrl("proyectoFuente/update"); ?>'+'&idProyecto='+idProyecto,
+
+              success:function(data){
+                updateDialog.dialog("open");
+                document.getElementById("ContenidoAgregarDesembolsos").innerHTML=data;
+              },
+              error: function(data) { // if error occured
+                  alert("Error al actulizar documento!");
+                  alert("Error: " + JSON.stringify(data));
+              },
+              dataType:'html'
+          });
+  }
+
+  var updateDialog;
+  $(document).ready(function(){
+          updateDialog = $("#fuentesfinan-dialog-form").dialog({
+          autoOpen: false,
+          modal: true,
+          width: 550,
+          height:650,
+          title: 'Details'
+      });
+          console.log(updateDialog)
+  });
+
+  <?php
+    if (!$model->isNewRecord) {
+      echo 'cargaProyectoFuentes();';
+    }
+  ?>
+
+  function send_fuentes(){
+      var data=$("#proyecto-fuente-form").serialize();
+
+      $.ajax({
+          type: 'POST',
+          url: '<?php echo CController::createUrl("/ProyectoFuente/create2", array("id"=>$model->idProyecto)); ?>',
+          data:data,
+          success:function(data){
+                  alert("Datos enviados correctamente!");
+                  cargaProyectoFuentes();
+                  $('#fuentes-dialog-form').dialog("close");
+              },
+          error: function(data) { // if error occured
+              alert("Error la fuente de financiamiento ya existe!");
+              //alert("Error: " + JSON.stringify(data));
+          },
+          dataType:'html'
+      });
+  }
+
+</script>
+				</div>
+			</div>
+			<?php }else{ echo '<span style="color: red">Guarde el proyecto para poder agregar esta sección.</span>';} ?>
+		  </div>
+      <div id="menu4" class="tab-pane fade">
+        <?php if(Yii::app()->request->getQuery('id')){ ?>
+  		    <h3>Beneficiaries</h3>
+  		    <p>Some content in menu 4.</p>
+        <?php }else{ echo '<span style="color: red">Guarde el proyecto para poder agregar esta sección.</span>';} ?>
+		  </div>
+      <div id="menu5" class="tab-pane fade">
+        <?php if(Yii::app()->request->getQuery('id')){ ?>
+  		    <h3>Planning Milestone</h3>
+  		    <p>Some content in menu 5.</p>
+        <?php }else{ echo '<span style="color: red">Guarde el proyecto para poder agregar esta sección.</span>';} ?>
+		  </div>
+		</div>
+</div>

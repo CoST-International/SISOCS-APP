@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<configuration date="2015/08/06" author="e.World Technology Ltd.">
+<project id="{95DDD5E1-EED3-4F75-9459-65662A38CD3B}" file="C:\Users\dpinedam\Documents\PHPMaker\Projects\revision.pmp" name="revision" product="PHPMaker" version="12.0" datetime="2015/08/06 17:34:47" languagefolder="phplang" userlevel="-2,&quot;Anonymous&quot;,0;">
+<table id="authassignment" name="authassignment" caption="authassignment" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="authitem" name="authitem" caption="authitem" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="authitemchild" name="authitemchild" caption="authitemchild" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cruge_authassignment" name="cruge_authassignment" caption="cruge authassignment" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cruge_authitem" name="cruge_authitem" caption="cruge authitem" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cruge_authitemchild" name="cruge_authitemchild" caption="cruge authitemchild" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cruge_field" name="cruge_field" caption="cruge field" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cruge_fieldvalue" name="cruge_fieldvalue" caption="cruge fieldvalue" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cruge_session" name="cruge_session" caption="cruge session" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cruge_system" name="cruge_system" caption="cruge system" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cruge_user" name="cruge_user" caption="cruge user" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_act_avances" name="cs_act_avances" caption="cs act avances" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_actividades_avance" name="cs_actividades_avance" caption="cs actividades avance" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_actividades_ejecucion" name="cs_actividades_ejecucion" caption="cs actividades ejecucion" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_address" name="cs_address" caption="cs address" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_adjudicacion" name="cs_adjudicacion" caption="cs adjudicacion" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_archivos_avances" name="cs_archivos_avances" caption="cs archivos avances" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_avances" name="cs_avances" caption="cs avances" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_beneficiario" name="cs_beneficiario" caption="cs beneficiario" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_calificacion" name="cs_calificacion" caption="cs calificacion" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_calificacion_empresa" name="cs_calificacion_empresa" caption="cs calificacion empresa" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_calificacion_firma" name="cs_calificacion_firma" caption="cs calificacion firma" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_calificacion_oferente" name="cs_calificacion_oferente" caption="cs calificacion oferente" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_catg_estados" name="cs_catg_estados" caption="cs catg estados" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_catg_sub_actividades" name="cs_catg_sub_actividades" caption="cs catg sub actividades" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_catg_tipo_actividades" name="cs_catg_tipo_actividades" caption="cs catg tipo actividades" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_catg_tipo_garantias" name="cs_catg_tipo_garantias" caption="cs catg tipo garantias" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_catg_unidades" name="cs_catg_unidades" caption="cs catg unidades" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_clase" name="cs_clase" caption="cs clase" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_consultorfirma" name="cs_consultorfirma" caption="cs consultorfirma" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_contactos" name="cs_contactos" caption="cs contactos" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_contratacion" name="cs_contratacion" caption="cs contratacion" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_contrato_historico" name="cs_contrato_historico" caption="cs contrato historico" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_contratos" name="cs_contratos" caption="cs contratos" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_departamento" name="cs_departamento" caption="cs departamento" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_desembolsos_montos" name="cs_desembolsos_montos" caption="cs desembolsos montos" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_doc_adjuntados" name="cs_doc_adjuntados" caption="cs doc adjuntados" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_ejecucion_status" name="cs_ejecucion_status" caption="cs ejecucion status" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_empleado" name="cs_empleado" caption="cs empleado" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_empresa" name="cs_empresa" caption="cs empresa" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_entes" name="cs_entes" caption="cs entes" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_estado" name="cs_estado" caption="cs estado" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_estadoproceso" name="cs_estadoproceso" caption="cs estadoproceso" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_estadored" name="cs_estadored" caption="cs estadored" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_estadosgestcontra" name="cs_estadosgestcontra" caption="cs estadosgestcontra" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_firma" name="cs_firma" caption="cs firma" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_fuentesfinan" name="cs_fuentesfinan" caption="cs fuentesfinan" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_funcionarios" name="cs_funcionarios" caption="cs funcionarios" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_gestioncontratos" name="cs_gestioncontratos" caption="cs gestioncontratos" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_historico" name="cs_historico" caption="cs historico" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_historico_contratos" name="cs_historico_contratos" caption="cs historico contratos" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_imagenes_avances" name="cs_imagenes_avances" caption="cs imagenes avances" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_img_adjuntadas" name="cs_img_adjuntadas" caption="cs img adjuntadas" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_inicio_ejecucion" name="cs_inicio_ejecucion" caption="cs inicio ejecucion" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_monedas" name="cs_monedas" caption="cs monedas" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_municipio" name="cs_municipio" caption="cs municipio" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_oferente" name="cs_oferente" caption="cs oferente" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_profiles" name="cs_profiles" caption="cs profiles" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_profiles_fields" name="cs_profiles_fields" caption="cs profiles fields" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_programa" name="cs_programa" caption="cs programa" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_programa_fuente" name="cs_programa_fuente" caption="cs programa fuente" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_programa_proposito" name="cs_programa_proposito" caption="cs programa proposito" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_programa_ubicacion" name="cs_programa_ubicacion" caption="cs programa ubicacion" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_proposito" name="cs_proposito" caption="cs proposito" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_proyecto" name="cs_proyecto" caption="cs proyecto" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_proyecto_beneficiario" name="cs_proyecto_beneficiario" caption="cs proyecto beneficiario" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_proyecto_fuente" name="cs_proyecto_fuente" caption="cs proyecto fuente" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_region" name="cs_region" caption="cs region" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_rol" name="cs_rol" caption="cs rol" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_ruta" name="cs_ruta" caption="cs ruta" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_sector" name="cs_sector" caption="cs sector" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_subsector" name="cs_subsector" caption="cs subsector" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_tipo_mod_contrato" name="cs_tipo_mod_contrato" caption="cs tipo mod contrato" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_tipocontrato" name="cs_tipocontrato" caption="cs tipocontrato" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_tipored" name="cs_tipored" caption="cs tipored" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_tiposadquisicion" name="cs_tiposadquisicion" caption="cs tiposadquisicion" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_tramo" name="cs_tramo" caption="cs tramo" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_ubicacionvial" name="cs_ubicacionvial" caption="cs ubicacionvial" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_unidadesentidad" name="cs_unidadesentidad" caption="cs unidadesentidad" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="cs_users" name="cs_users" caption="cs users" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="mq_auth_assignment" name="mq_auth_assignment" caption="mq auth assignment" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="mq_auth_item" name="mq_auth_item" caption="mq auth item" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="mq_auth_item_child" name="mq_auth_item_child" caption="mq auth item child" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="mq_category" name="mq_category" caption="mq category" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="mq_issue" name="mq_issue" caption="mq issue" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="mq_issue_attachment" name="mq_issue_attachment" caption="mq issue attachment" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="mq_issue_reception_type" name="mq_issue_reception_type" caption="mq issue reception type" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="mq_issue_response" name="mq_issue_response" caption="mq issue response" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="mq_niveles" name="mq_niveles" caption="mq niveles" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="mq_personal" name="mq_personal" caption="mq personal" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="mq_proyecto" name="mq_proyecto" caption="mq proyecto" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="mq_question" name="mq_question" caption="mq question" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="mq_respuestas" name="mq_respuestas" caption="mq respuestas" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="mq_solicitud" name="mq_solicitud" caption="mq solicitud" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="mq_status" name="mq_status" caption="mq status" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="mq_user" name="mq_user" caption="mq user" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="pcounter_save" name="pcounter_save" caption="pcounter save" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="pcounter_users" name="pcounter_users" caption="pcounter users" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="prueba" name="prueba" caption="prueba" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="tbl_auth_assignment" name="tbl_auth_assignment" caption="tbl auth assignment" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="tbl_auth_item" name="tbl_auth_item" caption="tbl auth item" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="tbl_auth_item_child" name="tbl_auth_item_child" caption="tbl auth item child" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="tbl_category" name="tbl_category" caption="tbl category" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="tbl_issue" name="tbl_issue" caption="tbl issue" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="tbl_issue_reception_type" name="tbl_issue_reception_type" caption="tbl issue reception type" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="tbl_issue_response" name="tbl_issue_response" caption="tbl issue response" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="tbl_migration" name="tbl_migration" caption="tbl migration" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="tbl_question" name="tbl_question" caption="tbl question" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="tbl_user" name="tbl_user" caption="tbl user" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="user" name="user" caption="user" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="v_avance_ft" name="v_avance_ft" caption="v avance ft" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="v_avances_resumenejecucion" name="v_avances_resumenejecucion" caption="v avances resumenejecucion" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="v_calificacion" name="v_calificacion" caption="v calificacion" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="v_doc_avancesporid" name="v_doc_avancesporid" caption="v doc avancesporid" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="v_idmetodo_poridadjudicacion" name="v_idmetodo_poridadjudicacion" caption="v idmetodo poridadjudicacion" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="v_idmetodoadquisicion_idcontratacion" name="v_idmetodoadquisicion_idcontratacion" caption="v idmetodoadquisicion idcontratacion" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="v_imagenes_poravance" name="v_imagenes_poravance" caption="v imagenes poravance" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="v_imagenes_resumenejecucion" name="v_imagenes_resumenejecucion" caption="v imagenes resumenejecucion" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="v_inicio_ejecucion" name="v_inicio_ejecucion" caption="v inicio ejecucion" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="v_proyecto" name="v_proyecto" caption="v proyecto" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="v_proyectos_carrousel" name="v_proyectos_carrousel" caption="v proyectos carrousel" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="v_ubicacion_poridproyecto" name="v_ubicacion_poridproyecto" caption="v ubicacion poridproyecto" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="vadjudicacion" name="vadjudicacion" caption="vadjudicacion" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="vavances" name="vavances" caption="vavances" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="vcalificacion" name="vcalificacion" caption="vcalificacion" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="vcalificacion_empresa" name="vcalificacion_empresa" caption="vcalificacion empresa" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="vcalificacion_firma" name="vcalificacion_firma" caption="vcalificacion firma" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="vcalificacion_oferente" name="vcalificacion_oferente" caption="vcalificacion oferente" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="vciudadano" name="vciudadano" caption="vciudadano" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="vcontratacion" name="vcontratacion" caption="vcontratacion" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="vcontratos" name="vcontratos" caption="vcontratos" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="vcontratos_gestion" name="vcontratos_gestion" caption="vcontratos gestion" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="vejecucion" name="vejecucion" caption="vejecucion" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="vidpaths" name="vidpaths" caption="IDs del Sistema" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="vids" name="vids" caption="vids" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="vprograma" name="vprograma" caption="vprograma" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="vprograma_fuentes" name="vprograma_fuentes" caption="vprograma fuentes" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="vprograma_proposito" name="vprograma_proposito" caption="vprograma proposito" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="vproyecto" name="vproyecto" caption="vproyecto" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="vproyecto_beneficiario" name="vproyecto_beneficiario" caption="vproyecto beneficiario" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="vproyecto_fuente" name="vproyecto_fuente" caption="vproyecto fuente" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+</project></configuration>

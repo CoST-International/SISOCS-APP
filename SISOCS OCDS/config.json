@@ -1,0 +1,35 @@
+{
+  "DBConfig": {
+    "MONGO": {
+      "DEV": {
+        "url": "mongodb://@localhost:27017/prd_sisocs1"
+      }
+    },
+    "MYSQL": {
+      "DEV": {
+        "database": "produccion",
+        "host": "localhost",
+        "password": "",
+        "user": "root"
+      }
+    }
+  },
+  "DBType": "MONGO",
+  "HTTPS": {
+    "certificate": "core/server.crt",
+    "privateKey": "core/server.key"
+  },
+  "appType": "DEV",
+  "configPort": 8009,
+  "debug": true,
+  "allowSignUp":true,
+  "fakeLogin": false,
+  "logFiles": {
+    "ERROR": "logs/error.log",
+    "EXCEPTION": "logs/exception.log",
+    "INFO": "logs/info.log"
+  },
+  "port": 8080,
+  "sessionTimeout": 100000,
+  "useHTTPS": false
+}

@@ -1,0 +1,1095 @@
+{
+   "ocid": "ocds-213czf-example-ppp",
+   "id": "1.2.1",
+   "language": "en",
+   "date": "2015-09-30T12:09:30-06:00",
+   "initiationType": "tender",
+   "tag": [
+      "planning"
+   ],
+   "title": "Example PPP",
+   "description": "The Example PPP project will guarantee the installation of a wholesale shared network that allows the provision of telecommunications services by current and future operators. The project will increase the telecommunication services coverage, promote competitive prices and enhance the quality of services according to international standards.",
+   "parties": [{
+         "id": "XX-GOV-12345678",
+         "name": "Ministry of Communications",
+         "roles": [
+            "procuringEntity"
+         ],
+         "identifier": {
+            "scheme": "XX-GOV",
+            "id": "12345678.0",
+            "legalName": "Ministry of Communications",
+            "uri": "http://ministries.example.gov/012345678"
+         },
+         "address": {
+            "streetAddress": "1 Main Street",
+            "locality": "Capital City",
+            "region": "Capital State",
+            "postalCode": "CS 123456",
+            "countryName": "Example Country"
+         },
+         "contactPoint": {
+            "name": "Public Private Partnerships Department",
+            "email": "ppps@communications.gov.example",
+            "telephone": "00 00 00 00 00",
+            "faxNumber": "00 00 00 00 01",
+            "url": "http://ppps.communications.gov.example"
+         }
+      },
+      {
+         "id": "XX-GOV-00000000",
+         "name": "Telecoms Promoter",
+         "roles": [
+            "publicAuthority"
+         ],
+         "identifier": {
+            "scheme": "XX-GOV",
+            "id": "0.0",
+            "legalName": "Telecoms Promoter",
+            "uri": "http://ministries.gov.example/00000000"
+         },
+         "address": {
+            "streetAddress": "1 Other Street",
+            "locality": "Capital City",
+            "region": "Capital State",
+            "postalCode": "CS 000000",
+            "countryName": "Example Country"
+         },
+         "contactPoint": {
+            "name": "Example PPP team",
+            "email": "ppps@telecompromoter.gov.example",
+            "telephone": "11 11 11 11",
+            "faxNumber": "11 11 11 12",
+            "url": "http://telecompromoter.gov.example"
+         }
+      },
+      {
+         "id": "XX-GOV-99999999",
+         "name": "National Fibre Infrastructure",
+         "roles": [
+            "assetProvider"
+         ],
+         "identifier": {
+            "scheme": "XX-GOV",
+            "id": "99999999.0",
+            "legalName": "National Fibre Infrastructure",
+            "uri": "http://statecompanies.gov.example/99999999"
+         },
+         "address": {
+            "streetAddress": "99 Cable Street",
+            "locality": "Capital City",
+            "region": "Capital State",
+            "postalCode": "CS 999999",
+            "countryName": "Example Country"
+         },
+         "contactPoint": {
+            "name": "Head Office",
+            "email": "enquiries@fibre.gov.example",
+            "telephone": "99 99 99 99",
+            "faxNumber": "99 99 99 90",
+            "url": "http://fibre.gov.example"
+         }
+      }
+   ],
+   "publicAuthority": {
+      "id": "XX-GOV-00000000",
+      "name": "Telecoms Promoter"
+   },
+   "planning": {
+      "budget": {
+         "id": "123456789.0",
+         "description": "Predicted public and private sector investment over the duration of the project",
+         "amount": {
+            "amount": 600000000,
+            "currency": "USD"
+         },
+         "uri": "http://finance.gov.example/budget/123456789",
+         "budgetBreakdown": [{
+               "id": "123456789-01-1",
+               "description": "Private sector investment",
+               "amount": {
+                  "amount": 20000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2016-01-01T00:00:00Z",
+                  "endDate": "2016-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "name": "Private sector"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-01-1"
+            },
+            {
+               "id": "123456789-01-2",
+               "description": "Private sector investment",
+               "amount": {
+                  "amount": 20000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2017-01-01T00:00:00Z",
+                  "endDate": "2017-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "name": "Private sector"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-01-2"
+            },
+            {
+               "id": "123456789-01-3",
+               "description": "Private sector investment",
+               "amount": {
+                  "amount": 20000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2018-01-01T00:00:00Z",
+                  "endDate": "2018-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "name": "Private sector"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-01-3"
+            },
+            {
+               "id": "123456789-01-4",
+               "description": "Private sector investment",
+               "amount": {
+                  "amount": 20000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2019-01-01T00:00:00Z",
+                  "endDate": "2019-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "name": "Private sector"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-01-4"
+            },
+            {
+               "id": "123456789-01-5",
+               "description": "Private sector investment",
+               "amount": {
+                  "amount": 20000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2020-01-01T00:00:00Z",
+                  "endDate": "2020-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "name": "Private sector"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-01-5"
+            },
+            {
+               "id": "123456789-01-6",
+               "description": "Private sector investment",
+               "amount": {
+                  "amount": 20000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2021-01-01T00:00:00Z",
+                  "endDate": "2021-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "name": "Private sector"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-01-6"
+            },
+            {
+               "id": "123456789-01-7",
+               "description": "Private sector investment",
+               "amount": {
+                  "amount": 20000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2022-01-01T00:00:00Z",
+                  "endDate": "2022-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "name": "Private sector"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-01-7"
+            },
+            {
+               "id": "123456789-01-8",
+               "description": "Private sector investment",
+               "amount": {
+                  "amount": 20000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2023-01-01T00:00:00Z",
+                  "endDate": "2023-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "name": "Private sector"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-01-8"
+            },
+            {
+               "id": "123456789-01-9",
+               "description": "Private sector investment",
+               "amount": {
+                  "amount": 20000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2024-01-01T00:00:00Z",
+                  "endDate": "2024-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "name": "Private sector"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-01-9"
+            },
+            {
+               "id": "123456789-01-10",
+               "description": "Private sector investment",
+               "amount": {
+                  "amount": 20000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2025-01-01T00:00:00Z",
+                  "endDate": "2025-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "name": "Private sector"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-01-10"
+            },
+            {
+               "id": "123456789-01-11",
+               "description": "Private sector investment",
+               "amount": {
+                  "amount": 20000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2026-01-01T00:00:00Z",
+                  "endDate": "2026-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "name": "Private sector"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-01-11"
+            },
+            {
+               "id": "123456789-01-12",
+               "description": "Private sector investment",
+               "amount": {
+                  "amount": 20000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2027-01-01T00:00:00Z",
+                  "endDate": "2027-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "name": "Private sector"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-01-12"
+            },
+            {
+               "id": "123456789-01-13",
+               "description": "Private sector investment",
+               "amount": {
+                  "amount": 20000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2028-01-01T00:00:00Z",
+                  "endDate": "2028-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "name": "Private sector"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-01-13"
+            },
+            {
+               "id": "123456789-01-14",
+               "description": "Private sector investment",
+               "amount": {
+                  "amount": 20000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2029-01-01T00:00:00Z",
+                  "endDate": "2029-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "name": "Private sector"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-01-14"
+            },
+            {
+               "id": "123456789-01-15",
+               "description": "Private sector investment",
+               "amount": {
+                  "amount": 20000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2030-01-01T00:00:00Z",
+                  "endDate": "2030-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "name": "Private sector"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-01-15"
+            },
+            {
+               "id": "123456789-01-16",
+               "description": "Private sector investment",
+               "amount": {
+                  "amount": 20000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2031-01-01T00:00:00Z",
+                  "endDate": "2031-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "name": "Private sector"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-01-16"
+            },
+            {
+               "id": "123456789-01-17",
+               "description": "Private sector investment",
+               "amount": {
+                  "amount": 20000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2032-01-01T00:00:00Z",
+                  "endDate": "2032-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "name": "Private sector"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-01-17"
+            },
+            {
+               "id": "123456789-01-18",
+               "description": "Private sector investment",
+               "amount": {
+                  "amount": 20000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2033-01-01T00:00:00Z",
+                  "endDate": "2033-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "name": "Private sector"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-01-18"
+            },
+            {
+               "id": "123456789-01-19",
+               "description": "Private sector investment",
+               "amount": {
+                  "amount": 20000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2034-01-01T00:00:00Z",
+                  "endDate": "2034-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "name": "Private sector"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-01-19"
+            },
+            {
+               "id": "123456789-01-20",
+               "description": "Private sector investment",
+               "amount": {
+                  "amount": 20000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2035-01-01T00:00:00Z",
+                  "endDate": "2035-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "name": "Private sector"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-01-20"
+            },
+            {
+               "id": "123456789-02-1",
+               "description": "Public sector investment",
+               "amount": {
+                  "amount": 10000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2016-01-01T00:00:00Z",
+                  "endDate": "2016-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "id": "XX-GOV-12345678",
+                  "name": "Ministry of Communications"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-02-1"
+            },
+            {
+               "id": "123456789-02-2",
+               "description": "Public sector investment",
+               "amount": {
+                  "amount": 10000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2017-01-01T00:00:00Z",
+                  "endDate": "2017-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "id": "XX-GOV-12345678",
+                  "name": "Ministry of Communications"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-02-2"
+            },
+            {
+               "id": "123456789-02-3",
+               "description": "Public sector investment",
+               "amount": {
+                  "amount": 10000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2018-01-01T00:00:00Z",
+                  "endDate": "2018-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "id": "XX-GOV-12345678",
+                  "name": "Ministry of Communications"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-02-3"
+            },
+            {
+               "id": "123456789-02-4",
+               "description": "Public sector investment",
+               "amount": {
+                  "amount": 10000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2019-01-01T00:00:00Z",
+                  "endDate": "2019-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "id": "XX-GOV-12345678",
+                  "name": "Ministry of Communications"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-02-4"
+            },
+            {
+               "id": "123456789-02-5",
+               "description": "Public sector investment",
+               "amount": {
+                  "amount": 10000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2020-01-01T00:00:00Z",
+                  "endDate": "2020-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "id": "XX-GOV-12345678",
+                  "name": "Ministry of Communications"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-02-5"
+            },
+            {
+               "id": "123456789-02-6",
+               "description": "Public sector investment",
+               "amount": {
+                  "amount": 10000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2021-01-01T00:00:00Z",
+                  "endDate": "2021-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "id": "XX-GOV-12345678",
+                  "name": "Ministry of Communications"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-02-6"
+            },
+            {
+               "id": "123456789-02-7",
+               "description": "Public sector investment",
+               "amount": {
+                  "amount": 10000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2022-01-01T00:00:00Z",
+                  "endDate": "2022-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "id": "XX-GOV-12345678",
+                  "name": "Ministry of Communications"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-02-7"
+            },
+            {
+               "id": "123456789-02-8",
+               "description": "Public sector investment",
+               "amount": {
+                  "amount": 10000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2023-01-01T00:00:00Z",
+                  "endDate": "2023-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "id": "XX-GOV-12345678",
+                  "name": "Ministry of Communications"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-02-8"
+            },
+            {
+               "id": "123456789-02-9",
+               "description": "Public sector investment",
+               "amount": {
+                  "amount": 10000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2024-01-01T00:00:00Z",
+                  "endDate": "2024-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "id": "XX-GOV-12345678",
+                  "name": "Ministry of Communications"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-02-9"
+            },
+            {
+               "id": "123456789-02-10",
+               "description": "Public sector investment",
+               "amount": {
+                  "amount": 10000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2025-01-01T00:00:00Z",
+                  "endDate": "2025-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "id": "XX-GOV-12345678",
+                  "name": "Ministry of Communications"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-02-10"
+            },
+            {
+               "id": "123456789-02-11",
+               "description": "Public sector investment",
+               "amount": {
+                  "amount": 10000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2026-01-01T00:00:00Z",
+                  "endDate": "2026-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "id": "XX-GOV-12345678",
+                  "name": "Ministry of Communications"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-02-11"
+            },
+            {
+               "id": "123456789-02-12",
+               "description": "Public sector investment",
+               "amount": {
+                  "amount": 10000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2027-01-01T00:00:00Z",
+                  "endDate": "2027-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "id": "XX-GOV-12345678",
+                  "name": "Ministry of Communications"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-02-12"
+            },
+            {
+               "id": "123456789-02-13",
+               "description": "Public sector investment",
+               "amount": {
+                  "amount": 10000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2028-01-01T00:00:00Z",
+                  "endDate": "2028-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "id": "XX-GOV-12345678",
+                  "name": "Ministry of Communications"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-02-13"
+            },
+            {
+               "id": "123456789-02-14",
+               "description": "Public sector investment",
+               "amount": {
+                  "amount": 10000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2029-01-01T00:00:00Z",
+                  "endDate": "2029-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "id": "XX-GOV-12345678",
+                  "name": "Ministry of Communications"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-02-14"
+            },
+            {
+               "id": "123456789-02-15",
+               "description": "Public sector investment",
+               "amount": {
+                  "amount": 10000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2030-01-01T00:00:00Z",
+                  "endDate": "2030-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "id": "XX-GOV-12345678",
+                  "name": "Ministry of Communications"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-02-15"
+            },
+            {
+               "id": "123456789-02-16",
+               "description": "Public sector investment",
+               "amount": {
+                  "amount": 10000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2031-01-01T00:00:00Z",
+                  "endDate": "2031-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "id": "XX-GOV-12345678",
+                  "name": "Ministry of Communications"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-02-16"
+            },
+            {
+               "id": "123456789-02-17",
+               "description": "Public sector investment",
+               "amount": {
+                  "amount": 10000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2032-01-01T00:00:00Z",
+                  "endDate": "2032-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "id": "XX-GOV-12345678",
+                  "name": "Ministry of Communications"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-02-17"
+            },
+            {
+               "id": "123456789-02-18",
+               "description": "Public sector investment",
+               "amount": {
+                  "amount": 10000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2033-01-01T00:00:00Z",
+                  "endDate": "2033-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "id": "XX-GOV-12345678",
+                  "name": "Ministry of Communications"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-02-18"
+            },
+            {
+               "id": "123456789-02-19",
+               "description": "Public sector investment",
+               "amount": {
+                  "amount": 10000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2034-01-01T00:00:00Z",
+                  "endDate": "2034-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "id": "XX-GOV-12345678",
+                  "name": "Ministry of Communications"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-02-19"
+            },
+            {
+               "id": "123456789-02-20",
+               "description": "Public sector investment",
+               "amount": {
+                  "amount": 10000000,
+                  "currency": "USD"
+               },
+               "period": {
+                  "startDate": "2035-01-01T00:00:00Z",
+                  "endDate": "2035-12-31T23:59:59Z"
+               },
+               "sourceParty": {
+                  "id": "XX-GOV-12345678",
+                  "name": "Ministry of Communications"
+               },
+               "uri": "http://finance.gov.example/budget/123456789-02-20"
+            }
+         ]
+      },
+      "rationale": "The project will increase the telecommunication services coverage, promote competitive prices and enhance the quality of services according to international standards. ",
+      "project": {
+         "title": "Example PPP",
+         "description": "The Example PPP project will guarantee the installation of a wholesale shared network that allows the provision of telecommunications services by current and future operators.",
+         "id": "example_ppp",
+         "uri": "http://communications.gov.example/projects/example_ppp",
+         "totalValue": {
+            "amount": 600000000,
+            "currency": "USD"
+         },
+         "sector": {
+            "scheme": "COFOG",
+            "description": "Communication (CS)",
+            "id": "04.6.0",
+            "uri": "https://unstats.un.org/unsd/cr/registry/regcs.asp?Cl=4&Lg=1&Co=04.6.0"
+         },
+         "locations": [{
+            "description": "Example Country",
+            "gazetteer": {
+               "scheme": "GEONAMES",
+               "identifiers": [
+                  "0.0"
+               ]
+            }
+         }]
+      },
+      "forecasts": [{
+         "id": "demand",
+         "title": "Annual demand",
+         "description": "Annual 4G traffic measured in gigabytes",
+         "observations": [{
+               "id": "2016.0",
+               "measure": "815280000.0",
+               "unit": {
+                  "name": "gigabytes",
+                  "id": "E34",
+                  "scheme": "UNCEFACT"
+               },
+               "period": {
+                  "startDate": "2016-01-01T00:00:00Z",
+                  "endDate": "2016-12-31T23:59:59Z"
+               }
+            },
+            {
+               "id": "2017.0",
+               "measure": "903365129.5706391",
+               "unit": {
+                  "name": "gigabytes",
+                  "id": "E34",
+                  "scheme": "UNCEFACT"
+               },
+               "period": {
+                  "startDate": "2017-01-01T00:00:00Z",
+                  "endDate": "2017-12-31T23:59:59Z"
+               }
+            },
+            {
+               "id": "2018.0",
+               "measure": "1001480826.6399665",
+               "unit": {
+                  "name": "gigabytes",
+                  "id": "E34",
+                  "scheme": "UNCEFACT"
+               },
+               "period": {
+                  "startDate": "2018-01-01T00:00:00Z",
+                  "endDate": "2018-12-31T23:59:59Z"
+               }
+            },
+            {
+               "id": "2019.0",
+               "measure": "1110825529.4633253",
+               "unit": {
+                  "name": "gigabytes",
+                  "id": "E34",
+                  "scheme": "UNCEFACT"
+               },
+               "period": {
+                  "startDate": "2019-01-01T00:00:00Z",
+                  "endDate": "2019-12-31T23:59:59Z"
+               }
+            },
+            {
+               "id": "2020.0",
+               "measure": "1232747361.2976859",
+               "unit": {
+                  "name": "gigabytes",
+                  "id": "E34",
+                  "scheme": "UNCEFACT"
+               },
+               "period": {
+                  "startDate": "2020-01-01T00:00:00Z",
+                  "endDate": "2020-12-31T23:59:59Z"
+               }
+            },
+            {
+               "id": "2021.0",
+               "measure": "1368763614.680674",
+               "unit": {
+                  "name": "gigabytes",
+                  "id": "E34",
+                  "scheme": "UNCEFACT"
+               },
+               "period": {
+                  "startDate": "2021-01-01T00:00:00Z",
+                  "endDate": "2021-12-31T23:59:59Z"
+               }
+            },
+            {
+               "id": "2022.0",
+               "measure": "1520582872.0748835",
+               "unit": {
+                  "name": "gigabytes",
+                  "id": "E34",
+                  "scheme": "UNCEFACT"
+               },
+               "period": {
+                  "startDate": "2022-01-01T00:00:00Z",
+                  "endDate": "2022-12-31T23:59:59Z"
+               }
+            },
+            {
+               "id": "2023.0",
+               "measure": "1690130132.8503568",
+               "unit": {
+                  "name": "gigabytes",
+                  "id": "E34",
+                  "scheme": "UNCEFACT"
+               },
+               "period": {
+                  "startDate": "2023-01-01T00:00:00Z",
+                  "endDate": "2023-12-31T23:59:59Z"
+               }
+            },
+            {
+               "id": "2024.0",
+               "measure": "1879575370.3220415",
+               "unit": {
+                  "name": "gigabytes",
+                  "id": "E34",
+                  "scheme": "UNCEFACT"
+               },
+               "period": {
+                  "startDate": "2024-01-01T00:00:00Z",
+                  "endDate": "2024-12-31T23:59:59Z"
+               }
+            },
+            {
+               "id": "2025.0",
+               "measure": "2091366004.3704107",
+               "unit": {
+                  "name": "gigabytes",
+                  "id": "E34",
+                  "scheme": "UNCEFACT"
+               },
+               "period": {
+                  "startDate": "2025-01-01T00:00:00Z",
+                  "endDate": "2025-12-31T23:59:59Z"
+               }
+            },
+            {
+               "id": "2026.0",
+               "measure": "2328263846.301749",
+               "unit": {
+                  "name": "gigabytes",
+                  "id": "E34",
+                  "scheme": "UNCEFACT"
+               },
+               "period": {
+                  "startDate": "2026-01-01T00:00:00Z",
+                  "endDate": "2026-12-31T23:59:59Z"
+               }
+            },
+            {
+               "id": "2027.0",
+               "measure": "2593387154.498728",
+               "unit": {
+                  "name": "gigabytes",
+                  "id": "E34",
+                  "scheme": "UNCEFACT"
+               },
+               "period": {
+                  "startDate": "2027-01-01T00:00:00Z",
+                  "endDate": "2027-12-31T23:59:59Z"
+               }
+            },
+            {
+               "id": "2028.0",
+               "measure": "2890258533.752807",
+               "unit": {
+                  "name": "gigabytes",
+                  "id": "E34",
+                  "scheme": "UNCEFACT"
+               },
+               "period": {
+                  "startDate": "2028-01-01T00:00:00Z",
+                  "endDate": "2028-12-31T23:59:59Z"
+               }
+            },
+            {
+               "id": "2029.0",
+               "measure": "3222859519.9091563",
+               "unit": {
+                  "name": "gigabytes",
+                  "id": "E34",
+                  "scheme": "UNCEFACT"
+               },
+               "period": {
+                  "startDate": "2029-01-01T00:00:00Z",
+                  "endDate": "2029-12-31T23:59:59Z"
+               }
+            },
+            {
+               "id": "2030.0",
+               "measure": "3595692816.858707",
+               "unit": {
+                  "name": "gigabytes",
+                  "id": "E34",
+                  "scheme": "UNCEFACT"
+               },
+               "period": {
+                  "startDate": "2030-01-01T00:00:00Z",
+                  "endDate": "2030-12-31T23:59:59Z"
+               }
+            },
+            {
+               "id": "2031.0",
+               "measure": "4013853297.6148205",
+               "unit": {
+                  "name": "gigabytes",
+                  "id": "E34",
+                  "scheme": "UNCEFACT"
+               },
+               "period": {
+                  "startDate": "2031-01-01T00:00:00Z",
+                  "endDate": "2031-12-31T23:59:59Z"
+               }
+            },
+            {
+               "id": "2032.0",
+               "measure": "4483109048.276784",
+               "unit": {
+                  "name": "gigabytes",
+                  "id": "E34",
+                  "scheme": "UNCEFACT"
+               },
+               "period": {
+                  "startDate": "2032-01-01T00:00:00Z",
+                  "endDate": "2032-12-31T23:59:59Z"
+               }
+            },
+            {
+               "id": "2033.0",
+               "measure": "5009993926.672642",
+               "unit": {
+                  "name": "gigabytes",
+                  "id": "E34",
+                  "scheme": "UNCEFACT"
+               },
+               "period": {
+                  "startDate": "2033-01-01T00:00:00Z",
+                  "endDate": "2033-12-31T23:59:59Z"
+               }
+            },
+            {
+               "id": "2034.0",
+               "measure": "5601913330.538246",
+               "unit": {
+                  "name": "gigabytes",
+                  "id": "E34",
+                  "scheme": "UNCEFACT"
+               },
+               "period": {
+                  "startDate": "2034-01-01T00:00:00Z",
+                  "endDate": "2034-12-31T23:59:59Z"
+               }
+            },
+            {
+               "id": "2035.0",
+               "measure": "6267265128.060023",
+               "unit": {
+                  "name": "gigabytes",
+                  "id": "E34",
+                  "scheme": "UNCEFACT"
+               },
+               "period": {
+                  "startDate": "2035-01-01T00:00:00Z",
+                  "endDate": "2035-12-31T23:59:59Z"
+               }
+            }
+         ]
+      }],
+      "documents": [{
+         "id": "1.0",
+         "documentType": "needsAssessment",
+         "title": "Needs Assessment",
+         "description": "The project will increase the telecommunication services coverage, promote competitive prices and enhance the quality of services according to international standards. ",
+         "url": "http://communications.gov.example/example_ppp/example_ppp_needs_assessment.pdf",
+         "datePublished": "2015-09-30T12:09:30-06:00",
+         "format": "application/pdf",
+         "language": "en",
+         "author": "Example Consultancy Services Ltd"
+      }],
+      "milestones": [{
+            "id": "1.0",
+            "typeReserved": "preProcurement",
+            "title": "Public consultation",
+            "description": "A public consultation will be held at the offices of the Ministry of Communications on 1st December 2015.",
+            "status": "scheduled",
+            "dueDate": "2015-12-01T00:00:00-06:00"
+         },
+         {
+            "id": "2.0",
+            "typeReserved": "approval",
+            "title": "Strategic outline case approval",
+            "description": "Ministry of Finance approved the strategic outline business case for the project",
+            "status": "met",
+            "dueDate": "2015-01-01T00:00:00-06:00",
+            "dateMet": "2015-01-01T00:00:00-06:00",
+            "dateModified": "2015-01-01T00:00:00-06:00",
+            "documents": [{
+               "id": "1.0"
+            }]
+         }
+      ]
+   }
+}

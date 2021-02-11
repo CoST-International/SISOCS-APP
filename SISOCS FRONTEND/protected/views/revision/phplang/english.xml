@@ -1,0 +1,3498 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ew-language date="2015/8/6" version="12.0.0" id="en" name="English" desc="English" author="e.World Technology Ltd.">
+	<locale>
+		<phrase id="locale" value=""/><!-- *** system locale for this language -->
+		<phrase id="use_system_locale" value="1"/><!-- *** change to "0" to disable system locale and use the following settings *** -->
+		<phrase id="decimal_point" value="."/>
+		<phrase id="thousands_sep" value=","/>
+		<phrase id="mon_decimal_point" value="."/>
+		<phrase id="mon_thousands_sep" value=","/>
+		<phrase id="currency_symbol" value="$"/>
+		<phrase id="positive_sign" value=""/>
+		<phrase id="negative_sign" value="-"/>
+		<phrase id="frac_digits" value="2"/>
+		<phrase id="p_cs_precedes" value="1"/>
+		<phrase id="p_sep_by_space" value="0"/>
+		<phrase id="n_cs_precedes" value="1"/>
+		<phrase id="n_sep_by_space" value="0"/>
+		<phrase id="p_sign_posn" value="3"/>
+		<phrase id="n_sign_posn" value="3"/>
+		<phrase id="time_zone" value="US/Pacific"/><!-- *** used for multi-language site only *** -->
+	</locale>
+	<global>
+		<phrase id="actiondeleted" value="Deleted"/>
+		<phrase id="actioninserted" value="Inserted"/>
+		<phrase id="actioninsertedgridadd" value="Inserted (Grid-Add)"/>
+		<phrase id="actionupdated" value="Updated"/>
+		<phrase id="actionupdatedgridedit" value="Updated (Grid-Edit)"/>
+		<phrase id="actionupdatedmultiupdate" value="Updated (Multi-Update)"/>
+		<phrase id="activateaccount" value="Your account is activated"/>
+		<phrase id="activatefailed" value="Activation failed"/>
+		<phrase id="add" value="Add"/>
+		<phrase id="addblankrow" value="Add Blank Row" class="glyphicon glyphicon-plus ewIcon"/><!-- v11 -->
+		<phrase id="addbtn" value="Add"/>
+		<phrase id="addlink" value="Add" class="glyphicon glyphicon-plus ewIcon"/><!-- v11 -->
+		<phrase id="addmasterdetaillink" value="Master/Detail Add" class="icon-md-add ewIcon"/><!-- v11 -->
+		<phrase id="addsuccess" value="Add succeeded"/>
+		<phrase id="advancedsearch" value="Advanced Search"/><!-- v11 -->
+		<phrase id="advancedsearchbtn" value="Advanced Search" class="icon-advanced-search ewIcon"/><!-- v11 -->
+		<phrase id="allrecords" value="All"/>
+		<phrase id="allword" value="All words"/>
+		<phrase id="alwaysask" value="Always ask for my user name and password"/>
+		<phrase id="anyword" value="Any word"/>
+		<phrase id="audittrailautologin" value="autologin"/>
+		<phrase id="audittrailfailedattempt" value="failed attempt: %n"/>
+		<phrase id="audittrailuserloggedin" value="user already logged in"/>
+		<phrase id="audittrailpasswordexpired" value="password expired"/>
+		<phrase id="audittraillogin" value="login"/>
+		<phrase id="audittraillogout" value="logout"/>
+		<phrase id="autologin" value="Auto login until I logout explicitly"/>
+		<phrase id="average" value="Average"/>
+		<phrase id="backtolist" value="Back to List"/>
+		<phrase id="backtologin" value="Back to login page"/>
+		<phrase id="backtomasterrecordpage" value="Back to master table"/>
+		<phrase id="batchdeletebegin" value="*** Batch delete begin ***"/>
+		<phrase id="batchdeleterollback" value="*** Batch delete rollback ***"/>
+		<phrase id="batchdeletesuccess" value="*** Batch delete successful ***"/>
+		<phrase id="batchinsertbegin" value="*** Batch insert begin ***"/>
+		<phrase id="batchinsertrollback" value="*** Batch insert rollback ***"/>
+		<phrase id="batchinsertsuccess" value="*** Batch insert successful ***"/>
+		<phrase id="batchupdatebegin" value="*** Batch update begin ***"/>
+		<phrase id="batchupdaterollback" value="*** Batch update rollback ***"/>
+		<phrase id="batchupdatesuccess" value="*** Batch update successful ***"/>
+		<phrase id="buttonactions" value="Actions" class="icon-options ewIcon"/><!-- v11 -->
+		<phrase id="buttonaddedit" value="Add/Edit" class="icon-addedit ewIcon"/><!-- v11 -->
+		<phrase id="buttondetails" value="Master/Detail" class="icon-master-detail ewIcon"/><!-- v11 -->
+		<phrase id="buttonexport" value="Export" class="icon-export ewIcon"/><!-- v11 -->
+		<phrase id="buttonlistoptions" value="Options" class="icon-options ewIcon"/><!-- v11 -->
+		<phrase id="buttonsearch" value="Search" class="icon-search ewIcon"/><!-- v11 -->
+		<phrase id="cancelbtn" value="Cancel"/>
+		<phrase id="cancellink" value="Cancel" class="glyphicon glyphicon-remove ewIcon"/><!-- v11 -->
+		<phrase id="changepwd" value="Change Password"/>
+		<phrase id="changepwdpage" value="Change Password"/>
+		<phrase id="changepwdbtn" value="Change"/>
+		<phrase id="choosefilebtn" value="Choose..."/><!-- v11 -->
+		<phrase id="choosefile" value="Choose file"/><!-- v11 -->
+		<phrase id="choosefiles" value="Choose files"/><!-- v11 -->
+		<phrase id="clickrecaptcha" value="Please click reCAPTCHA" client="1"/><!-- v12 -->
+		<phrase id="confirm" value="Confirm"/>
+		<phrase id="confirmbtn" value="Confirm"/>
+		<phrase id="confirmcancel" value="Do you want to cancel?" client="1"/><!-- v12 -->
+		<phrase id="confirmpassword" value="Confirm Password"/>
+		<phrase id="conflictcancellink" value="Cancel"/>
+		<phrase id="lightboxtitle" value=" " client="1"/><!-- v11 -->
+		<phrase id="lightboxcurrent" value="image {current} of {total}" client="1"/><!-- Note: DO NOT translate "{current}" and "{total}" --><!-- v11 -->
+		<phrase id="lightboxprevious" value="previous" client="1"/><!-- v11 -->
+		<phrase id="lightboxnext" value="next" client="1"/><!-- v11 -->
+		<phrase id="lightboxclose" value="close" client="1"/><!-- v11 -->
+		<phrase id="lightboxxhrerror" value="This content failed to load." client="1"/><!-- v11 -->
+		<phrase id="lightboximgerror" value="This image failed to load." client="1"/><!-- v11 -->
+		<phrase id="copy" value="Copy"/>
+		<phrase id="copylink" value="Copy" class="icon-copy ewIcon"/><!-- v11 -->
+		<phrase id="count" value="Count"/>
+		<phrase id="countselected" value="%s selected" client="1"/><!-- v12 -->
+		<phrase id="currentpassword" value="Current password: " client="1"/><!-- v12 -->
+		<phrase id="customactioncompleted" value="'%s' completed"/>
+		<phrase id="customactioncancelled" value="'%s' cancelled"/>
+		<phrase id="customactionfailed" value="'%s' failed"/><!-- v12 -->
+		<phrase id="customactionnotallowed" value="'%s' not allowed"/><!-- v12 -->
+		<phrase id="customview" value="CUSTOM VIEW"/>
+		<phrase id="delete" value="Delete"/>
+		<phrase id="deletebtn" value="Delete"/>
+		<phrase id="deletecancelled" value="Delete cancelled"/>
+		<phrase id="deleteconfirmmsg" value="Do you want to delete the selected record(s)?" client="1"/>
+		<phrase id="deletefilter" value="Delete filter"/><!-- v12 -->
+		<phrase id="deletefilterconfirm" value="Delete filter %s?" client="1"/><!-- v12 -->
+		<phrase id="deletelink" value="Delete" class="glyphicon glyphicon-trash ewIcon"/><!-- v11 -->
+		<phrase id="deleteselectedlink" value="Delete Selected Records" class="glyphicon glyphicon-trash ewIcon"/><!-- v11 -->
+		<phrase id="deletesuccess" value="Delete succeeded"/>
+		<phrase id="detaillink" value=""/>
+		<phrase id="detailcount" value="&lt;span dir='ltr'&gt;(%c)&lt;/span&gt;"/><!-- v11 -->
+		<phrase id="masterdetailcopylink" value="Master/Detail Copy" class="icon-md-copy ewIcon"/><!-- v11 -->
+		<phrase id="masterdetaileditlink" value="Master/Detail Edit" class="icon-md-edit ewIcon"/><!-- v11 -->
+		<phrase id="masterdetaillistlink" value="Detail List" class="icon-table ewIcon"/><!-- v11 -->
+		<phrase id="masterdetailviewlink" value="Master/Detail View" class="icon-md-view ewIcon"/><!-- v11 -->
+		<phrase id="dupindex" value="Duplicate value '%v' for unique index '%f'"/>
+		<phrase id="dupkey" value="Duplicate primary key: '%f'"/>
+		<phrase id="edit" value="Edit"/>
+		<phrase id="editlink" value="Edit" class="icon-edit ewIcon"/><!-- v11 -->
+		<phrase id="enterfiltername" value="Enter filter name" client="1"/><!-- v12 -->
+		<phrase id="enternewpassword" value="Please enter new password" client="1"/>
+		<phrase id="enteroldpassword" value="Please enter old password" client="1"/>
+		<phrase id="enterpassword" value="Please enter password" client="1"/>
+		<phrase id="enterpwd" value="Please enter password" client="1"/>
+		<phrase id="enterrequiredfield" value="Please enter required field - %s"/><!-- v11 -->
+		<phrase id="entersearchcriteria" value="Please enter search criteria"/>
+		<phrase id="enterusername" value="Please enter username" client="1"/>
+		<phrase id="entervalidatecode" value="Enter the validation code shown" client="1"/><!-- v11 -->
+		<phrase id="entersenderemail" value="Please enter sender email" client="1"/>
+		<phrase id="enterpropersenderemail" value="Exceed maximum sender email count or email address incorrect" client="1"/>
+		<phrase id="enterrecipientemail" value="Please enter recipient email" client="1"/>
+		<phrase id="enterproperrecipientemail" value="Exceed maximum recipient email count or email address incorrect" client="1"/>
+		<phrase id="enterproperccemail" value="Exceed maximum cc email count or email address incorrect" client="1"/>
+		<phrase id="enterproperbccemail" value="Exceed maximum bcc email count or email address incorrect" client="1"/>
+		<phrase id="entersubject" value="Please enter subject" client="1"/>
+		<phrase id="emailformsender" value="From"/>
+		<phrase id="emailformrecipient" value="To"/>
+		<phrase id="emailformcc" value="Cc"/>
+		<phrase id="emailformbcc" value="Bcc"/>
+		<phrase id="emailformsubject" value="Subject"/>
+		<phrase id="emailformmessage" value="Message"/>
+		<phrase id="emailformcontenttype" value="Send as"/>
+		<phrase id="emailformcontenttypeurl" value="URL"/>
+		<phrase id="emailformcontenttypehtml" value="HTML"/>
+		<phrase id="enteruid" value="Please enter user ID" client="1"/>
+		<phrase id="entervalidemail" value="Please enter valid Email Address" client="1"/>
+		<phrase id="exactphrase" value="Exact phrase"/>
+		<phrase id="exceedmaxretry" value="Exceed maximum login retry count. Account is locked. Please try again in %t minutes"/>
+		<phrase id="exceedmaxemailexport" value="Exceed maximum export email count. Please try again later"/>
+		<phrase id="exporttocsv" value="Export to CSV" class="icon-csv ewIcon"/><!-- v11 -->
+		<phrase id="exporttocsvtext" value="CSV"/>
+		<phrase id="exporttoemail" value="Email" class="icon-email ewIcon"/><!-- v11 -->
+		<phrase id="exporttoemailtext" value="Email" client="1"/>
+		<phrase id="exporttoexcel" value="Export to Excel" class="icon-excel ewIcon"/><!-- v11 -->
+		<phrase id="exporttoexceltext" value="Excel"/>
+		<phrase id="exporttohtml" value="Export to HTML" class="icon-html ewIcon"/><!-- v11 -->
+		<phrase id="exporttohtmltext" value="HTML"/>
+		<phrase id="exporttopdf" value="Export to PDF" class="icon-pdf ewIcon"/><!-- v11 -->
+		<phrase id="exporttopdftext" value="PDF"/>
+		<phrase id="exporttoword" value="Export to Word" class="icon-word ewIcon"/><!-- v11 -->
+		<phrase id="exporttowordtext" value="Word"/>
+		<phrase id="exporttoxml" value="Export to XML" class="icon-xml ewIcon"/><!-- v11 -->
+		<phrase id="exporttoxmltext" value="XML"/>
+		<phrase id="failedtosendmail" value="Failed to send mail. "/>
+		<phrase id="fieldname" value="Field Name"/>
+		<phrase id="fieldrequiredindicator" value="&lt;span class=&quot;ewRequired&quot;&gt;&amp;nbsp;*&lt;/span&gt;"/>
+		<phrase id="filenotfound" value="File not found"/><!-- *** characters need to be supported by EW_TMP_IMAGE_FONT *** -->
+		<phrase id="filter" value="Filter"/><!-- v12 -->
+		<phrase id="filtername" value="Filter name" client="1"/><!-- v12 -->
+		<phrase id="filters" value="Filters" class="icon-filter ewIcon"/><!-- v12 -->
+		<phrase id="overwritebtn" value="Overwrite"/>
+		<phrase id="overwritelink" value="Overwrite"/>
+		<phrase id="forgotpwd" value="Forgot Password"/>
+		<phrase id="goback" value="Go Back"/>
+		<phrase id="gridaddcancelled" value="Grid add cancelled"/><!-- v11 -->
+		<phrase id="gridaddlink" value="Grid Add" class="icon-grid-add ewIcon"/><!-- v11 -->
+		<phrase id="gridcancellink" value="Cancel" class="glyphicon glyphicon-remove ewIcon"/><!-- v11 -->
+		<phrase id="grideditcancelled" value="Grid edit cancelled"/><!-- v11 -->
+		<phrase id="grideditlink" value="Grid Edit" class="icon-grid-edit ewIcon"/><!-- v11 -->
+		<phrase id="gridinsertlink" value="Insert" class="glyphicon glyphicon-ok ewIcon"/><!-- v11 -->
+		<phrase id="gridsavelink" value="Save" class="glyphicon glyphicon-ok ewIcon"/><!-- v11 -->
+		<phrase id="highlight" value="Highlight"/><!-- v11 -->
+		<phrase id="highlightbtn" value="Highlight" class="icon-highlight ewIcon"/><!-- v11 -->
+		<phrase id="homepage" value="Home" class="glyphicon glyphicon-home ewIcon"/><!-- v11 -->
+		<phrase id="incorrectcreditcard" value="Incorrect credit card number"/>
+		<phrase id="incorrectdateymd" value="Incorrect date, format = yyyy%smm%sdd"/>
+		<phrase id="incorrectdatemdy" value="Incorrect date, format = mm%sdd%syyyy"/>
+		<phrase id="incorrectdatedmy" value="Incorrect date, format = dd%smm%syyyy"/>
+		<phrase id="incorrectshortdateymd" value="Incorrect date, format = yy%smm%sdd"/>
+		<phrase id="incorrectshortdatemdy" value="Incorrect date, format = mm%sdd%syy"/>
+		<phrase id="incorrectshortdatedmy" value="Incorrect date, format = dd%smm%syy"/>
+		<phrase id="incorrectemail" value="Incorrect email" client="1"/>
+		<phrase id="incorrectfield" value="Incorrect field" client="1"/>
+		<phrase id="incorrectfloat" value="Incorrect floating point number" client="1"/>
+		<phrase id="incorrectguid" value="Incorrect GUID" client="1"/>
+		<phrase id="incorrectinteger" value="Incorrect integer" client="1"/>
+		<phrase id="incorrectphone" value="Incorrect phone number" client="1"/>
+		<phrase id="incorrectregexp" value="Regular expression not matched" client="1"/>
+		<phrase id="incorrectrange" value="Number must be between %1 and %2" client="1"/>
+		<phrase id="incorrectssn" value="Incorrect social security number" client="1"/>
+		<phrase id="incorrecttime" value="Incorrect time (hh:mm:ss)" client="1"/>
+		<phrase id="incorrectzip" value="Incorrect ZIP code" client="1"/>
+		<phrase id="inlineaddlink" value="Inline Add" class="icon-inline-add ewIcon"/><!-- v11 -->
+		<phrase id="inlinecopylink" value="Inline Copy" class="icon-inline-copy ewIcon"/><!-- v11 -->
+		<phrase id="inlineeditlink" value="Inline Edit" class="icon-inline-edit ewIcon"/><!-- v11 -->
+		<phrase id="insertcancelled" value="Insert cancelled"/>
+		<phrase id="insertfailed" value="Insert failed" client="1"/>
+		<phrase id="insertlink" value="Insert" class="glyphicon glyphicon-ok ewIcon"/><!-- v11 -->
+		<phrase id="insertsuccess" value="Insert succeeded"/>
+		<phrase id="invalidemail" value="Invalid Email"/>
+		<phrase id="invalidfield" value="Invalid Field"/>
+		<phrase id="invalidkeyvalue" value="Invalid key value"/>
+		<phrase id="invalidrecord" value="Invalid Record! Key is null" client="1"/>
+		<phrase id="invalidpostrequest" value="Invalid post request"/><!-- v11 -->
+		<phrase id="invalidparameter" value="Invalid Parameter"/>
+		<phrase id="invalidpassword" value="Invalid Password"/>
+		<phrase id="invalidnewpassword" value="Invalid New Password"/>
+		<phrase id="invaliduidpwd" value="Incorrect user ID or password"/>
+		<phrase id="keep" value="Keep"/>
+		<phrase id="language" value="Language"/>
+		<phrase id="listactionbutton" value="Actions" class="icon-user ewIcon"/><!-- v12 -->
+		<phrase id="loading" value="Loading..." client="1"/>
+		<phrase id="login" value="Login"/>
+		<phrase id="logincancelled" value="Login cancelled"/>
+		<phrase id="loginoptions" value="Options"/><!-- v11 -->
+		<phrase id="loginpage" value="Login"/>
+		<phrase id="logout" value="Logout"/>
+		<phrase id="masterrecord" value="Master Record: "/>
+		<phrase id="maxfilesize" value="Max. file size (%s bytes) exceeded." client="1"/>
+		<phrase id="messageok" value="OK" client="1"/>
+		<phrase id="mismatchpassword" value="Mismatch Password" client="1"/>
+		<phrase id="missinglookuptablename" value="Missing lookup table name"/>
+		<phrase id="missingdisplayfieldname" value="Missing display field name"/>
+		<phrase id="missingdisplayfieldvalue" value="Missing display field value"/>
+		<phrase id="missinguserlevelid" value="Missing User Level ID"/>
+		<phrase id="missinguserlevelname" value="Missing User Level name"/>
+		<phrase id="mobilemenu" value="Menu"/>
+		<phrase id="multiplemasterdetails" value="Master/Detail" class="icon-master-detail ewIcon"/><!-- v11 -->
+		<phrase id="new" value="New"/>
+		<phrase id="newpassword" value="New Password"/>
+		<phrase id="newvalue" value="New value"/><!-- v12 -->
+		<phrase id="next" value="Next" client="1"/><!-- v12 -->
+		<phrase id="noaddrecord" value="No records to be added" client="1"/>
+		<phrase id="nofieldselected" value="No field selected for update" client="1"/>
+		<phrase id="nopermission" value="You do not have permission to access the page."/>
+		<phrase id="noaddpermission" value="You do not have permission to add the record."/>
+		<phrase id="nodeletepermission" value="You do not have permission to delete the record."/>
+		<phrase id="noeditpermission" value="You do not have permission to edit the record."/>
+		<phrase id="norecord" value="No records found"/>
+		<phrase id="norecordforkey" value="No record found for key = "/>
+		<phrase id="norecordselected" value="No records selected" client="1"/>
+		<phrase id="notablegenerated" value="No tables generated"/>
+		<phrase id="nouserlevel" value="No user level settings."/>
+		<phrase id="of" value="of"/>
+		<phrase id="old" value="Old"/>
+		<phrase id="oldpassword" value="Old Password"/>
+		<phrase id="optionalreadyexist" value="Option already exists"/>
+		<phrase id="page" value="Page"/>
+		<phrase id="pagerfirst" value="First"/>
+		<phrase id="pagerlast" value="Last"/>
+		<phrase id="pagernext" value="Next"/>
+		<phrase id="pagerprevious" value="Previous"/>
+		<phrase id="password" value="Password"/>
+		<phrase id="passwordmask" value="********"/><!-- v12 -->
+		<phrase id="passwordrequest" value="Password Request"/>
+		<phrase id="passwordchanged" value="Password Changed"/>
+		<phrase id="passwordexpired" value="Password Expired. Please change password."/>
+		<phrase id="passwordstrength" value="Strength: %p" client="1"/><!-- v12 -->
+		<phrase id="passwordtoosimple" value="Your password is too simple" client="1"/><!-- v12 -->
+		<phrase id="generatepassword" value="Generate password" class="glyphicon glyphicon-flash ewIcon"/><!-- v12 -->
+		<phrase id="permission" value="Permissions" class="icon-user ewIcon"/><!-- v11 -->
+		<phrase id="permissionaddcopy" value="Add/Copy"/>
+		<phrase id="permissiondelete" value="Delete"/>
+		<phrase id="permissionedit" value="Edit"/>
+		<phrase id="permissionlistsearchview" value="List/Search/View"/>
+		<phrase id="permissionlist" value="List"/>
+		<phrase id="permissionsearch" value="Search"/>
+		<phrase id="permissionview" value="View"/>
+		<phrase id="pickdate" value="Pick a date"/>
+		<phrase id="pleaseselect" value="Please select" client="1"/><!-- v12 -->
+		<phrase id="pleasewait" value="Please wait..." client="1"/>
+		<phrase id="primarykeyunspecified" value="Primary key unspecified"/>
+		<phrase id="printerfriendly" value="Printer Friendly" class="icon-print ewIcon"/><!-- v11 -->
+		<phrase id="printerfriendlytext" value="Printer Friendly"/>
+		<phrase id="prev" value="Prev" client="1"/><!-- v12 -->
+		<phrase id="pwdemailsent" value="Password sent to your email"/>
+		<phrase id="resetpwdemailsent" value="The reset password email has been sent to you"/>
+		<phrase id="quicksearch" value="Quick Search"/>
+		<phrase id="quicksearchbtn" value="Search"/>
+		<phrase id="quicksearchauto" value="Auto" client="1"/><!-- v11 -->
+		<phrase id="quicksearchautoshort" value="" client="1"/><!-- v11 -->
+		<phrase id="quicksearchall" value="All keywords" client="1"/><!-- v11 -->
+		<phrase id="quicksearchallshort" value="All" client="1"/><!-- v11 -->
+		<phrase id="quicksearchany" value="Any keywords" client="1"/><!-- v11 -->
+		<phrase id="quicksearchanyshort" value="Any" client="1"/><!-- v11 -->
+		<phrase id="quicksearchexact" value="Exact match" client="1"/><!-- v11 -->
+		<phrase id="quicksearchexactshort" value="Exact" client="1"/><!-- v11 -->
+		<phrase id="record" value="Records"/>
+		<phrase id="recordchangedbyotheruser" value="Data has been changed by other user. Click [Reload] to retrieve the changed data (your data in the form will be overwritten) or click [Overwrite] to overwrite the changed data."/>
+		<phrase id="recorddeleted" value="record(s) deleted"/>
+		<phrase id="recordinserted" value="record(s) inserted"/>
+		<phrase id="recordupdated" value="record(s) updated"/>
+		<phrase id="recordsperpage" value="Page Size"/>
+		<phrase id="register" value="Register"/>
+		<phrase id="registerbtn" value="Register"/>
+		<phrase id="registersuccess" value="Registration succeeded"/>
+		<phrase id="registersuccessactivate" value="Registration succeeded. An email has been sent to your email address, please click the link in the email to activate your account."/>
+		<phrase id="registerpage" value="Registration"/>
+		<phrase id="relatedrecordrequired" value="You cannot add or update a record because the foreign key value does not exist in the master table '%t'"/>
+		<phrase id="relatedrecordexists" value="You cannot delete a record because related records exist in the detail table '%t'"/>
+		<phrase id="reloadbtn" value="Reload"/>
+		<phrase id="reloadlink" value="Reload"/>
+		<phrase id="rememberme" value="Remember me"/>
+		<phrase id="remove" value="Remove"/>
+		<phrase id="replace" value="Replace"/>
+		<phrase id="report" value="Report"/>
+		<phrase id="requestpwdpage" value="Request Password"/>
+		<phrase id="reset" value="Reset"/>
+		<phrase id="resendregisteremailbtn" value="Resend registration email"/><!-- v12 -->
+		<phrase id="resendregisteremailsuccess" value="Registration email for user '%u' has been re-sent"/><!-- v12 -->
+		<phrase id="resendregisteremailfailure" value="Failed to re-send register email for user '%u' has failed"/><!-- v12 -->
+		<phrase id="resetconcurrentuserbtn" value="Reset concurrent user session"/><!-- v12 -->
+		<phrase id="resetconcurrentusersuccess" value="Session for user '%u' has been reset"/><!-- v12 -->
+		<phrase id="resetconcurrentuserfailure" value="Failed to reset session for user '%u'"/><!-- v12 -->
+		<phrase id="resetloginretrybtn" value="Reset login retry count"/><!-- v12 -->
+		<phrase id="resetloginretrysuccess" value="Login retry count for user '%u' has been reset"/><!-- v12 -->
+		<phrase id="resetloginretryfailure" value="Failed to reset login retry count for user '%u'"/><!-- v12 -->
+		<phrase id="resetsearchbtn" value="Reset" class="icon-reset-search ewIcon"/><!-- v11 -->
+		<phrase id="resetsearch" value="Reset"/>
+		<phrase id="rptavg" value="Average"/>
+		<phrase id="rptdtlrec" value="Detail Records"/>
+		<phrase id="rptgrandtotal" value="Grand Total"/>
+		<phrase id="rptmax" value="Maximum"/>
+		<phrase id="rptmin" value="Minimum"/>
+		<phrase id="rptsum" value="Sum"/>
+		<phrase id="rptsumhead" value="Summary for"/>
+		<phrase id="savebtn" value="Save"/><!-- v11 -->
+		<phrase id="savecurrentfilter" value="Save current filter"/><!-- v12 -->
+		<phrase id="saveusername" value="Save my user name"/>
+		<phrase id="search" value="Search"/>
+		<phrase id="searchbtn" value="Search" class="glyphicon glyphicon-search ewIcon"/><!-- v11 -->
+		<phrase id="searchpanel" value="Search Panel"/><!-- v11 -->
+		<phrase id="sendemailbtn" value="Send"/>
+		<phrase id="sendemailsuccess" value="Email sent successfully" client="1"/>
+		<phrase id="sendpwd" value="Send"/>
+		<phrase id="sequencenumber" value="%s."/>
+		<phrase id="sessionwillexpire" value="Your session will expire in %s seconds. Click OK to continue your session." client="1"/><!-- v12 -->
+		<phrase id="sessionexpired" value="Your session has expired." client="1"/><!-- v12 -->
+		<phrase id="setpasswordexpiredbtn" value="Set password expired"/><!-- v12 -->
+		<phrase id="setpasswordexpiredsuccess" value="Password for user '%u' has been set as expired"/><!-- v12 -->
+		<phrase id="setpasswordexpiredfailure" value="Failed to set password for user '%u' as expired"/><!-- v12 -->
+		<phrase id="showallbtn" value="Show all" class="icon-reset-search ewIcon"/><!-- v11 -->
+		<phrase id="showall" value="Show all"/><!-- v11 -->
+		<phrase id="srchlegend" value=""/>
+		<phrase id="table" value="TABLE"/>
+		<phrase id="tbltypetable" value="Table: "/>
+		<phrase id="tbltypeview" value="View: "/>
+		<phrase id="tbltypecustomview" value="Custom View: "/>
+		<phrase id="tbltypereport" value="Report: "/>
+		<phrase id="to" value="to"/>
+		<phrase id="total" value="Total"/>
+		<phrase id="unauthorizeduserid" value="The current user (%c) is not authorized to assign the user ID (%u)."/>
+		<phrase id="unauthorizedparentuserid" value="The current user (%c) is not authorized to assign the parent user ID (%p)."/>
+		<phrase id="unauthorizedmasteruserid" value="The current user (%c) is not authorized to insert the record. Master filter: %f"/>
+		<phrase id="update" value="Update"/>
+		<phrase id="updatebtn" value="Update"/>
+		<phrase id="updatecancelled" value="Update cancelled"/>
+		<phrase id="updatefailed" value="Update failed"/>
+		<phrase id="updatelink" value="Update" class="glyphicon glyphicon-ok ewIcon"/><!-- v11 -->
+		<phrase id="updateselectall" value="Select all"/><!-- v11 -->
+		<phrase id="updateselectedlink" value="Update Selected Records" class="icon-edit ewIcon"/><!-- v11 -->
+		<phrase id="updatesuccess" value="Update succeeded"/>
+		<phrase id="uploading" value="Uploading..." client="1"/>
+		<phrase id="uploadstart" value="Start" client="1"/>
+		<phrase id="uploadcancel" value="Cancel" client="1"/>
+		<phrase id="uploaddelete" value="Delete" client="1"/>
+		<phrase id="uploadoverwrite" value="Overwrite old file?" client="1"/>
+		<phrase id="uploaderrmsg1" value="The uploaded file exceeds the upload_max_filesize directive in php.ini"/>
+		<phrase id="uploaderrmsg2" value="The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form"/>
+		<phrase id="uploaderrmsg3" value="The uploaded file was only partially uploaded"/>
+		<phrase id="uploaderrmsg4" value="No file was uploaded"/>
+		<phrase id="uploaderrmsg6" value="Missing a temporary folder"/>
+		<phrase id="uploaderrmsg7" value="Failed to write file to disk"/>
+		<phrase id="uploaderrmsg8" value="A PHP extension stopped the file upload"/>
+		<phrase id="uploaderrmsgpostmaxsize" value="The uploaded file exceeds the post_max_size directive in php.ini"/>
+		<phrase id="uploaderrmsgmaxfilesize" value="File is too big" client="1"/>
+		<phrase id="uploaderrmsgminfilesize" value="File is too small" client="1"/>
+		<phrase id="uploaderrmsgacceptfiletypes" value="File type not allowed" client="1"/>
+		<phrase id="uploaderrmsgmaxnumberoffiles" value="Maximum number of files exceeded" client="1"/>
+		<phrase id="uploaderrmsgmaxwidth" value="Image exceeds maximum width"/>
+		<phrase id="uploaderrmsgminwidth" value="Image requires a minimum width"/>
+		<phrase id="uploaderrmsgmaxheight" value="Image exceeds maximum height"/>
+		<phrase id="uploaderrmsgminheight" value="Image requires a minimum height"/>
+		<phrase id="uploaderrmsgmaxfilelength" value="Total length of file names exceeds field length" client="1"/>
+		<phrase id="useradministrator" value="Administrator" client="1"/><!-- v12 -->
+		<phrase id="useranonymous" value="Anonymous" client="1"/><!-- v12 -->
+		<phrase id="userdefault" value="Default" client="1"/><!-- v12 -->
+		<phrase id="useremail" value="Email"/>
+		<phrase id="userexists" value="User already exists"/>
+		<phrase id="userlevel" value="User Level: "/>
+		<phrase id="userleveladministratorname" value="User level name for user level -1 must be 'Administrator'" client="1"/>
+		<phrase id="userlevelanonymousname" value="User level name for user level -2 must be 'Anonymous'" client="1"/><!-- v12 -->
+		<phrase id="userlevelpermission" value="User Level Permissions"/>
+		<phrase id="userlevelidinteger" value="User Level ID must be integer" client="1"/>
+		<phrase id="userleveldefaultname" value="User level name for user level 0 must be 'Default'" client="1"/>
+		<phrase id="userlevelidincorrect" value="User defined User Level ID must be larger than 0" client="1"/>
+		<phrase id="userlevelnameincorrect" value="User defined User Level name cannot be 'Administrator' or 'Default'" client="1"/>
+		<phrase id="userloggedin" value="User '%u' already logged in"/>
+		<phrase id="username" value="User Name"/>
+		<phrase id="userprofilecorrupted" value="User profile is corrupted. Please logout and login again"/>
+		<phrase id="valuenotexist" value="Value does not exist" client="1"/><!-- v11 -->
+		<phrase id="view" value="View"/>
+		<phrase id="viewimagegallery" value="Click to view image"/><!-- v12 -->
+		<phrase id="viewlink" value="View" class="icon-view ewIcon"/><!-- v11 -->
+		<phrase id="viewpageaddlink" value="Add" class="glyphicon glyphicon-plus ewIcon"/><!-- v11 -->
+		<phrase id="viewpagecopylink" value="Copy" class="icon-copy ewIcon"/><!-- v11 -->
+		<phrase id="viewpagedeletelink" value="Delete" class="glyphicon glyphicon-trash ewIcon"/><!-- v11 -->
+		<phrase id="viewpagedetaillink" value=""/>
+		<phrase id="viewpageeditlink" value="Edit" class="icon-edit ewIcon"/><!-- v11 -->
+		<phrase id="wrongfiletype" value="File type is not allowed." client="1"/>
+		<phrase id="tableorview" value="Tables"/>
+		<phrase id="=" value="&amp;nbsp;"/><!-- v12 -->
+		<phrase id="equal" value="="/><!-- v12 -->
+		<phrase id="&lt;&gt;" value="&amp;lt;&amp;gt;"/>
+		<phrase id="&lt;" value="&amp;lt;"/>
+		<phrase id="&lt;=" value="&amp;lt;="/>
+		<phrase id="&gt;" value="&amp;gt;"/>
+		<phrase id="&gt;=" value="&amp;gt;="/>
+		<phrase id="like" value="contains"/>
+		<phrase id="not like" value="does not contain"/><!-- v11.0.3 -->
+		<phrase id="starts with" value="starts with"/>
+		<phrase id="ends with" value="ends with"/>
+		<phrase id="is null" value="is null"/>
+		<phrase id="is not null" value="is not null"/>
+		<phrase id="between" value="between"/>
+		<phrase id="and" value="and"/>
+		<phrase id="or" value="or"/>
+	</global>
+	<project><phrase id="footertext" value="&amp;copy;2015 e.World Technology Ltd. All rights reserved."/>
+<menu id="1"><phrase id="menutext" value="authassignment"/>
+</menu>
+<menu id="2"><phrase id="menutext" value="authitem"/>
+</menu>
+<menu id="3"><phrase id="menutext" value="authitemchild"/>
+</menu>
+<menu id="4"><phrase id="menutext" value="cruge authassignment"/>
+</menu>
+<menu id="5"><phrase id="menutext" value="cruge authitem"/>
+</menu>
+<menu id="6"><phrase id="menutext" value="cruge authitemchild"/>
+</menu>
+<menu id="7"><phrase id="menutext" value="cruge field"/>
+</menu>
+<menu id="8"><phrase id="menutext" value="cruge fieldvalue"/>
+</menu>
+<menu id="9"><phrase id="menutext" value="cruge session"/>
+</menu>
+<menu id="10"><phrase id="menutext" value="cruge system"/>
+</menu>
+<menu id="11"><phrase id="menutext" value="cruge user"/>
+</menu>
+<menu id="12"><phrase id="menutext" value="cs act avances"/>
+</menu>
+<menu id="13"><phrase id="menutext" value="cs actividades avance"/>
+</menu>
+<menu id="14"><phrase id="menutext" value="cs actividades ejecucion"/>
+</menu>
+<menu id="15"><phrase id="menutext" value="cs address"/>
+</menu>
+<menu id="17"><phrase id="menutext" value="cs archivos avances"/>
+</menu>
+<menu id="41"><phrase id="menutext" value="Unidades o Entes"/>
+</menu>
+<menu id="60"><phrase id="menutext" value="Planificacion de Programas"/>
+</menu>
+<menu id="65"><phrase id="menutext" value="Planificacion de Proyectos"/>
+</menu>
+<menu id="20"><phrase id="menutext" value="Invitacion y Calificacion"/>
+</menu>
+<menu id="16"><phrase id="menutext" value="Evaluacion de Ofertas / Adjudicacion"/>
+</menu>
+<menu id="32"><phrase id="menutext" value="Contratacion"/>
+</menu>
+<menu id="34"><phrase id="menutext" value="Gestion de los Contratos"/>
+</menu>
+<menu id="54"><phrase id="menutext" value="Implementacion"/>
+</menu>
+<menu id="18"><phrase id="menutext" value="Avances"/>
+</menu>
+<menu id="19"><phrase id="menutext" value="cs beneficiario"/>
+</menu>
+<menu id="21"><phrase id="menutext" value="cs calificacion empresa"/>
+</menu>
+<menu id="22"><phrase id="menutext" value="cs calificacion firma"/>
+</menu>
+<menu id="23"><phrase id="menutext" value="cs calificacion oferente"/>
+</menu>
+<menu id="24"><phrase id="menutext" value="cs catg estados"/>
+</menu>
+<menu id="25"><phrase id="menutext" value="cs catg sub actividades"/>
+</menu>
+<menu id="26"><phrase id="menutext" value="cs catg tipo actividades"/>
+</menu>
+<menu id="27"><phrase id="menutext" value="cs catg tipo garantias"/>
+</menu>
+<menu id="28"><phrase id="menutext" value="cs catg unidades"/>
+</menu>
+<menu id="29"><phrase id="menutext" value="cs clase"/>
+</menu>
+<menu id="30"><phrase id="menutext" value="cs consultorfirma"/>
+</menu>
+<menu id="31"><phrase id="menutext" value="cs contactos"/>
+</menu>
+<menu id="33"><phrase id="menutext" value="cs contrato historico"/>
+</menu>
+<menu id="35"><phrase id="menutext" value="cs departamento"/>
+</menu>
+<menu id="36"><phrase id="menutext" value="cs desembolsos montos"/>
+</menu>
+<menu id="37"><phrase id="menutext" value="cs doc adjuntados"/>
+</menu>
+<menu id="38"><phrase id="menutext" value="cs ejecucion status"/>
+</menu>
+<menu id="39"><phrase id="menutext" value="cs empleado"/>
+</menu>
+<menu id="40"><phrase id="menutext" value="cs empresa"/>
+</menu>
+<menu id="42"><phrase id="menutext" value="cs estado"/>
+</menu>
+<menu id="43"><phrase id="menutext" value="cs estadoproceso"/>
+</menu>
+<menu id="44"><phrase id="menutext" value="cs estadored"/>
+</menu>
+<menu id="45"><phrase id="menutext" value="cs estadosgestcontra"/>
+</menu>
+<menu id="46"><phrase id="menutext" value="cs firma"/>
+</menu>
+<menu id="47"><phrase id="menutext" value="cs fuentesfinan"/>
+</menu>
+<menu id="48"><phrase id="menutext" value="cs funcionarios"/>
+</menu>
+<menu id="49"><phrase id="menutext" value="cs gestioncontratos"/>
+</menu>
+<menu id="50"><phrase id="menutext" value="cs historico"/>
+</menu>
+<menu id="51"><phrase id="menutext" value="cs historico contratos"/>
+</menu>
+<menu id="52"><phrase id="menutext" value="cs imagenes avances"/>
+</menu>
+<menu id="53"><phrase id="menutext" value="cs img adjuntadas"/>
+</menu>
+<menu id="55"><phrase id="menutext" value="cs monedas"/>
+</menu>
+<menu id="56"><phrase id="menutext" value="cs municipio"/>
+</menu>
+<menu id="57"><phrase id="menutext" value="cs oferente"/>
+</menu>
+<menu id="58"><phrase id="menutext" value="cs profiles"/>
+</menu>
+<menu id="59"><phrase id="menutext" value="cs profiles fields"/>
+</menu>
+<menu id="61"><phrase id="menutext" value="cs programa fuente"/>
+</menu>
+<menu id="62"><phrase id="menutext" value="cs programa proposito"/>
+</menu>
+<menu id="63"><phrase id="menutext" value="cs programa ubicacion"/>
+</menu>
+<menu id="64"><phrase id="menutext" value="cs proposito"/>
+</menu>
+<menu id="66"><phrase id="menutext" value="cs proyecto beneficiario"/>
+</menu>
+<menu id="67"><phrase id="menutext" value="cs proyecto fuente"/>
+</menu>
+<menu id="68"><phrase id="menutext" value="cs region"/>
+</menu>
+<menu id="69"><phrase id="menutext" value="cs rol"/>
+</menu>
+<menu id="70"><phrase id="menutext" value="cs ruta"/>
+</menu>
+<menu id="71"><phrase id="menutext" value="cs sector"/>
+</menu>
+<menu id="72"><phrase id="menutext" value="cs subsector"/>
+</menu>
+<menu id="73"><phrase id="menutext" value="cs tipo mod contrato"/>
+</menu>
+<menu id="74"><phrase id="menutext" value="cs tipocontrato"/>
+</menu>
+<menu id="75"><phrase id="menutext" value="cs tipored"/>
+</menu>
+<menu id="76"><phrase id="menutext" value="cs tiposadquisicion"/>
+</menu>
+<menu id="77"><phrase id="menutext" value="cs tramo"/>
+</menu>
+<menu id="78"><phrase id="menutext" value="cs ubicacionvial"/>
+</menu>
+<menu id="79"><phrase id="menutext" value="cs unidadesentidad"/>
+</menu>
+<menu id="80"><phrase id="menutext" value="cs users"/>
+</menu>
+<menu id="81"><phrase id="menutext" value="mq auth assignment"/>
+</menu>
+<menu id="82"><phrase id="menutext" value="mq auth item"/>
+</menu>
+<menu id="83"><phrase id="menutext" value="mq auth item child"/>
+</menu>
+<menu id="84"><phrase id="menutext" value="mq category"/>
+</menu>
+<menu id="85"><phrase id="menutext" value="mq issue"/>
+</menu>
+<menu id="86"><phrase id="menutext" value="mq issue attachment"/>
+</menu>
+<menu id="87"><phrase id="menutext" value="mq issue reception type"/>
+</menu>
+<menu id="88"><phrase id="menutext" value="mq issue response"/>
+</menu>
+<menu id="89"><phrase id="menutext" value="mq niveles"/>
+</menu>
+<menu id="90"><phrase id="menutext" value="mq personal"/>
+</menu>
+<menu id="91"><phrase id="menutext" value="mq proyecto"/>
+</menu>
+<menu id="92"><phrase id="menutext" value="mq question"/>
+</menu>
+<menu id="93"><phrase id="menutext" value="mq respuestas"/>
+</menu>
+<menu id="94"><phrase id="menutext" value="mq solicitud"/>
+</menu>
+<menu id="95"><phrase id="menutext" value="mq status"/>
+</menu>
+<menu id="96"><phrase id="menutext" value="mq user"/>
+</menu>
+<menu id="97"><phrase id="menutext" value="pcounter save"/>
+</menu>
+<menu id="98"><phrase id="menutext" value="pcounter users"/>
+</menu>
+<menu id="99"><phrase id="menutext" value="prueba"/>
+</menu>
+<menu id="100"><phrase id="menutext" value="tbl auth assignment"/>
+</menu>
+<menu id="101"><phrase id="menutext" value="tbl auth item"/>
+</menu>
+<menu id="102"><phrase id="menutext" value="tbl auth item child"/>
+</menu>
+<menu id="103"><phrase id="menutext" value="tbl category"/>
+</menu>
+<menu id="104"><phrase id="menutext" value="tbl issue"/>
+</menu>
+<menu id="105"><phrase id="menutext" value="tbl issue reception type"/>
+</menu>
+<menu id="106"><phrase id="menutext" value="tbl issue response"/>
+</menu>
+<menu id="107"><phrase id="menutext" value="tbl migration"/>
+</menu>
+<menu id="108"><phrase id="menutext" value="tbl question"/>
+</menu>
+<menu id="109"><phrase id="menutext" value="tbl user"/>
+</menu>
+<menu id="110"><phrase id="menutext" value="user"/>
+</menu>
+<menu id="111"><phrase id="menutext" value="v avance ft"/>
+</menu>
+<menu id="112"><phrase id="menutext" value="v avances resumenejecucion"/>
+</menu>
+<menu id="113"><phrase id="menutext" value="v calificacion"/>
+</menu>
+<menu id="114"><phrase id="menutext" value="v doc avancesporid"/>
+</menu>
+<menu id="115"><phrase id="menutext" value="v idmetodo poridadjudicacion"/>
+</menu>
+<menu id="116"><phrase id="menutext" value="v idmetodoadquisicion idcontratacion"/>
+</menu>
+<menu id="117"><phrase id="menutext" value="v imagenes poravance"/>
+</menu>
+<menu id="118"><phrase id="menutext" value="v imagenes resumenejecucion"/>
+</menu>
+<menu id="119"><phrase id="menutext" value="v inicio ejecucion"/>
+</menu>
+<menu id="120"><phrase id="menutext" value="v proyecto"/>
+</menu>
+<menu id="121"><phrase id="menutext" value="v proyectos carrousel"/>
+</menu>
+<menu id="122"><phrase id="menutext" value="v ubicacion poridproyecto"/>
+</menu>
+<menu id="123"><phrase id="menutext" value="vadjudicacion"/>
+</menu>
+<menu id="124"><phrase id="menutext" value="vavances"/>
+</menu>
+<menu id="125"><phrase id="menutext" value="vcalificacion"/>
+</menu>
+<menu id="126"><phrase id="menutext" value="vcalificacion empresa"/>
+</menu>
+<menu id="127"><phrase id="menutext" value="vcalificacion firma"/>
+</menu>
+<menu id="128"><phrase id="menutext" value="vcalificacion oferente"/>
+</menu>
+<menu id="129"><phrase id="menutext" value="vciudadano"/>
+</menu>
+<menu id="130"><phrase id="menutext" value="vcontratacion"/>
+</menu>
+<menu id="131"><phrase id="menutext" value="vcontratos"/>
+</menu>
+<menu id="132"><phrase id="menutext" value="vcontratos gestion"/>
+</menu>
+<menu id="133"><phrase id="menutext" value="vejecucion"/>
+</menu>
+<menu id="134"><phrase id="menutext" value="IDs del Sistema"/>
+</menu>
+<menu id="135"><phrase id="menutext" value="vids"/>
+</menu>
+<menu id="136"><phrase id="menutext" value="vprograma"/>
+</menu>
+<menu id="137"><phrase id="menutext" value="vprograma fuentes"/>
+</menu>
+<menu id="138"><phrase id="menutext" value="vprograma proposito"/>
+</menu>
+<menu id="139"><phrase id="menutext" value="vproyecto"/>
+</menu>
+<menu id="140"><phrase id="menutext" value="vproyecto beneficiario"/>
+</menu>
+<menu id="141"><phrase id="menutext" value="vproyecto fuente"/>
+</menu>
+<table id="authassignment"><phrase id="tblcaption" value="authassignment"/>
+<field id="itemname"><phrase id="fldcaption" value="itemname"/>
+</field>
+<field id="_userid"><phrase id="fldcaption" value="userid"/>
+</field>
+<field id="bizrule"><phrase id="fldcaption" value="bizrule"/>
+</field>
+<field id="data"><phrase id="fldcaption" value="data"/>
+</field>
+</table>
+<table id="authitem"><phrase id="tblcaption" value="authitem"/>
+<field id="name"><phrase id="fldcaption" value="name"/>
+</field>
+<field id="type"><phrase id="fldcaption" value="type"/>
+</field>
+<field id="description"><phrase id="fldcaption" value="description"/>
+</field>
+<field id="bizrule"><phrase id="fldcaption" value="bizrule"/>
+</field>
+<field id="data"><phrase id="fldcaption" value="data"/>
+</field>
+</table>
+<table id="authitemchild"><phrase id="tblcaption" value="authitemchild"/>
+<field id="parent"><phrase id="fldcaption" value="parent"/>
+</field>
+<field id="child"><phrase id="fldcaption" value="child"/>
+</field>
+</table>
+<table id="cruge_authassignment"><phrase id="tblcaption" value="cruge authassignment"/>
+<field id="_userid"><phrase id="fldcaption" value="userid"/>
+</field>
+<field id="bizrule"><phrase id="fldcaption" value="bizrule"/>
+</field>
+<field id="data"><phrase id="fldcaption" value="data"/>
+</field>
+<field id="itemname"><phrase id="fldcaption" value="itemname"/>
+</field>
+</table>
+<table id="cruge_authitem"><phrase id="tblcaption" value="cruge authitem"/>
+<field id="name"><phrase id="fldcaption" value="name"/>
+</field>
+<field id="type"><phrase id="fldcaption" value="type"/>
+</field>
+<field id="description"><phrase id="fldcaption" value="description"/>
+</field>
+<field id="bizrule"><phrase id="fldcaption" value="bizrule"/>
+</field>
+<field id="data"><phrase id="fldcaption" value="data"/>
+</field>
+</table>
+<table id="cruge_authitemchild"><phrase id="tblcaption" value="cruge authitemchild"/>
+<field id="parent"><phrase id="fldcaption" value="parent"/>
+</field>
+<field id="child"><phrase id="fldcaption" value="child"/>
+</field>
+</table>
+<table id="cruge_field"><phrase id="tblcaption" value="cruge field"/>
+<field id="idfield"><phrase id="fldcaption" value="idfield"/>
+</field>
+<field id="fieldname"><phrase id="fldcaption" value="fieldname"/>
+</field>
+<field id="longname"><phrase id="fldcaption" value="longname"/>
+</field>
+<field id="position"><phrase id="fldcaption" value="position"/>
+</field>
+<field id="required"><phrase id="fldcaption" value="required"/>
+</field>
+<field id="fieldtype"><phrase id="fldcaption" value="fieldtype"/>
+</field>
+<field id="fieldsize"><phrase id="fldcaption" value="fieldsize"/>
+</field>
+<field id="maxlength"><phrase id="fldcaption" value="maxlength"/>
+</field>
+<field id="showinreports"><phrase id="fldcaption" value="showinreports"/>
+</field>
+<field id="useregexp"><phrase id="fldcaption" value="useregexp"/>
+</field>
+<field id="useregexpmsg"><phrase id="fldcaption" value="useregexpmsg"/>
+</field>
+<field id="predetvalue"><phrase id="fldcaption" value="predetvalue"/>
+</field>
+</table>
+<table id="cruge_fieldvalue"><phrase id="tblcaption" value="cruge fieldvalue"/>
+<field id="idfieldvalue"><phrase id="fldcaption" value="idfieldvalue"/>
+</field>
+<field id="iduser"><phrase id="fldcaption" value="iduser"/>
+</field>
+<field id="idfield"><phrase id="fldcaption" value="idfield"/>
+</field>
+<field id="value"><phrase id="fldcaption" value="value"/>
+</field>
+</table>
+<table id="cruge_session"><phrase id="tblcaption" value="cruge session"/>
+<field id="idsession"><phrase id="fldcaption" value="idsession"/>
+</field>
+<field id="iduser"><phrase id="fldcaption" value="iduser"/>
+</field>
+<field id="created"><phrase id="fldcaption" value="created"/>
+</field>
+<field id="expire"><phrase id="fldcaption" value="expire"/>
+</field>
+<field id="status"><phrase id="fldcaption" value="status"/>
+</field>
+<field id="ipaddress"><phrase id="fldcaption" value="ipaddress"/>
+</field>
+<field id="usagecount"><phrase id="fldcaption" value="usagecount"/>
+</field>
+<field id="lastusage"><phrase id="fldcaption" value="lastusage"/>
+</field>
+<field id="logoutdate"><phrase id="fldcaption" value="logoutdate"/>
+</field>
+<field id="ipaddressout"><phrase id="fldcaption" value="ipaddressout"/>
+</field>
+</table>
+<table id="cruge_system"><phrase id="tblcaption" value="cruge system"/>
+<field id="idsystem"><phrase id="fldcaption" value="idsystem"/>
+</field>
+<field id="name"><phrase id="fldcaption" value="name"/>
+</field>
+<field id="largename"><phrase id="fldcaption" value="largename"/>
+</field>
+<field id="sessionmaxdurationmins"><phrase id="fldcaption" value="sessionmaxdurationmins"/>
+</field>
+<field id="sessionmaxsameipconnections"><phrase id="fldcaption" value="sessionmaxsameipconnections"/>
+</field>
+<field id="sessionreusesessions"><phrase id="fldcaption" value="sessionreusesessions"/>
+</field>
+<field id="sessionmaxsessionsperday"><phrase id="fldcaption" value="sessionmaxsessionsperday"/>
+</field>
+<field id="sessionmaxsessionsperuser"><phrase id="fldcaption" value="sessionmaxsessionsperuser"/>
+</field>
+<field id="systemnonewsessions"><phrase id="fldcaption" value="systemnonewsessions"/>
+</field>
+<field id="systemdown"><phrase id="fldcaption" value="systemdown"/>
+</field>
+<field id="registerusingcaptcha"><phrase id="fldcaption" value="registerusingcaptcha"/>
+</field>
+<field id="registerusingterms"><phrase id="fldcaption" value="registerusingterms"/>
+</field>
+<field id="terms"><phrase id="fldcaption" value="terms"/>
+</field>
+<field id="registerusingactivation"><phrase id="fldcaption" value="registerusingactivation"/>
+</field>
+<field id="defaultroleforregistration"><phrase id="fldcaption" value="defaultroleforregistration"/>
+</field>
+<field id="registerusingtermslabel"><phrase id="fldcaption" value="registerusingtermslabel"/>
+</field>
+<field id="registrationonlogin"><phrase id="fldcaption" value="registrationonlogin"/>
+</field>
+</table>
+<table id="cruge_user"><phrase id="tblcaption" value="cruge user"/>
+<field id="iduser"><phrase id="fldcaption" value="iduser"/>
+</field>
+<field id="regdate"><phrase id="fldcaption" value="regdate"/>
+</field>
+<field id="actdate"><phrase id="fldcaption" value="actdate"/>
+</field>
+<field id="logondate"><phrase id="fldcaption" value="logondate"/>
+</field>
+<field id="username"><phrase id="fldcaption" value="username"/>
+</field>
+<field id="_email"><phrase id="fldcaption" value="email"/>
+</field>
+<field id="password"><phrase id="fldcaption" value="password"/>
+</field>
+<field id="authkey"><phrase id="fldcaption" value="authkey"/>
+</field>
+<field id="state"><phrase id="fldcaption" value="state"/>
+</field>
+<field id="totalsessioncounter"><phrase id="fldcaption" value="totalsessioncounter"/>
+</field>
+<field id="currentsessioncounter"><phrase id="fldcaption" value="currentsessioncounter"/>
+</field>
+</table>
+<table id="cs_act_avances"><phrase id="tblcaption" value="cs act avances"/>
+<field id="codigo"><phrase id="fldcaption" value="codigo"/>
+</field>
+<field id="cod_contrato"><phrase id="fldcaption" value="cod contrato"/>
+</field>
+<field id="cod_avances"><phrase id="fldcaption" value="cod avances"/>
+</field>
+<field id="cod_actividad"><phrase id="fldcaption" value="cod actividad"/>
+</field>
+<field id="cod_subactividad"><phrase id="fldcaption" value="cod subactividad"/>
+</field>
+<field id="unidad"><phrase id="fldcaption" value="unidad"/>
+</field>
+<field id="cantidad"><phrase id="fldcaption" value="cantidad"/>
+</field>
+<field id="precio_unitario"><phrase id="fldcaption" value="precio unitario"/>
+</field>
+<field id="fecha_registro"><phrase id="fldcaption" value="fecha registro"/>
+</field>
+<field id="user_registro"><phrase id="fldcaption" value="user registro"/>
+</field>
+</table>
+<table id="cs_actividades_avance"><phrase id="tblcaption" value="cs actividades avance"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="idavance"><phrase id="fldcaption" value="id Avance"/>
+</field>
+<field id="idestimacion"><phrase id="fldcaption" value="id Estimacion"/>
+</field>
+<field id="idejecucion"><phrase id="fldcaption" value="id Ejecucion"/>
+</field>
+<field id="avance"><phrase id="fldcaption" value="avance"/>
+</field>
+<field id="fecha"><phrase id="fldcaption" value="fecha"/>
+</field>
+<field id="usuario"><phrase id="fldcaption" value="usuario"/>
+</field>
+<field id="eliminada"><phrase id="fldcaption" value="eliminada"/>
+</field>
+</table>
+<table id="cs_actividades_ejecucion"><phrase id="tblcaption" value="cs actividades ejecucion"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="idestimacion"><phrase id="fldcaption" value="id Estimacion"/>
+</field>
+<field id="idactividad"><phrase id="fldcaption" value="id Actividad"/>
+</field>
+<field id="cantidad"><phrase id="fldcaption" value="cantidad"/>
+</field>
+<field id="preciounitario"><phrase id="fldcaption" value="precio Unitario"/>
+</field>
+<field id="fecha"><phrase id="fldcaption" value="fecha"/>
+</field>
+<field id="usuario"><phrase id="fldcaption" value="usuario"/>
+</field>
+</table>
+<table id="cs_address"><phrase id="tblcaption" value="cs address"/>
+<field id="latitude"><phrase id="fldcaption" value="latitude"/>
+</field>
+<field id="longitude"><phrase id="fldcaption" value="longitude"/>
+</field>
+<field id="mapzoomlevel"><phrase id="fldcaption" value="map Zoom Level"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="latitude2"><phrase id="fldcaption" value="latitude 2"/>
+</field>
+<field id="longitude2"><phrase id="fldcaption" value="longitude 2"/>
+</field>
+<field id="proyecto"><phrase id="fldcaption" value="proyecto"/>
+</field>
+</table>
+<table id="cs_adjudicacion"><phrase id="tblcaption" value="cs adjudicacion"/>
+<field id="idadjudicacion"><phrase id="fldcaption" value="id Adjudicacion"/>
+</field>
+<field id="idcalificacion"><phrase id="fldcaption" value="id Calificacion"/>
+</field>
+<field id="numproceso"><phrase id="fldcaption" value="numproceso"/>
+</field>
+<field id="nomprocesoproyecto"><phrase id="fldcaption" value="nomprocesoproyecto"/>
+</field>
+<field id="nconsulnac"><phrase id="fldcaption" value="nconsulnac"/>
+</field>
+<field id="nconsulinter"><phrase id="fldcaption" value="nconsulinter"/>
+</field>
+<field id="costoesti"><phrase id="fldcaption" value="costoesti"/>
+</field>
+<field id="estadoproceso"><phrase id="fldcaption" value="estadoproceso"/>
+</field>
+<field id="actaaper"><phrase id="fldcaption" value="actaaper"/>
+</field>
+<field id="informeacta"><phrase id="fldcaption" value="informeacta"/>
+</field>
+<field id="resoladju"><phrase id="fldcaption" value="resoladju"/>
+</field>
+<field id="estado"><phrase id="fldcaption" value="estado"/>
+</field>
+<field id="otro"><phrase id="fldcaption" value="otro"/>
+</field>
+<field id="numfirmasnac"><phrase id="fldcaption" value="numfirmasnac"/>
+</field>
+<field id="numfimasinter"><phrase id="fldcaption" value="numfimasinter"/>
+</field>
+<field id="numconsulcorta"><phrase id="fldcaption" value="numconsulcorta"/>
+</field>
+<field id="fecharecibido"><phrase id="fldcaption" value="fecharecibido"/>
+</field>
+<field id="fechacreacion"><phrase id="fldcaption" value="fechacreacion"/>
+</field>
+</table>
+<table id="cs_archivos_avances"><phrase id="tblcaption" value="cs archivos avances"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="avance"><phrase id="fldcaption" value="avance"/>
+</field>
+<field id="numero"><phrase id="fldcaption" value="numero"/>
+</field>
+<field id="archivo"><phrase id="fldcaption" value="archivo"/>
+</field>
+<field id="fecha"><phrase id="fldcaption" value="fecha"/>
+</field>
+</table>
+<table id="cs_avances"><phrase id="tblcaption" value="cs avances"/>
+<field id="codigo"><phrase id="fldcaption" value="codigo"/>
+</field>
+<field id="codigo_inicio_ejecucion"><phrase id="fldcaption" value="codigo inicio ejecucion"/>
+</field>
+<field id="porcent_programado"><phrase id="fldcaption" value="porcent programado"/>
+</field>
+<field id="porcent_real"><phrase id="fldcaption" value="porcent real"/>
+</field>
+<field id="finan_programado"><phrase id="fldcaption" value="finan programado"/>
+</field>
+<field id="finan_real"><phrase id="fldcaption" value="finan real"/>
+</field>
+<field id="fecha_registro"><phrase id="fldcaption" value="fecha registro"/>
+</field>
+<field id="estado"><phrase id="fldcaption" value="estado"/>
+</field>
+<field id="user_registro"><phrase id="fldcaption" value="user registro"/>
+</field>
+<field id="desc_problemas"><phrase id="fldcaption" value="desc problemas"/>
+</field>
+<field id="desc_temas"><phrase id="fldcaption" value="desc temas"/>
+</field>
+<field id="idejecucion"><phrase id="fldcaption" value="id Ejecucion"/>
+</field>
+<field id="fecha_avance"><phrase id="fldcaption" value="fecha avance"/>
+</field>
+<field id="idcontratacion"><phrase id="fldcaption" value="id Contratacion"/>
+</field>
+<field id="estado_sol"><phrase id="fldcaption" value="estado sol"/>
+</field>
+<field id="adj_garantias"><phrase id="fldcaption" value="adj garantias"/>
+</field>
+<field id="adj_avances"><phrase id="fldcaption" value="adj avances"/>
+</field>
+<field id="adj_supervicion"><phrase id="fldcaption" value="adj supervicion"/>
+</field>
+<field id="adj_evaluacion"><phrase id="fldcaption" value="adj evaluacion"/>
+</field>
+<field id="adj_tecnica"><phrase id="fldcaption" value="adj tecnica"/>
+</field>
+<field id="adj_financiero"><phrase id="fldcaption" value="adj financiero"/>
+</field>
+<field id="adj_recepcion"><phrase id="fldcaption" value="adj recepcion"/>
+</field>
+<field id="adj_disconformidad"><phrase id="fldcaption" value="adj disconformidad"/>
+</field>
+</table>
+<table id="cs_beneficiario"><phrase id="tblcaption" value="cs beneficiario"/>
+<field id="idbeneficiarios"><phrase id="fldcaption" value="idbeneficiarios"/>
+</field>
+<field id="depto"><phrase id="fldcaption" value="depto"/>
+</field>
+<field id="muni"><phrase id="fldcaption" value="muni"/>
+</field>
+</table>
+<table id="cs_calificacion"><phrase id="tblcaption" value="cs calificacion"/>
+<field id="idcalificacion"><phrase id="fldcaption" value="id Calificacion"/>
+</field>
+<field id="idproyecto"><phrase id="fldcaption" value="id Proyecto"/>
+</field>
+<field id="numproceso"><phrase id="fldcaption" value="numproceso"/>
+</field>
+<field id="nomprocesoproyecto"><phrase id="fldcaption" value="nomprocesoproyecto"/>
+</field>
+<field id="fechactualizacion"><phrase id="fldcaption" value="fechactualizacion"/>
+</field>
+<field id="idfuncionario"><phrase id="fldcaption" value="id Funcionario"/>
+</field>
+<field id="estatusproceso"><phrase id="fldcaption" value="estatusproceso"/>
+</field>
+<field id="proceseval"><phrase id="fldcaption" value="proceseval"/>
+</field>
+<field id="invitainter"><phrase id="fldcaption" value="invitainter"/>
+</field>
+<field id="basespreca"><phrase id="fldcaption" value="basespreca"/>
+</field>
+<field id="resolucion"><phrase id="fldcaption" value="resolucion"/>
+</field>
+<field id="nombreante"><phrase id="fldcaption" value="nombreante"/>
+</field>
+<field id="convocainvi"><phrase id="fldcaption" value="convocainvi"/>
+</field>
+<field id="tdr"><phrase id="fldcaption" value="tdr"/>
+</field>
+<field id="aclaraciones"><phrase id="fldcaption" value="aclaraciones"/>
+</field>
+<field id="actarecpcion"><phrase id="fldcaption" value="actarecpcion"/>
+</field>
+<field id="fechaingreso"><phrase id="fldcaption" value="fechaingreso"/>
+</field>
+<field id="tipocontrato"><phrase id="fldcaption" value="tipocontrato"/>
+</field>
+<field id="estado"><phrase id="fldcaption" value="estado"/>
+</field>
+<field id="otro1"><phrase id="fldcaption" value="otro 1"/>
+</field>
+<field id="otro2"><phrase id="fldcaption" value="otro 2"/>
+</field>
+<field id="identidadadquisicion"><phrase id="fldcaption" value="identidadadquisicion"/>
+</field>
+<field id="idmetodo"><phrase id="fldcaption" value="idmetodo"/>
+</field>
+<field id="fecharecibido"><phrase id="fldcaption" value="fecharecibido"/>
+</field>
+</table>
+<table id="cs_calificacion_empresa"><phrase id="tblcaption" value="cs calificacion empresa"/>
+<field id="idcalificacion"><phrase id="fldcaption" value="idcalificacion"/>
+</field>
+<field id="idempresa"><phrase id="fldcaption" value="idempresa"/>
+</field>
+</table>
+<table id="cs_calificacion_firma"><phrase id="tblcaption" value="cs calificacion firma"/>
+<field id="idfirma"><phrase id="fldcaption" value="idfirma"/>
+</field>
+<field id="idcalificacion"><phrase id="fldcaption" value="idcalificacion"/>
+</field>
+</table>
+<table id="cs_calificacion_oferente"><phrase id="tblcaption" value="cs calificacion oferente"/>
+<field id="idcalificacion"><phrase id="fldcaption" value="idcalificacion"/>
+</field>
+<field id="idoferente"><phrase id="fldcaption" value="idoferente"/>
+</field>
+</table>
+<table id="cs_catg_estados"><phrase id="tblcaption" value="cs catg estados"/>
+<field id="codigo"><phrase id="fldcaption" value="codigo"/>
+</field>
+<field id="estado"><phrase id="fldcaption" value="estado"/>
+</field>
+<field id="descripcion"><phrase id="fldcaption" value="descripcion"/>
+</field>
+<field id="fecha_registro"><phrase id="fldcaption" value="fecha registro"/>
+</field>
+<field id="user_registro"><phrase id="fldcaption" value="user registro"/>
+</field>
+</table>
+<table id="cs_catg_sub_actividades"><phrase id="tblcaption" value="cs catg sub actividades"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="idejecucion"><phrase id="fldcaption" value="id Ejecucion"/>
+</field>
+<field id="descripcion"><phrase id="fldcaption" value="descripcion"/>
+</field>
+<field id="precio"><phrase id="fldcaption" value="precio"/>
+</field>
+<field id="fecha_registro"><phrase id="fldcaption" value="fecha registro"/>
+</field>
+<field id="user_registro"><phrase id="fldcaption" value="user registro"/>
+</field>
+<field id="estado"><phrase id="fldcaption" value="estado"/>
+</field>
+<field id="eliminada"><phrase id="fldcaption" value="eliminada"/>
+</field>
+</table>
+<table id="cs_catg_tipo_actividades"><phrase id="tblcaption" value="cs catg tipo actividades"/>
+<field id="codigo"><phrase id="fldcaption" value="codigo"/>
+</field>
+<field id="descripcion"><phrase id="fldcaption" value="descripcion"/>
+</field>
+<field id="abreviatura"><phrase id="fldcaption" value="abreviatura"/>
+</field>
+<field id="estado"><phrase id="fldcaption" value="estado"/>
+</field>
+<field id="fecha_registro"><phrase id="fldcaption" value="fecha registro"/>
+</field>
+<field id="user_registro"><phrase id="fldcaption" value="user registro"/>
+</field>
+</table>
+<table id="cs_catg_tipo_garantias"><phrase id="tblcaption" value="cs catg tipo garantias"/>
+<field id="codigo"><phrase id="fldcaption" value="codigo"/>
+</field>
+<field id="descripcion"><phrase id="fldcaption" value="descripcion"/>
+</field>
+<field id="abreviatura"><phrase id="fldcaption" value="abreviatura"/>
+</field>
+<field id="estado"><phrase id="fldcaption" value="estado"/>
+</field>
+<field id="fecha_registro"><phrase id="fldcaption" value="fecha registro"/>
+</field>
+<field id="user_registro"><phrase id="fldcaption" value="user registro"/>
+</field>
+</table>
+<table id="cs_catg_unidades"><phrase id="tblcaption" value="cs catg unidades"/>
+<field id="codigo"><phrase id="fldcaption" value="codigo"/>
+</field>
+<field id="descripcion"><phrase id="fldcaption" value="descripcion"/>
+</field>
+<field id="abreviatura"><phrase id="fldcaption" value="abreviatura"/>
+</field>
+<field id="fecha_registro"><phrase id="fldcaption" value="fecha registro"/>
+</field>
+<field id="user_registro"><phrase id="fldcaption" value="user registro"/>
+</field>
+</table>
+<table id="cs_clase"><phrase id="tblcaption" value="cs clase"/>
+<field id="idclase"><phrase id="fldcaption" value="idclase"/>
+</field>
+<field id="clase"><phrase id="fldcaption" value="clase"/>
+</field>
+</table>
+<table id="cs_consultorfirma"><phrase id="tblcaption" value="cs consultorfirma"/>
+<field id="idconsultorfirma"><phrase id="fldcaption" value="idconsultorfirma"/>
+</field>
+<field id="firma"><phrase id="fldcaption" value="firma"/>
+</field>
+</table>
+<table id="cs_contactos"><phrase id="tblcaption" value="cs contactos"/>
+<field id="codigo"><phrase id="fldcaption" value="codigo"/>
+</field>
+<field id="nombres"><phrase id="fldcaption" value="Nombres"/>
+</field>
+<field id="direccion"><phrase id="fldcaption" value="direccion"/>
+</field>
+<field id="telefono"><phrase id="fldcaption" value="telefono"/>
+</field>
+<field id="movil"><phrase id="fldcaption" value="movil"/>
+</field>
+<field id="_email"><phrase id="fldcaption" value="email"/>
+</field>
+<field id="fecha_registro"><phrase id="fldcaption" value="fecha registro"/>
+</field>
+<field id="user_registro"><phrase id="fldcaption" value="user registro"/>
+</field>
+</table>
+<table id="cs_contratacion"><phrase id="tblcaption" value="cs contratacion"/>
+<field id="idcontratacion"><phrase id="fldcaption" value="id Contratacion"/>
+</field>
+<field id="idadjudicacion"><phrase id="fldcaption" value="id Adjudicacion"/>
+</field>
+<field id="identidad"><phrase id="fldcaption" value="id Entidad"/>
+</field>
+<field id="idoferente"><phrase id="fldcaption" value="idoferente"/>
+</field>
+<field id="precio"><phrase id="fldcaption" value="precio"/>
+</field>
+<field id="precio2"><phrase id="fldcaption" value="precio 2"/>
+</field>
+<field id="alcances"><phrase id="fldcaption" value="alcances"/>
+</field>
+<field id="fechainicio"><phrase id="fldcaption" value="fechainicio"/>
+</field>
+<field id="fechafinal"><phrase id="fldcaption" value="fechafinal"/>
+</field>
+<field id="duracioncontrato"><phrase id="fldcaption" value="duracioncontrato"/>
+</field>
+<field id="documentocontra"><phrase id="fldcaption" value="documentocontra"/>
+</field>
+<field id="regante"><phrase id="fldcaption" value="regante"/>
+</field>
+<field id="espeplanos"><phrase id="fldcaption" value="espeplanos"/>
+</field>
+<field id="estado"><phrase id="fldcaption" value="estado"/>
+</field>
+<field id="otro"><phrase id="fldcaption" value="otro"/>
+</field>
+<field id="ncontrato"><phrase id="fldcaption" value="ncontrato"/>
+</field>
+<field id="titulocontrato"><phrase id="fldcaption" value="titulocontrato"/>
+</field>
+<field id="fecharecibido"><phrase id="fldcaption" value="fecharecibido"/>
+</field>
+<field id="fechacreacion"><phrase id="fldcaption" value="fechacreacion"/>
+</field>
+</table>
+<table id="cs_contrato_historico"><phrase id="tblcaption" value="cs contrato historico"/>
+<field id="idcontrato"><phrase id="fldcaption" value="idcontrato"/>
+</field>
+<field id="idhistorico"><phrase id="fldcaption" value="idhistorico"/>
+</field>
+</table>
+<table id="cs_contratos"><phrase id="tblcaption" value="cs contratos"/>
+<field id="idcontratos"><phrase id="fldcaption" value="id Contratos"/>
+</field>
+<field id="idcontratacion"><phrase id="fldcaption" value="id Contratacion"/>
+</field>
+<field id="estatuscontrato"><phrase id="fldcaption" value="estatuscontrato"/>
+</field>
+<field id="nmodifica"><phrase id="fldcaption" value="nmodifica"/>
+</field>
+<field id="fecha"><phrase id="fldcaption" value="fecha"/>
+</field>
+<field id="tipomodifica"><phrase id="fldcaption" value="tipomodifica"/>
+</field>
+<field id="justimodcontrato"><phrase id="fldcaption" value="justimodcontrato"/>
+</field>
+<field id="precioactual"><phrase id="fldcaption" value="precioactual"/>
+</field>
+<field id="fechatercontra"><phrase id="fldcaption" value="fechatercontra"/>
+</field>
+<field id="alcanceactucontrato"><phrase id="fldcaption" value="alcanceactucontrato"/>
+</field>
+<field id="detallesreadju"><phrase id="fldcaption" value="detallesreadju"/>
+</field>
+<field id="prograini"><phrase id="fldcaption" value="prograini"/>
+</field>
+<field id="adendas"><phrase id="fldcaption" value="adendas"/>
+</field>
+<field id="prograactu"><phrase id="fldcaption" value="prograactu"/>
+</field>
+<field id="estado"><phrase id="fldcaption" value="estado"/>
+</field>
+<field id="otro"><phrase id="fldcaption" value="otro"/>
+</field>
+<field id="fecharecibido"><phrase id="fldcaption" value="fecharecibido"/>
+</field>
+<field id="fechacreacion"><phrase id="fldcaption" value="fechacreacion"/>
+</field>
+</table>
+<table id="cs_departamento"><phrase id="tblcaption" value="cs departamento"/>
+<field id="codigodepto"><phrase id="fldcaption" value="codigo Depto"/>
+</field>
+<field id="departamento"><phrase id="fldcaption" value="departamento"/>
+</field>
+<field id="iddepto"><phrase id="fldcaption" value="iddepto"/>
+</field>
+</table>
+<table id="cs_desembolsos_montos"><phrase id="tblcaption" value="cs desembolsos montos"/>
+<field id="codigo"><phrase id="fldcaption" value="codigo"/>
+</field>
+<field id="cod_contrato"><phrase id="fldcaption" value="cod contrato"/>
+</field>
+<field id="desembolso"><phrase id="fldcaption" value="desembolso"/>
+</field>
+<field id="monto"><phrase id="fldcaption" value="monto"/>
+</field>
+<field id="descripcion"><phrase id="fldcaption" value="descripcion"/>
+</field>
+<field id="fecha_desembolso"><phrase id="fldcaption" value="fecha desembolso"/>
+</field>
+<field id="fecha_registro"><phrase id="fldcaption" value="fecha registro"/>
+</field>
+<field id="user_registro"><phrase id="fldcaption" value="user registro"/>
+</field>
+</table>
+<table id="cs_doc_adjuntados"><phrase id="tblcaption" value="cs doc adjuntados"/>
+<field id="codigo"><phrase id="fldcaption" value="codigo"/>
+</field>
+<field id="cod_contrato"><phrase id="fldcaption" value="cod contrato"/>
+</field>
+<field id="cod_avance"><phrase id="fldcaption" value="cod avance"/>
+</field>
+<field id="nombre_doc1"><phrase id="fldcaption" value="nombre doc 1"/>
+</field>
+<field id="nombre_doc2"><phrase id="fldcaption" value="nombre doc 2"/>
+</field>
+<field id="nombre_doc3"><phrase id="fldcaption" value="nombre doc 3"/>
+</field>
+<field id="nombre_doc4"><phrase id="fldcaption" value="nombre doc 4"/>
+</field>
+<field id="nombre_doc5"><phrase id="fldcaption" value="nombre doc 5"/>
+</field>
+<field id="nombre_doc6"><phrase id="fldcaption" value="nombre doc 6"/>
+</field>
+<field id="nombre_doc7"><phrase id="fldcaption" value="nombre doc 7"/>
+</field>
+<field id="nombre_doc8"><phrase id="fldcaption" value="nombre doc 8"/>
+</field>
+<field id="nombre_fisico1"><phrase id="fldcaption" value="nombre fisico 1"/>
+</field>
+<field id="nombre_fisico2"><phrase id="fldcaption" value="nombre fisico 2"/>
+</field>
+<field id="nombre_fisico3"><phrase id="fldcaption" value="nombre fisico 3"/>
+</field>
+<field id="nombre_fisico4"><phrase id="fldcaption" value="nombre fisico 4"/>
+</field>
+<field id="nombre_fisico5"><phrase id="fldcaption" value="nombre fisico 5"/>
+</field>
+<field id="nombre_fisico6"><phrase id="fldcaption" value="nombre fisico 6"/>
+</field>
+<field id="nombre_fisico7"><phrase id="fldcaption" value="nombre fisico 7"/>
+</field>
+<field id="nombre_fisico8"><phrase id="fldcaption" value="nombre fisico 8"/>
+</field>
+<field id="ubicacion_doc"><phrase id="fldcaption" value="ubicacion doc"/>
+</field>
+<field id="fecha_registro"><phrase id="fldcaption" value="fecha registro"/>
+</field>
+<field id="user_registro"><phrase id="fldcaption" value="user registro"/>
+</field>
+</table>
+<table id="cs_ejecucion_status"><phrase id="tblcaption" value="cs ejecucion status"/>
+<field id="codigo"><phrase id="fldcaption" value="codigo"/>
+</field>
+<field id="descripcion"><phrase id="fldcaption" value="descripcion"/>
+</field>
+<field id="fecha_registro"><phrase id="fldcaption" value="fecha registro"/>
+</field>
+<field id="user_registro"><phrase id="fldcaption" value="user registro"/>
+</field>
+</table>
+<table id="cs_empleado"><phrase id="tblcaption" value="cs empleado"/>
+<field id="idempleado"><phrase id="fldcaption" value="idempleado"/>
+</field>
+<field id="nombre"><phrase id="fldcaption" value="nombre"/>
+</field>
+<field id="foto"><phrase id="fldcaption" value="foto"/>
+</field>
+<field id="correo"><phrase id="fldcaption" value="correo"/>
+</field>
+<field id="archivo"><phrase id="fldcaption" value="archivo"/>
+</field>
+</table>
+<table id="cs_empresa"><phrase id="tblcaption" value="cs empresa"/>
+<field id="idempresa"><phrase id="fldcaption" value="idempresa"/>
+</field>
+<field id="nombre_empresa"><phrase id="fldcaption" value="nombre empresa"/>
+</field>
+</table>
+<table id="cs_entes"><phrase id="tblcaption" value="cs entes"/>
+<field id="descripcion"><phrase id="fldcaption" value="descripcion"/>
+</field>
+<field id="idente"><phrase id="fldcaption" value="idente"/>
+</field>
+</table>
+<table id="cs_estado"><phrase id="tblcaption" value="cs estado"/>
+<field id="estado"><phrase id="fldcaption" value="estado"/>
+</field>
+</table>
+<table id="cs_estadoproceso"><phrase id="tblcaption" value="cs estadoproceso"/>
+<field id="estadoproceso"><phrase id="fldcaption" value="estadoproceso"/>
+</field>
+</table>
+<table id="cs_estadored"><phrase id="tblcaption" value="cs estadored"/>
+<field id="idestadored"><phrase id="fldcaption" value="Idestadored"/>
+</field>
+<field id="descripcion_estado_red"><phrase id="fldcaption" value="descripcion estado red"/>
+</field>
+</table>
+<table id="cs_estadosgestcontra"><phrase id="tblcaption" value="cs estadosgestcontra"/>
+<field id="codigo"><phrase id="fldcaption" value="codigo"/>
+</field>
+<field id="estado"><phrase id="fldcaption" value="estado"/>
+</field>
+<field id="descripcion"><phrase id="fldcaption" value="descripcion"/>
+</field>
+<field id="fecha_registro"><phrase id="fldcaption" value="fecha registro"/>
+</field>
+<field id="user_registro"><phrase id="fldcaption" value="user registro"/>
+</field>
+</table>
+<table id="cs_firma"><phrase id="tblcaption" value="cs firma"/>
+<field id="idfirma"><phrase id="fldcaption" value="idfirma"/>
+</field>
+<field id="nombre_firma"><phrase id="fldcaption" value="nombre firma"/>
+</field>
+</table>
+<table id="cs_fuentesfinan"><phrase id="tblcaption" value="cs fuentesfinan"/>
+<field id="fuente"><phrase id="fldcaption" value="fuente"/>
+</field>
+<field id="idfuente"><phrase id="fldcaption" value="idfuente"/>
+</field>
+<field id="abreviatura"><phrase id="fldcaption" value="abreviatura"/>
+</field>
+</table>
+<table id="cs_funcionarios"><phrase id="tblcaption" value="cs funcionarios"/>
+<field id="idfuncionario"><phrase id="fldcaption" value="idfuncionario"/>
+</field>
+<field id="idente"><phrase id="fldcaption" value="id Ente"/>
+</field>
+<field id="nombre"><phrase id="fldcaption" value="nombre"/>
+</field>
+<field id="puesto"><phrase id="fldcaption" value="puesto"/>
+</field>
+<field id="telefono"><phrase id="fldcaption" value="telefono"/>
+</field>
+<field id="correo"><phrase id="fldcaption" value="correo"/>
+</field>
+</table>
+<table id="cs_gestioncontratos"><phrase id="tblcaption" value="cs gestioncontratos"/>
+<field id="codigo"><phrase id="fldcaption" value="codigo"/>
+</field>
+<field id="cod_contrato"><phrase id="fldcaption" value="cod contrato"/>
+</field>
+<field id="cod_contacto_01"><phrase id="fldcaption" value="cod contacto 01"/>
+</field>
+<field id="cod_contacto_02"><phrase id="fldcaption" value="cod contacto 02"/>
+</field>
+<field id="cod_contacto_03"><phrase id="fldcaption" value="cod contacto 03"/>
+</field>
+<field id="tipo_garant_01"><phrase id="fldcaption" value="tipo garant 01"/>
+</field>
+<field id="tipo_garant_02"><phrase id="fldcaption" value="tipo garant 02"/>
+</field>
+<field id="tipo_garant_03"><phrase id="fldcaption" value="tipo garant 03"/>
+</field>
+<field id="monto_garant_01"><phrase id="fldcaption" value="monto garant 01"/>
+</field>
+<field id="monto_garant_02"><phrase id="fldcaption" value="monto garant 02"/>
+</field>
+<field id="monto_garant_03"><phrase id="fldcaption" value="monto garant 03"/>
+</field>
+<field id="estado_garant_01"><phrase id="fldcaption" value="estado garant 01"/>
+</field>
+<field id="estado_garant_02"><phrase id="fldcaption" value="estado garant 02"/>
+</field>
+<field id="estado_garant_03"><phrase id="fldcaption" value="estado garant 03"/>
+</field>
+<field id="fecha_venc_01"><phrase id="fldcaption" value="fecha venc 01"/>
+</field>
+<field id="fecha_venc_02"><phrase id="fldcaption" value="fecha venc 02"/>
+</field>
+<field id="fecha_venc_03"><phrase id="fldcaption" value="fecha venc 03"/>
+</field>
+<field id="geo_latitud"><phrase id="fldcaption" value="geo latitud"/>
+</field>
+<field id="geo_longitud"><phrase id="fldcaption" value="geo longitud"/>
+</field>
+<field id="fecha_inicio"><phrase id="fldcaption" value="fecha inicio"/>
+</field>
+<field id="desc_problemas"><phrase id="fldcaption" value="desc problemas"/>
+</field>
+<field id="desc_temas"><phrase id="fldcaption" value="desc temas"/>
+</field>
+<field id="fecha_registro"><phrase id="fldcaption" value="fecha registro"/>
+</field>
+<field id="user_registro"><phrase id="fldcaption" value="user registro"/>
+</field>
+</table>
+<table id="cs_historico"><phrase id="tblcaption" value="cs historico"/>
+<field id="idhistorico"><phrase id="fldcaption" value="idhistorico"/>
+</field>
+<field id="fecha"><phrase id="fldcaption" value="fecha"/>
+</field>
+</table>
+<table id="cs_historico_contratos"><phrase id="tblcaption" value="cs historico contratos"/>
+<field id="idcontrato"><phrase id="fldcaption" value="idcontrato"/>
+</field>
+<field id="idhistorico"><phrase id="fldcaption" value="idhistorico"/>
+</field>
+</table>
+<table id="cs_imagenes_avances"><phrase id="tblcaption" value="cs imagenes avances"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="avance"><phrase id="fldcaption" value="avance"/>
+</field>
+<field id="imagen"><phrase id="fldcaption" value="imagen"/>
+</field>
+<field id="fecha"><phrase id="fldcaption" value="fecha"/>
+</field>
+</table>
+<table id="cs_img_adjuntadas"><phrase id="tblcaption" value="cs img adjuntadas"/>
+<field id="codigo"><phrase id="fldcaption" value="codigo"/>
+</field>
+<field id="cod_avance"><phrase id="fldcaption" value="cod avance"/>
+</field>
+<field id="cod_contrato"><phrase id="fldcaption" value="cod contrato"/>
+</field>
+<field id="nombre_img"><phrase id="fldcaption" value="nombre img"/>
+</field>
+<field id="nombre_fisico"><phrase id="fldcaption" value="nombre fisico"/>
+</field>
+<field id="ubicacion_img"><phrase id="fldcaption" value="ubicacion img"/>
+</field>
+<field id="fecha_registro"><phrase id="fldcaption" value="fecha registro"/>
+</field>
+<field id="user_registro"><phrase id="fldcaption" value="user registro"/>
+</field>
+</table>
+<table id="cs_inicio_ejecucion"><phrase id="tblcaption" value="cs inicio ejecucion"/>
+<field id="codigo"><phrase id="fldcaption" value="codigo"/>
+</field>
+<field id="idcontratacion"><phrase id="fldcaption" value="id Contratacion"/>
+</field>
+<field id="imagen"><phrase id="fldcaption" value="imagen"/>
+</field>
+<field id="cod_contacto_01"><phrase id="fldcaption" value="cod contacto 01"/>
+</field>
+<field id="cod_contacto_02"><phrase id="fldcaption" value="cod contacto 02"/>
+</field>
+<field id="cod_contacto_03"><phrase id="fldcaption" value="cod contacto 03"/>
+</field>
+<field id="tipo_garant_01"><phrase id="fldcaption" value="tipo garant 01"/>
+</field>
+<field id="tipo_garant_02"><phrase id="fldcaption" value="tipo garant 02"/>
+</field>
+<field id="tipo_garant_03"><phrase id="fldcaption" value="tipo garant 03"/>
+</field>
+<field id="monto_garant_01"><phrase id="fldcaption" value="monto garant 01"/>
+</field>
+<field id="monto_garant_02"><phrase id="fldcaption" value="monto garant 02"/>
+</field>
+<field id="monto_garant_03"><phrase id="fldcaption" value="monto garant 03"/>
+</field>
+<field id="estado_garant_01"><phrase id="fldcaption" value="estado garant 01"/>
+</field>
+<field id="estado_garant_02"><phrase id="fldcaption" value="estado garant 02"/>
+</field>
+<field id="estado_garant_03"><phrase id="fldcaption" value="estado garant 03"/>
+</field>
+<field id="fecha_venc_01"><phrase id="fldcaption" value="fecha venc 01"/>
+</field>
+<field id="fecha_venc_02"><phrase id="fldcaption" value="fecha venc 02"/>
+</field>
+<field id="fecha_venc_03"><phrase id="fldcaption" value="fecha venc 03"/>
+</field>
+<field id="geo_latitud"><phrase id="fldcaption" value="geo latitud"/>
+</field>
+<field id="geo_longitud"><phrase id="fldcaption" value="geo longitud"/>
+</field>
+<field id="geo_lati_final"><phrase id="fldcaption" value="geo lati final"/>
+</field>
+<field id="geo_long_final"><phrase id="fldcaption" value="geo long final"/>
+</field>
+<field id="fecha_inicio"><phrase id="fldcaption" value="fecha inicio"/>
+</field>
+<field id="estado_sol"><phrase id="fldcaption" value="estado sol"/>
+</field>
+<field id="fecha_registro"><phrase id="fldcaption" value="fecha registro"/>
+</field>
+<field id="user_registro"><phrase id="fldcaption" value="user registro"/>
+</field>
+</table>
+<table id="cs_monedas"><phrase id="tblcaption" value="cs monedas"/>
+<field id="idmoneda"><phrase id="fldcaption" value="id Moneda"/>
+</field>
+<field id="moneda"><phrase id="fldcaption" value="moneda"/>
+</field>
+</table>
+<table id="cs_municipio"><phrase id="tblcaption" value="cs municipio"/>
+<field id="idmunicipio"><phrase id="fldcaption" value="idmunicipio"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="depto"><phrase id="fldcaption" value="depto"/>
+</field>
+<field id="municipio"><phrase id="fldcaption" value="municipio"/>
+</field>
+</table>
+<table id="cs_oferente"><phrase id="tblcaption" value="cs oferente"/>
+<field id="idoferentes"><phrase id="fldcaption" value="idoferentes"/>
+</field>
+<field id="nombre_oferente"><phrase id="fldcaption" value="nombre oferente"/>
+</field>
+</table>
+<table id="cs_profiles"><phrase id="tblcaption" value="cs profiles"/>
+<field id="user_id"><phrase id="fldcaption" value="user id"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="lastname"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="firstname"/>
+</field>
+</table>
+<table id="cs_profiles_fields"><phrase id="tblcaption" value="cs profiles fields"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="varname"><phrase id="fldcaption" value="varname"/>
+</field>
+<field id="title"><phrase id="fldcaption" value="title"/>
+</field>
+<field id="field_type"><phrase id="fldcaption" value="field type"/>
+</field>
+<field id="field_size"><phrase id="fldcaption" value="field size"/>
+</field>
+<field id="field_size_min"><phrase id="fldcaption" value="field size min"/>
+</field>
+<field id="required"><phrase id="fldcaption" value="required"/>
+</field>
+<field id="match"><phrase id="fldcaption" value="match"/>
+</field>
+<field id="range"><phrase id="fldcaption" value="range"/>
+</field>
+<field id="error_message"><phrase id="fldcaption" value="error message"/>
+</field>
+<field id="other_validator"><phrase id="fldcaption" value="other validator"/>
+</field>
+<field id="_default"><phrase id="fldcaption" value="default"/>
+</field>
+<field id="widget"><phrase id="fldcaption" value="widget"/>
+</field>
+<field id="widgetparams"><phrase id="fldcaption" value="widgetparams"/>
+</field>
+<field id="position"><phrase id="fldcaption" value="position"/>
+</field>
+<field id="visible"><phrase id="fldcaption" value="visible"/>
+</field>
+</table>
+<table id="cs_programa"><phrase id="tblcaption" value="cs programa"/>
+<field id="idprograma"><phrase id="fldcaption" value="id Programa"/>
+</field>
+<field id="programa"><phrase id="fldcaption" value="programa"/>
+</field>
+<field id="bip"><phrase id="fldcaption" value="BIP"/>
+</field>
+<field id="nombreprograma"><phrase id="fldcaption" value="nombreprograma"/>
+</field>
+<field id="ubicacion"><phrase id="fldcaption" value="ubicacion"/>
+</field>
+<field id="entes"><phrase id="fldcaption" value="entes"/>
+</field>
+<field id="idfuncionario"><phrase id="fldcaption" value="id Funcionario"/>
+</field>
+<field id="idrol"><phrase id="fldcaption" value="id Rol"/>
+</field>
+<field id="idsector"><phrase id="fldcaption" value="id Sector"/>
+</field>
+<field id="idsubsector"><phrase id="fldcaption" value="id Sub Sector"/>
+</field>
+<field id="descripcion"><phrase id="fldcaption" value="descripcion"/>
+</field>
+<field id="costoesti"><phrase id="fldcaption" value="costoesti"/>
+</field>
+<field id="fechaapro"><phrase id="fldcaption" value="fechaapro"/>
+</field>
+<field id="cartaconvenio"><phrase id="fldcaption" value="cartaconvenio"/>
+</field>
+<field id="otro1"><phrase id="fldcaption" value="otro 1"/>
+</field>
+<field id="planope"><phrase id="fldcaption" value="planope"/>
+</field>
+<field id="presupuesto"><phrase id="fldcaption" value="presupuesto"/>
+</field>
+<field id="perfildelprogra"><phrase id="fldcaption" value="perfildelprogra"/>
+</field>
+<field id="otro2"><phrase id="fldcaption" value="otro 2"/>
+</field>
+<field id="fechacreacion"><phrase id="fldcaption" value="fechacreacion"/>
+</field>
+<field id="estado"><phrase id="fldcaption" value="estado"/>
+</field>
+<field id="idproposito"><phrase id="fldcaption" value="id Proposito"/>
+</field>
+<field id="fecharecibido"><phrase id="fldcaption" value="fecharecibido"/>
+</field>
+<field id="moneda"><phrase id="fldcaption" value="moneda"/>
+</field>
+</table>
+<table id="cs_programa_fuente"><phrase id="tblcaption" value="cs programa fuente"/>
+<field id="idprograma"><phrase id="fldcaption" value="id Programa"/>
+</field>
+<field id="idfuente"><phrase id="fldcaption" value="id Fuente"/>
+</field>
+<field id="monto"><phrase id="fldcaption" value="monto"/>
+</field>
+<field id="idmoneda"><phrase id="fldcaption" value="id Moneda"/>
+</field>
+<field id="tasa_cambio"><phrase id="fldcaption" value="tasa cambio"/>
+</field>
+</table>
+<table id="cs_programa_proposito"><phrase id="tblcaption" value="cs programa proposito"/>
+<field id="idprograma"><phrase id="fldcaption" value="idprograma"/>
+</field>
+<field id="idproposito"><phrase id="fldcaption" value="idproposito"/>
+</field>
+</table>
+<table id="cs_programa_ubicacion"><phrase id="tblcaption" value="cs programa ubicacion"/>
+<field id="idprograma"><phrase id="fldcaption" value="idprograma"/>
+</field>
+<field id="idubicacion"><phrase id="fldcaption" value="idubicacion"/>
+</field>
+</table>
+<table id="cs_proposito"><phrase id="tblcaption" value="cs proposito"/>
+<field id="idproposito"><phrase id="fldcaption" value="idproposito"/>
+</field>
+<field id="proposito"><phrase id="fldcaption" value="proposito"/>
+</field>
+</table>
+<table id="cs_proyecto"><phrase id="tblcaption" value="cs proyecto"/>
+<field id="idproyecto"><phrase id="fldcaption" value="id Proyecto"/>
+</field>
+<field id="idprograma"><phrase id="fldcaption" value="id Programa"/>
+</field>
+<field id="codigo"><phrase id="fldcaption" value="codigo"/>
+</field>
+<field id="nombre_proyecto"><phrase id="fldcaption" value="nombre proyecto"/>
+</field>
+<field id="idubicacion"><phrase id="fldcaption" value="id Ubicacion"/>
+</field>
+<field id="idregion"><phrase id="fldcaption" value="id Region"/>
+</field>
+<field id="iddepto"><phrase id="fldcaption" value="id Depto"/>
+</field>
+<field id="idtramo"><phrase id="fldcaption" value="id Tramo"/>
+</field>
+<field id="idruta"><phrase id="fldcaption" value="id Ruta"/>
+</field>
+<field id="idtipored"><phrase id="fldcaption" value="id Tipo Red"/>
+</field>
+<field id="idproposito"><phrase id="fldcaption" value="id Proposito"/>
+</field>
+<field id="descrip"><phrase id="fldcaption" value="descrip"/>
+</field>
+<field id="presupuesto"><phrase id="fldcaption" value="presupuesto"/>
+</field>
+<field id="especiplano"><phrase id="fldcaption" value="especiplano"/>
+</field>
+<field id="presuprogra"><phrase id="fldcaption" value="presuprogra"/>
+</field>
+<field id="estudiofact"><phrase id="fldcaption" value="estudiofact"/>
+</field>
+<field id="estudioimpact"><phrase id="fldcaption" value="estudioimpact"/>
+</field>
+<field id="licambi"><phrase id="fldcaption" value="licambi"/>
+</field>
+<field id="estuimpactierra"><phrase id="fldcaption" value="estuimpactierra"/>
+</field>
+<field id="planreasea"><phrase id="fldcaption" value="planreasea"/>
+</field>
+<field id="plananual"><phrase id="fldcaption" value="plananual"/>
+</field>
+<field id="acuerdofinan"><phrase id="fldcaption" value="acuerdofinan"/>
+</field>
+<field id="otro"><phrase id="fldcaption" value="otro"/>
+</field>
+<field id="fechacreacion"><phrase id="fldcaption" value="fechacreacion"/>
+</field>
+<field id="estado"><phrase id="fldcaption" value="estado"/>
+</field>
+<field id="idfuncionario"><phrase id="fldcaption" value="id Funcionario"/>
+</field>
+<field id="fechaaprob"><phrase id="fldcaption" value="fechaaprob"/>
+</field>
+<field id="idfuente"><phrase id="fldcaption" value="idfuente"/>
+</field>
+<field id="codsefin"><phrase id="fldcaption" value="codsefin"/>
+</field>
+<field id="notaprioridad"><phrase id="fldcaption" value="notaprioridad"/>
+</field>
+<field id="constanciabanco"><phrase id="fldcaption" value="constanciabanco"/>
+</field>
+<field id="fecharecibido"><phrase id="fldcaption" value="fecharecibido"/>
+</field>
+<field id="clase"><phrase id="fldcaption" value="clase"/>
+</field>
+<field id="entes"><phrase id="fldcaption" value="entes"/>
+</field>
+<field id="idrol"><phrase id="fldcaption" value="id Rol"/>
+</field>
+</table>
+<table id="cs_proyecto_beneficiario"><phrase id="tblcaption" value="cs proyecto beneficiario"/>
+<field id="idproyecto"><phrase id="fldcaption" value="idproyecto"/>
+</field>
+<field id="idbeneficiario"><phrase id="fldcaption" value="idbeneficiario"/>
+</field>
+<field id="km"><phrase id="fldcaption" value="km"/>
+</field>
+</table>
+<table id="cs_proyecto_fuente"><phrase id="tblcaption" value="cs proyecto fuente"/>
+<field id="idproyecto"><phrase id="fldcaption" value="id Proyecto"/>
+</field>
+<field id="idfuente"><phrase id="fldcaption" value="id Fuente"/>
+</field>
+<field id="monto"><phrase id="fldcaption" value="monto"/>
+</field>
+<field id="idmoneda"><phrase id="fldcaption" value="id Moneda"/>
+</field>
+<field id="tasa_cambio"><phrase id="fldcaption" value="tasa cambio"/>
+</field>
+</table>
+<table id="cs_region"><phrase id="tblcaption" value="cs region"/>
+<field id="region"><phrase id="fldcaption" value="region"/>
+</field>
+<field id="idregion"><phrase id="fldcaption" value="idregion"/>
+</field>
+</table>
+<table id="cs_rol"><phrase id="tblcaption" value="cs rol"/>
+<field id="idrol"><phrase id="fldcaption" value="idrol"/>
+</field>
+<field id="rol"><phrase id="fldcaption" value="rol"/>
+</field>
+</table>
+<table id="cs_ruta"><phrase id="tblcaption" value="cs ruta"/>
+<field id="idruta"><phrase id="fldcaption" value="idruta"/>
+</field>
+<field id="tramo"><phrase id="fldcaption" value="tramo"/>
+</field>
+</table>
+<table id="cs_sector"><phrase id="tblcaption" value="cs sector"/>
+<field id="sector"><phrase id="fldcaption" value="sector"/>
+</field>
+<field id="idsector"><phrase id="fldcaption" value="idsector"/>
+</field>
+</table>
+<table id="cs_subsector"><phrase id="tblcaption" value="cs subsector"/>
+<field id="idsubsector"><phrase id="fldcaption" value="id Sub Sector"/>
+</field>
+<field id="idsector"><phrase id="fldcaption" value="id Sector"/>
+</field>
+<field id="subsector"><phrase id="fldcaption" value="subsector"/>
+</field>
+</table>
+<table id="cs_tipo_mod_contrato"><phrase id="tblcaption" value="cs tipo mod contrato"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="tipo_modificacion"><phrase id="fldcaption" value="tipo modificacion"/>
+</field>
+</table>
+<table id="cs_tipocontrato"><phrase id="tblcaption" value="cs tipocontrato"/>
+<field id="contrato"><phrase id="fldcaption" value="contrato"/>
+</field>
+</table>
+<table id="cs_tipored"><phrase id="tblcaption" value="cs tipored"/>
+<field id="idtipored"><phrase id="fldcaption" value="Idtipored"/>
+</field>
+<field id="descripcion_tipo"><phrase id="fldcaption" value="descripcion tipo"/>
+</field>
+</table>
+<table id="cs_tiposadquisicion"><phrase id="tblcaption" value="cs tiposadquisicion"/>
+<field id="idtipo"><phrase id="fldcaption" value="idtipo"/>
+</field>
+<field id="adquisicion"><phrase id="fldcaption" value="adquisicion"/>
+</field>
+<field id="siglas"><phrase id="fldcaption" value="siglas"/>
+</field>
+</table>
+<table id="cs_tramo"><phrase id="tblcaption" value="cs tramo"/>
+<field id="idtramo"><phrase id="fldcaption" value="idtramo"/>
+</field>
+<field id="tramo"><phrase id="fldcaption" value="tramo"/>
+</field>
+</table>
+<table id="cs_ubicacionvial"><phrase id="tblcaption" value="cs ubicacionvial"/>
+<field id="region"><phrase id="fldcaption" value="region"/>
+</field>
+<field id="tramo"><phrase id="fldcaption" value="tramo"/>
+</field>
+<field id="ruta"><phrase id="fldcaption" value="ruta"/>
+</field>
+<field id="departamento"><phrase id="fldcaption" value="departamento"/>
+</field>
+<field id="codigo"><phrase id="fldcaption" value="codigo"/>
+</field>
+<field id="idubicacion"><phrase id="fldcaption" value="idubicacion"/>
+</field>
+<field id="clase"><phrase id="fldcaption" value="clase"/>
+</field>
+</table>
+<table id="cs_unidadesentidad"><phrase id="tblcaption" value="cs unidadesentidad"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="entidad"><phrase id="fldcaption" value="entidad"/>
+</field>
+<field id="unidad"><phrase id="fldcaption" value="unidad"/>
+</field>
+</table>
+<table id="cs_users"><phrase id="tblcaption" value="cs users"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="username"><phrase id="fldcaption" value="username"/>
+</field>
+<field id="password"><phrase id="fldcaption" value="password"/>
+</field>
+<field id="_email"><phrase id="fldcaption" value="email"/>
+</field>
+<field id="activkey"><phrase id="fldcaption" value="activkey"/>
+</field>
+<field id="create_at"><phrase id="fldcaption" value="create at"/>
+</field>
+<field id="lastvisit_at"><phrase id="fldcaption" value="lastvisit at"/>
+</field>
+<field id="superuser"><phrase id="fldcaption" value="superuser"/>
+</field>
+<field id="status"><phrase id="fldcaption" value="status"/>
+</field>
+</table>
+<table id="mq_auth_assignment"><phrase id="tblcaption" value="mq auth assignment"/>
+<field id="itemname"><phrase id="fldcaption" value="itemname"/>
+</field>
+<field id="_userid"><phrase id="fldcaption" value="userid"/>
+</field>
+<field id="bizrule"><phrase id="fldcaption" value="bizrule"/>
+</field>
+<field id="data"><phrase id="fldcaption" value="data"/>
+</field>
+</table>
+<table id="mq_auth_item"><phrase id="tblcaption" value="mq auth item"/>
+<field id="name"><phrase id="fldcaption" value="name"/>
+</field>
+<field id="type"><phrase id="fldcaption" value="type"/>
+</field>
+<field id="description"><phrase id="fldcaption" value="description"/>
+</field>
+<field id="bizrule"><phrase id="fldcaption" value="bizrule"/>
+</field>
+<field id="data"><phrase id="fldcaption" value="data"/>
+</field>
+</table>
+<table id="mq_auth_item_child"><phrase id="tblcaption" value="mq auth item child"/>
+<field id="parent"><phrase id="fldcaption" value="parent"/>
+</field>
+<field id="child"><phrase id="fldcaption" value="child"/>
+</field>
+</table>
+<table id="mq_category"><phrase id="tblcaption" value="mq category"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="name"><phrase id="fldcaption" value="name"/>
+</field>
+</table>
+<table id="mq_issue"><phrase id="tblcaption" value="mq issue"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="ticket_number"><phrase id="fldcaption" value="ticket number"/>
+</field>
+<field id="assigned_to"><phrase id="fldcaption" value="assigned to"/>
+</field>
+<field id="institution_name"><phrase id="fldcaption" value="institution name"/>
+</field>
+<field id="contact_number"><phrase id="fldcaption" value="contact number"/>
+</field>
+<field id="contact_email"><phrase id="fldcaption" value="contact email"/>
+</field>
+<field id="status"><phrase id="fldcaption" value="status"/>
+</field>
+<field id="status_correo"><phrase id="fldcaption" value="status correo"/>
+</field>
+<field id="create_time"><phrase id="fldcaption" value="create time"/>
+</field>
+<field id="create_user"><phrase id="fldcaption" value="create user"/>
+</field>
+<field id="update_user"><phrase id="fldcaption" value="update user"/>
+</field>
+<field id="category_id"><phrase id="fldcaption" value="category id"/>
+</field>
+<field id="order_number"><phrase id="fldcaption" value="order number"/>
+</field>
+<field id="reception_type_id"><phrase id="fldcaption" value="reception type id"/>
+</field>
+<field id="description"><phrase id="fldcaption" value="description"/>
+</field>
+<field id="update_time"><phrase id="fldcaption" value="update time"/>
+</field>
+<field id="attachment"><phrase id="fldcaption" value="attachment"/>
+</field>
+<field id="institution_id"><phrase id="fldcaption" value="institution id"/>
+</field>
+<field id="expediente"><phrase id="fldcaption" value="expediente"/>
+</field>
+<field id="identidad"><phrase id="fldcaption" value="identidad"/>
+</field>
+<field id="nombre"><phrase id="fldcaption" value="nombre"/>
+</field>
+<field id="apellido"><phrase id="fldcaption" value="apellido"/>
+</field>
+<field id="direccion"><phrase id="fldcaption" value="direccion"/>
+</field>
+<field id="hechos"><phrase id="fldcaption" value="hechos"/>
+</field>
+<field id="adjunto"><phrase id="fldcaption" value="adjunto"/>
+</field>
+<field id="privado"><phrase id="fldcaption" value="privado"/>
+</field>
+<field id="comunidad"><phrase id="fldcaption" value="comunidad"/>
+</field>
+<field id="carretera"><phrase id="fldcaption" value="carretera"/>
+</field>
+<field id="incumplimiento"><phrase id="fldcaption" value="incumplimiento"/>
+</field>
+<field id="abusos"><phrase id="fldcaption" value="abusos"/>
+</field>
+<field id="idproyecto"><phrase id="fldcaption" value="id Proyecto"/>
+</field>
+<field id="ruta"><phrase id="fldcaption" value="ruta"/>
+</field>
+<field id="tramo"><phrase id="fldcaption" value="tramo"/>
+</field>
+<field id="idcontrato"><phrase id="fldcaption" value="id Contrato"/>
+</field>
+<field id="idsupervision"><phrase id="fldcaption" value="id Supervision"/>
+</field>
+<field id="seguridad"><phrase id="fldcaption" value="seguridad"/>
+</field>
+<field id="otros"><phrase id="fldcaption" value="otros"/>
+</field>
+<field id="is_suggestion"><phrase id="fldcaption" value="is suggestion"/>
+</field>
+</table>
+<table id="mq_issue_attachment"><phrase id="tblcaption" value="mq issue attachment"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="issue_id"><phrase id="fldcaption" value="issue id"/>
+</field>
+<field id="adjunto"><phrase id="fldcaption" value="adjunto"/>
+</field>
+</table>
+<table id="mq_issue_reception_type"><phrase id="tblcaption" value="mq issue reception type"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="name"><phrase id="fldcaption" value="name"/>
+</field>
+</table>
+<table id="mq_issue_response"><phrase id="tblcaption" value="mq issue response"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="issue_id"><phrase id="fldcaption" value="issue id"/>
+</field>
+<field id="create_time"><phrase id="fldcaption" value="create time"/>
+</field>
+<field id="de"><phrase id="fldcaption" value="de"/>
+</field>
+<field id="para"><phrase id="fldcaption" value="para"/>
+</field>
+<field id="comentario"><phrase id="fldcaption" value="comentario"/>
+</field>
+<field id="adjuntos"><phrase id="fldcaption" value="adjuntos"/>
+</field>
+</table>
+<table id="mq_niveles"><phrase id="tblcaption" value="mq niveles"/>
+<field id="idnivel"><phrase id="fldcaption" value="id Nivel"/>
+</field>
+<field id="descripcion"><phrase id="fldcaption" value="Descripcion"/>
+</field>
+</table>
+<table id="mq_personal"><phrase id="tblcaption" value="mq personal"/>
+<field id="idpersonal"><phrase id="fldcaption" value="id Personal"/>
+</field>
+<field id="identidad"><phrase id="fldcaption" value="Identidad"/>
+</field>
+<field id="nombre"><phrase id="fldcaption" value="Nombre"/>
+</field>
+<field id="nivel"><phrase id="fldcaption" value="Nivel"/>
+</field>
+<field id="departamento"><phrase id="fldcaption" value="Departamento"/>
+</field>
+<field id="usuario"><phrase id="fldcaption" value="usuario"/>
+</field>
+<field id="clave"><phrase id="fldcaption" value="clave"/>
+</field>
+</table>
+<table id="mq_proyecto"><phrase id="tblcaption" value="mq proyecto"/>
+<field id="idproyecto"><phrase id="fldcaption" value="id Proyecto"/>
+</field>
+<field id="idprograma"><phrase id="fldcaption" value="id Programa"/>
+</field>
+<field id="codigo"><phrase id="fldcaption" value="codigo"/>
+</field>
+<field id="nombre_proyecto"><phrase id="fldcaption" value="nombre proyecto"/>
+</field>
+<field id="idubicacion"><phrase id="fldcaption" value="id Ubicacion"/>
+</field>
+<field id="idregion"><phrase id="fldcaption" value="id Region"/>
+</field>
+<field id="iddepto"><phrase id="fldcaption" value="id Depto"/>
+</field>
+<field id="idtramo"><phrase id="fldcaption" value="id Tramo"/>
+</field>
+<field id="idruta"><phrase id="fldcaption" value="id Ruta"/>
+</field>
+<field id="idtipored"><phrase id="fldcaption" value="id Tipo Red"/>
+</field>
+<field id="idproposito"><phrase id="fldcaption" value="id Proposito"/>
+</field>
+<field id="descrip"><phrase id="fldcaption" value="descrip"/>
+</field>
+<field id="presupuesto"><phrase id="fldcaption" value="presupuesto"/>
+</field>
+<field id="especiplano"><phrase id="fldcaption" value="especiplano"/>
+</field>
+<field id="presuprogra"><phrase id="fldcaption" value="presuprogra"/>
+</field>
+<field id="estudiofact"><phrase id="fldcaption" value="estudiofact"/>
+</field>
+<field id="estudioimpact"><phrase id="fldcaption" value="estudioimpact"/>
+</field>
+<field id="licambi"><phrase id="fldcaption" value="licambi"/>
+</field>
+<field id="estuimpactierra"><phrase id="fldcaption" value="estuimpactierra"/>
+</field>
+<field id="planreasea"><phrase id="fldcaption" value="planreasea"/>
+</field>
+<field id="plananual"><phrase id="fldcaption" value="plananual"/>
+</field>
+<field id="acuerdofinan"><phrase id="fldcaption" value="acuerdofinan"/>
+</field>
+<field id="otro"><phrase id="fldcaption" value="otro"/>
+</field>
+<field id="fechacreacion"><phrase id="fldcaption" value="fechacreacion"/>
+</field>
+<field id="estado"><phrase id="fldcaption" value="estado"/>
+</field>
+<field id="idfuncionario"><phrase id="fldcaption" value="id Funcionario"/>
+</field>
+<field id="fechaaprob"><phrase id="fldcaption" value="fechaaprob"/>
+</field>
+<field id="idfuente"><phrase id="fldcaption" value="idfuente"/>
+</field>
+<field id="codsefin"><phrase id="fldcaption" value="codsefin"/>
+</field>
+<field id="notaprioridad"><phrase id="fldcaption" value="notaprioridad"/>
+</field>
+<field id="constanciabanco"><phrase id="fldcaption" value="constanciabanco"/>
+</field>
+<field id="fecharecibido"><phrase id="fldcaption" value="fecharecibido"/>
+</field>
+</table>
+<table id="mq_question"><phrase id="tblcaption" value="mq question"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="title"><phrase id="fldcaption" value="title"/>
+</field>
+<field id="answer"><phrase id="fldcaption" value="answer"/>
+</field>
+<field id="create_time"><phrase id="fldcaption" value="create time"/>
+</field>
+<field id="create_user"><phrase id="fldcaption" value="create user"/>
+</field>
+<field id="update_user"><phrase id="fldcaption" value="update user"/>
+</field>
+<field id="department_id"><phrase id="fldcaption" value="department id"/>
+</field>
+</table>
+<table id="mq_respuestas"><phrase id="tblcaption" value="mq respuestas"/>
+<field id="idrespuesta"><phrase id="fldcaption" value="id Respuesta"/>
+</field>
+<field id="idsolicitud"><phrase id="fldcaption" value="id Solicitud"/>
+</field>
+<field id="fecha"><phrase id="fldcaption" value="Fecha"/>
+</field>
+<field id="de"><phrase id="fldcaption" value="de"/>
+</field>
+<field id="para"><phrase id="fldcaption" value="para"/>
+</field>
+<field id="comentario"><phrase id="fldcaption" value="comentario"/>
+</field>
+<field id="adjuntos"><phrase id="fldcaption" value="adjuntos"/>
+</field>
+</table>
+<table id="mq_solicitud"><phrase id="tblcaption" value="mq solicitud"/>
+<field id="idsolicitud"><phrase id="fldcaption" value="id Solicitud"/>
+</field>
+<field id="expediente"><phrase id="fldcaption" value="expediente"/>
+</field>
+<field id="identidad"><phrase id="fldcaption" value="identidad"/>
+</field>
+<field id="nombre"><phrase id="fldcaption" value="nombre"/>
+</field>
+<field id="apellido"><phrase id="fldcaption" value="apellido"/>
+</field>
+<field id="direccion"><phrase id="fldcaption" value="direccion"/>
+</field>
+<field id="telefono"><phrase id="fldcaption" value="telefono"/>
+</field>
+<field id="correo"><phrase id="fldcaption" value="correo"/>
+</field>
+<field id="hechos"><phrase id="fldcaption" value="hechos"/>
+</field>
+<field id="adjunto"><phrase id="fldcaption" value="adjunto"/>
+</field>
+<field id="seguridad"><phrase id="fldcaption" value="seguridad"/>
+</field>
+<field id="privado"><phrase id="fldcaption" value="privado"/>
+</field>
+<field id="comunidad"><phrase id="fldcaption" value="comunidad"/>
+</field>
+<field id="carretera"><phrase id="fldcaption" value="carretera"/>
+</field>
+<field id="incumplimiento"><phrase id="fldcaption" value="incumplimiento"/>
+</field>
+<field id="abusos"><phrase id="fldcaption" value="abusos"/>
+</field>
+<field id="otros"><phrase id="fldcaption" value="otros"/>
+</field>
+<field id="proyecto"><phrase id="fldcaption" value="proyecto"/>
+</field>
+<field id="tramo"><phrase id="fldcaption" value="tramo"/>
+</field>
+<field id="comentario"><phrase id="fldcaption" value="comentario"/>
+</field>
+<field id="fecha"><phrase id="fldcaption" value="fecha"/>
+</field>
+<field id="asignado_a"><phrase id="fldcaption" value="asignado a"/>
+</field>
+<field id="estado"><phrase id="fldcaption" value="estado"/>
+</field>
+</table>
+<table id="mq_status"><phrase id="tblcaption" value="mq status"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="name"><phrase id="fldcaption" value="name"/>
+</field>
+</table>
+<table id="mq_user"><phrase id="tblcaption" value="mq user"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="username"><phrase id="fldcaption" value="username"/>
+</field>
+<field id="_email"><phrase id="fldcaption" value="email"/>
+</field>
+<field id="first_name"><phrase id="fldcaption" value="first name"/>
+</field>
+<field id="last_name"><phrase id="fldcaption" value="last name"/>
+</field>
+<field id="is_help_desk"><phrase id="fldcaption" value="is help desk"/>
+</field>
+<field id="password_hash"><phrase id="fldcaption" value="password hash"/>
+</field>
+</table>
+<table id="pcounter_save"><phrase id="tblcaption" value="pcounter save"/>
+<field id="save_name"><phrase id="fldcaption" value="save name"/>
+</field>
+<field id="save_value"><phrase id="fldcaption" value="save value"/>
+</field>
+</table>
+<table id="pcounter_users"><phrase id="tblcaption" value="pcounter users"/>
+<field id="user_ip"><phrase id="fldcaption" value="user ip"/>
+</field>
+<field id="user_time"><phrase id="fldcaption" value="user time"/>
+</field>
+</table>
+<table id="prueba"><phrase id="tblcaption" value="prueba"/>
+<field id="idprograma"><phrase id="fldcaption" value="id Programa"/>
+</field>
+<field id="programa"><phrase id="fldcaption" value="programa"/>
+</field>
+<field id="bip"><phrase id="fldcaption" value="BIP"/>
+</field>
+<field id="nombreprograma"><phrase id="fldcaption" value="nombreprograma"/>
+</field>
+<field id="entes"><phrase id="fldcaption" value="entes"/>
+</field>
+<field id="idfuncionario"><phrase id="fldcaption" value="id Funcionario"/>
+</field>
+<field id="idfuente"><phrase id="fldcaption" value="id Fuente"/>
+</field>
+<field id="monto"><phrase id="fldcaption" value="monto"/>
+</field>
+<field id="idmoneda"><phrase id="fldcaption" value="id Moneda"/>
+</field>
+<field id="tasa_cambio"><phrase id="fldcaption" value="tasa cambio"/>
+</field>
+<field id="fuente"><phrase id="fldcaption" value="fuente"/>
+</field>
+<field id="idproposito"><phrase id="fldcaption" value="idproposito"/>
+</field>
+<field id="proposito"><phrase id="fldcaption" value="proposito"/>
+</field>
+</table>
+<table id="tbl_auth_assignment"><phrase id="tblcaption" value="tbl auth assignment"/>
+<field id="itemname"><phrase id="fldcaption" value="itemname"/>
+</field>
+<field id="_userid"><phrase id="fldcaption" value="userid"/>
+</field>
+<field id="bizrule"><phrase id="fldcaption" value="bizrule"/>
+</field>
+<field id="data"><phrase id="fldcaption" value="data"/>
+</field>
+</table>
+<table id="tbl_auth_item"><phrase id="tblcaption" value="tbl auth item"/>
+<field id="name"><phrase id="fldcaption" value="name"/>
+</field>
+<field id="type"><phrase id="fldcaption" value="type"/>
+</field>
+<field id="description"><phrase id="fldcaption" value="description"/>
+</field>
+<field id="bizrule"><phrase id="fldcaption" value="bizrule"/>
+</field>
+<field id="data"><phrase id="fldcaption" value="data"/>
+</field>
+</table>
+<table id="tbl_auth_item_child"><phrase id="tblcaption" value="tbl auth item child"/>
+<field id="parent"><phrase id="fldcaption" value="parent"/>
+</field>
+<field id="child"><phrase id="fldcaption" value="child"/>
+</field>
+</table>
+<table id="tbl_category"><phrase id="tblcaption" value="tbl category"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="name"><phrase id="fldcaption" value="name"/>
+</field>
+</table>
+<table id="tbl_issue"><phrase id="tblcaption" value="tbl issue"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="ticket_number"><phrase id="fldcaption" value="ticket number"/>
+</field>
+<field id="assigned_to"><phrase id="fldcaption" value="assigned to"/>
+</field>
+<field id="institution_name"><phrase id="fldcaption" value="institution name"/>
+</field>
+<field id="contact_number"><phrase id="fldcaption" value="contact number"/>
+</field>
+<field id="contact_email"><phrase id="fldcaption" value="contact email"/>
+</field>
+<field id="status"><phrase id="fldcaption" value="status"/>
+</field>
+<field id="create_time"><phrase id="fldcaption" value="create time"/>
+</field>
+<field id="create_user"><phrase id="fldcaption" value="create user"/>
+</field>
+<field id="update_user"><phrase id="fldcaption" value="update user"/>
+</field>
+<field id="category_id"><phrase id="fldcaption" value="category id"/>
+</field>
+<field id="order_number"><phrase id="fldcaption" value="order number"/>
+</field>
+<field id="reception_type_id"><phrase id="fldcaption" value="reception type id"/>
+</field>
+<field id="description"><phrase id="fldcaption" value="description"/>
+</field>
+<field id="update_time"><phrase id="fldcaption" value="update time"/>
+</field>
+<field id="attachment"><phrase id="fldcaption" value="attachment"/>
+</field>
+<field id="institution_id"><phrase id="fldcaption" value="institution id"/>
+</field>
+<field id="expediente"><phrase id="fldcaption" value="expediente"/>
+</field>
+<field id="identidad"><phrase id="fldcaption" value="identidad"/>
+</field>
+<field id="nombre"><phrase id="fldcaption" value="nombre"/>
+</field>
+<field id="apellido"><phrase id="fldcaption" value="apellido"/>
+</field>
+<field id="direccion"><phrase id="fldcaption" value="direccion"/>
+</field>
+<field id="hechos"><phrase id="fldcaption" value="hechos"/>
+</field>
+<field id="adjunto"><phrase id="fldcaption" value="adjunto"/>
+</field>
+<field id="privado"><phrase id="fldcaption" value="privado"/>
+</field>
+<field id="comunidad"><phrase id="fldcaption" value="comunidad"/>
+</field>
+<field id="carretera"><phrase id="fldcaption" value="carretera"/>
+</field>
+<field id="incumplimiento"><phrase id="fldcaption" value="incumplimiento"/>
+</field>
+<field id="abusos"><phrase id="fldcaption" value="abusos"/>
+</field>
+<field id="idproyecto"><phrase id="fldcaption" value="id Proyecto"/>
+</field>
+<field id="ruta"><phrase id="fldcaption" value="ruta"/>
+</field>
+<field id="tramo"><phrase id="fldcaption" value="tramo"/>
+</field>
+<field id="idcontrato"><phrase id="fldcaption" value="id Contrato"/>
+</field>
+<field id="idsupervision"><phrase id="fldcaption" value="id Supervision"/>
+</field>
+<field id="seguridad"><phrase id="fldcaption" value="seguridad"/>
+</field>
+<field id="otros"><phrase id="fldcaption" value="otros"/>
+</field>
+</table>
+<table id="tbl_issue_reception_type"><phrase id="tblcaption" value="tbl issue reception type"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="name"><phrase id="fldcaption" value="name"/>
+</field>
+</table>
+<table id="tbl_issue_response"><phrase id="tblcaption" value="tbl issue response"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="issue_id"><phrase id="fldcaption" value="issue id"/>
+</field>
+<field id="create_time"><phrase id="fldcaption" value="create time"/>
+</field>
+<field id="de"><phrase id="fldcaption" value="de"/>
+</field>
+<field id="para"><phrase id="fldcaption" value="para"/>
+</field>
+<field id="comentario"><phrase id="fldcaption" value="comentario"/>
+</field>
+<field id="adjuntos"><phrase id="fldcaption" value="adjuntos"/>
+</field>
+</table>
+<table id="tbl_migration"><phrase id="tblcaption" value="tbl migration"/>
+<field id="version"><phrase id="fldcaption" value="version"/>
+</field>
+<field id="apply_time"><phrase id="fldcaption" value="apply time"/>
+</field>
+</table>
+<table id="tbl_question"><phrase id="tblcaption" value="tbl question"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="title"><phrase id="fldcaption" value="title"/>
+</field>
+<field id="answer"><phrase id="fldcaption" value="answer"/>
+</field>
+<field id="create_time"><phrase id="fldcaption" value="create time"/>
+</field>
+<field id="create_user"><phrase id="fldcaption" value="create user"/>
+</field>
+<field id="update_user"><phrase id="fldcaption" value="update user"/>
+</field>
+<field id="department_id"><phrase id="fldcaption" value="department id"/>
+</field>
+</table>
+<table id="tbl_user"><phrase id="tblcaption" value="tbl user"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="username"><phrase id="fldcaption" value="username"/>
+</field>
+<field id="_email"><phrase id="fldcaption" value="email"/>
+</field>
+<field id="first_name"><phrase id="fldcaption" value="first name"/>
+</field>
+<field id="last_name"><phrase id="fldcaption" value="last name"/>
+</field>
+<field id="is_help_desk"><phrase id="fldcaption" value="is help desk"/>
+</field>
+<field id="password_hash"><phrase id="fldcaption" value="password hash"/>
+</field>
+</table>
+<table id="user"><phrase id="tblcaption" value="user"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="username"><phrase id="fldcaption" value="username"/>
+</field>
+<field id="password"><phrase id="fldcaption" value="password"/>
+</field>
+<field id="_email"><phrase id="fldcaption" value="email"/>
+</field>
+<field id="profile"><phrase id="fldcaption" value="profile"/>
+</field>
+</table>
+<table id="v_avance_ft"><phrase id="tblcaption" value="v avance ft"/>
+<field id="codigo"><phrase id="fldcaption" value="codigo"/>
+</field>
+<field id="codigo_inicio_ejecucion"><phrase id="fldcaption" value="codigo inicio ejecucion"/>
+</field>
+<field id="porcent_programado"><phrase id="fldcaption" value="porcent programado"/>
+</field>
+<field id="porcent_real"><phrase id="fldcaption" value="porcent real"/>
+</field>
+<field id="finan_programado"><phrase id="fldcaption" value="finan programado"/>
+</field>
+<field id="finan_real"><phrase id="fldcaption" value="finan real"/>
+</field>
+<field id="fecha_avance"><phrase id="fldcaption" value="fecha avance"/>
+</field>
+<field id="fecha_registro"><phrase id="fldcaption" value="fecha registro"/>
+</field>
+<field id="desc_problemas"><phrase id="fldcaption" value="desc problemas"/>
+</field>
+<field id="desc_temas"><phrase id="fldcaption" value="desc temas"/>
+</field>
+<field id="idcontratacion"><phrase id="fldcaption" value="id Contratacion"/>
+</field>
+<field id="adj_garantias"><phrase id="fldcaption" value="adj garantias"/>
+</field>
+<field id="estado_sol"><phrase id="fldcaption" value="estado sol"/>
+</field>
+<field id="adj_avances"><phrase id="fldcaption" value="adj avances"/>
+</field>
+<field id="adj_supervicion"><phrase id="fldcaption" value="adj supervicion"/>
+</field>
+<field id="adj_evaluacion"><phrase id="fldcaption" value="adj evaluacion"/>
+</field>
+<field id="adj_tecnica"><phrase id="fldcaption" value="adj tecnica"/>
+</field>
+<field id="adj_financiero"><phrase id="fldcaption" value="adj financiero"/>
+</field>
+<field id="adj_recepcion"><phrase id="fldcaption" value="adj recepcion"/>
+</field>
+<field id="adj_disconformidad"><phrase id="fldcaption" value="adj disconformidad"/>
+</field>
+</table>
+<table id="v_avances_resumenejecucion"><phrase id="tblcaption" value="v avances resumenejecucion"/>
+<field id="idcontratacion"><phrase id="fldcaption" value="id Contratacion"/>
+</field>
+<field id="codigo"><phrase id="fldcaption" value="codigo"/>
+</field>
+<field id="codigo_inicio_ejecucion"><phrase id="fldcaption" value="codigo inicio ejecucion"/>
+</field>
+<field id="porcent_programado"><phrase id="fldcaption" value="porcent programado"/>
+</field>
+<field id="porcent_real"><phrase id="fldcaption" value="porcent real"/>
+</field>
+<field id="finan_programado"><phrase id="fldcaption" value="finan programado"/>
+</field>
+<field id="finan_real"><phrase id="fldcaption" value="finan real"/>
+</field>
+</table>
+<table id="v_calificacion"><phrase id="tblcaption" value="v calificacion"/>
+<field id="idcalificacion"><phrase id="fldcaption" value="id Calificacion"/>
+</field>
+<field id="idproyecto"><phrase id="fldcaption" value="id Proyecto"/>
+</field>
+<field id="numproceso"><phrase id="fldcaption" value="numproceso"/>
+</field>
+<field id="nomprocesoproyecto"><phrase id="fldcaption" value="nomprocesoproyecto"/>
+</field>
+<field id="fechactualizacion"><phrase id="fldcaption" value="fechactualizacion"/>
+</field>
+<field id="idfuncionario"><phrase id="fldcaption" value="id Funcionario"/>
+</field>
+<field id="estatusproceso"><phrase id="fldcaption" value="estatusproceso"/>
+</field>
+<field id="proceseval"><phrase id="fldcaption" value="proceseval"/>
+</field>
+<field id="invitainter"><phrase id="fldcaption" value="invitainter"/>
+</field>
+<field id="basespreca"><phrase id="fldcaption" value="basespreca"/>
+</field>
+<field id="resolucion"><phrase id="fldcaption" value="resolucion"/>
+</field>
+<field id="nombreante"><phrase id="fldcaption" value="nombreante"/>
+</field>
+<field id="convocainvi"><phrase id="fldcaption" value="convocainvi"/>
+</field>
+<field id="tdr"><phrase id="fldcaption" value="tdr"/>
+</field>
+<field id="aclaraciones"><phrase id="fldcaption" value="aclaraciones"/>
+</field>
+<field id="actarecpcion"><phrase id="fldcaption" value="actarecpcion"/>
+</field>
+<field id="fechaingreso"><phrase id="fldcaption" value="fechaingreso"/>
+</field>
+<field id="tipocontrato"><phrase id="fldcaption" value="tipocontrato"/>
+</field>
+<field id="estado"><phrase id="fldcaption" value="estado"/>
+</field>
+<field id="otro1"><phrase id="fldcaption" value="otro 1"/>
+</field>
+<field id="otro2"><phrase id="fldcaption" value="otro 2"/>
+</field>
+<field id="identidadadquisicion"><phrase id="fldcaption" value="identidadadquisicion"/>
+</field>
+<field id="idmetodo"><phrase id="fldcaption" value="idmetodo"/>
+</field>
+<field id="fecharecibido"><phrase id="fldcaption" value="fecharecibido"/>
+</field>
+<field id="nombre_proyecto"><phrase id="fldcaption" value="nombre proyecto"/>
+</field>
+<field id="nombre"><phrase id="fldcaption" value="nombre"/>
+</field>
+</table>
+<table id="v_doc_avancesporid"><phrase id="tblcaption" value="v doc avancesporid"/>
+<field id="cod_avance"><phrase id="fldcaption" value="cod avance"/>
+</field>
+<field id="adj_garantias"><phrase id="fldcaption" value="adj garantias"/>
+</field>
+<field id="adj_avances"><phrase id="fldcaption" value="adj avances"/>
+</field>
+<field id="adj_supervicion"><phrase id="fldcaption" value="adj supervicion"/>
+</field>
+<field id="adj_evaluacion"><phrase id="fldcaption" value="adj evaluacion"/>
+</field>
+<field id="adj_tecnica"><phrase id="fldcaption" value="adj tecnica"/>
+</field>
+<field id="adj_financiero"><phrase id="fldcaption" value="adj financiero"/>
+</field>
+<field id="adj_recepcion"><phrase id="fldcaption" value="adj recepcion"/>
+</field>
+<field id="adj_disconformidad"><phrase id="fldcaption" value="adj disconformidad"/>
+</field>
+</table>
+<table id="v_idmetodo_poridadjudicacion"><phrase id="tblcaption" value="v idmetodo poridadjudicacion"/>
+<field id="idcalificacion"><phrase id="fldcaption" value="id Calificacion"/>
+</field>
+<field id="idadjudicacion"><phrase id="fldcaption" value="id Adjudicacion"/>
+</field>
+<field id="idmetodo"><phrase id="fldcaption" value="idmetodo"/>
+</field>
+</table>
+<table id="v_idmetodoadquisicion_idcontratacion"><phrase id="tblcaption" value="v idmetodoadquisicion idcontratacion"/>
+<field id="idcalificacion"><phrase id="fldcaption" value="id Calificacion"/>
+</field>
+<field id="idadjudicacion"><phrase id="fldcaption" value="id Adjudicacion"/>
+</field>
+<field id="idcontratacion"><phrase id="fldcaption" value="id Contratacion"/>
+</field>
+<field id="idmetodo"><phrase id="fldcaption" value="idmetodo"/>
+</field>
+</table>
+<table id="v_imagenes_poravance"><phrase id="tblcaption" value="v imagenes poravance"/>
+<field id="cod_img_adjuntada"><phrase id="fldcaption" value="cod img adjuntada"/>
+</field>
+<field id="cod_avance"><phrase id="fldcaption" value="cod avance"/>
+</field>
+<field id="nombre_img"><phrase id="fldcaption" value="nombre img"/>
+</field>
+<field id="ubicacion_img"><phrase id="fldcaption" value="ubicacion img"/>
+</field>
+<field id="fecha_registro"><phrase id="fldcaption" value="fecha registro"/>
+</field>
+</table>
+<table id="v_imagenes_resumenejecucion"><phrase id="tblcaption" value="v imagenes resumenejecucion"/>
+<field id="idcontratacion"><phrase id="fldcaption" value="id Contratacion"/>
+</field>
+<field id="codigo"><phrase id="fldcaption" value="codigo"/>
+</field>
+<field id="nombre_img"><phrase id="fldcaption" value="nombre img"/>
+</field>
+<field id="fecha_registro"><phrase id="fldcaption" value="fecha registro"/>
+</field>
+<field id="cod_avance"><phrase id="fldcaption" value="cod avance"/>
+</field>
+<field id="cod_contrato"><phrase id="fldcaption" value="cod contrato"/>
+</field>
+</table>
+<table id="v_inicio_ejecucion"><phrase id="tblcaption" value="v inicio ejecucion"/>
+<field id="codigo"><phrase id="fldcaption" value="codigo"/>
+</field>
+<field id="idcontratacion"><phrase id="fldcaption" value="id Contratacion"/>
+</field>
+<field id="cod_contacto_01"><phrase id="fldcaption" value="cod contacto 01"/>
+</field>
+<field id="cod_contacto_02"><phrase id="fldcaption" value="cod contacto 02"/>
+</field>
+<field id="cod_contacto_03"><phrase id="fldcaption" value="cod contacto 03"/>
+</field>
+<field id="tipo_garant_01"><phrase id="fldcaption" value="tipo garant 01"/>
+</field>
+<field id="tipo_garant_02"><phrase id="fldcaption" value="tipo garant 02"/>
+</field>
+<field id="tipo_garant_03"><phrase id="fldcaption" value="tipo garant 03"/>
+</field>
+<field id="monto_garant_01"><phrase id="fldcaption" value="monto garant 01"/>
+</field>
+<field id="monto_garant_02"><phrase id="fldcaption" value="monto garant 02"/>
+</field>
+<field id="monto_garant_03"><phrase id="fldcaption" value="monto garant 03"/>
+</field>
+<field id="estado_garant_01"><phrase id="fldcaption" value="estado garant 01"/>
+</field>
+<field id="estado_garant_02"><phrase id="fldcaption" value="estado garant 02"/>
+</field>
+<field id="estado_garant_03"><phrase id="fldcaption" value="estado garant 03"/>
+</field>
+<field id="fecha_venc_01"><phrase id="fldcaption" value="fecha venc 01"/>
+</field>
+<field id="fecha_venc_02"><phrase id="fldcaption" value="fecha venc 02"/>
+</field>
+<field id="fecha_venc_03"><phrase id="fldcaption" value="fecha venc 03"/>
+</field>
+<field id="geo_latitud"><phrase id="fldcaption" value="geo latitud"/>
+</field>
+<field id="geo_longitud"><phrase id="fldcaption" value="geo longitud"/>
+</field>
+<field id="fecha_inicio"><phrase id="fldcaption" value="fecha inicio"/>
+</field>
+<field id="estado_sol"><phrase id="fldcaption" value="estado sol"/>
+</field>
+<field id="fecha_registro"><phrase id="fldcaption" value="fecha registro"/>
+</field>
+<field id="user_registro"><phrase id="fldcaption" value="user registro"/>
+</field>
+<field id="nombres"><phrase id="fldcaption" value="Nombres"/>
+</field>
+<field id="descripcion"><phrase id="fldcaption" value="descripcion"/>
+</field>
+</table>
+<table id="v_proyecto"><phrase id="tblcaption" value="v proyecto"/>
+<field id="idproyecto"><phrase id="fldcaption" value="id Proyecto"/>
+</field>
+<field id="idprograma"><phrase id="fldcaption" value="id Programa"/>
+</field>
+<field id="codigo_p"><phrase id="fldcaption" value="codigo p"/>
+</field>
+<field id="nombre_proyecto"><phrase id="fldcaption" value="nombre proyecto"/>
+</field>
+<field id="idubicacion"><phrase id="fldcaption" value="id Ubicacion"/>
+</field>
+<field id="idregion"><phrase id="fldcaption" value="idregion"/>
+</field>
+<field id="iddepto"><phrase id="fldcaption" value="id Depto"/>
+</field>
+<field id="idtramo"><phrase id="fldcaption" value="id Tramo"/>
+</field>
+<field id="idruta"><phrase id="fldcaption" value="id Ruta"/>
+</field>
+<field id="idtipored"><phrase id="fldcaption" value="id Tipo Red"/>
+</field>
+<field id="idproposito"><phrase id="fldcaption" value="id Proposito"/>
+</field>
+<field id="descrip"><phrase id="fldcaption" value="descrip"/>
+</field>
+<field id="presupuesto"><phrase id="fldcaption" value="presupuesto"/>
+</field>
+<field id="especiplano"><phrase id="fldcaption" value="especiplano"/>
+</field>
+<field id="presuprogra"><phrase id="fldcaption" value="presuprogra"/>
+</field>
+<field id="estudiofact"><phrase id="fldcaption" value="estudiofact"/>
+</field>
+<field id="estudioimpact"><phrase id="fldcaption" value="estudioimpact"/>
+</field>
+<field id="licambi"><phrase id="fldcaption" value="licambi"/>
+</field>
+<field id="estuimpactierra"><phrase id="fldcaption" value="estuimpactierra"/>
+</field>
+<field id="planreasea"><phrase id="fldcaption" value="planreasea"/>
+</field>
+<field id="plananual"><phrase id="fldcaption" value="plananual"/>
+</field>
+<field id="acuerdofinan"><phrase id="fldcaption" value="acuerdofinan"/>
+</field>
+<field id="otro"><phrase id="fldcaption" value="otro"/>
+</field>
+<field id="fechacreacion"><phrase id="fldcaption" value="fechacreacion"/>
+</field>
+<field id="estado"><phrase id="fldcaption" value="estado"/>
+</field>
+<field id="idfuncionario"><phrase id="fldcaption" value="id Funcionario"/>
+</field>
+<field id="fechaaprob"><phrase id="fldcaption" value="fechaaprob"/>
+</field>
+<field id="idfuente"><phrase id="fldcaption" value="idfuente"/>
+</field>
+<field id="codsefin"><phrase id="fldcaption" value="codsefin"/>
+</field>
+<field id="notaprioridad"><phrase id="fldcaption" value="notaprioridad"/>
+</field>
+<field id="constanciabanco"><phrase id="fldcaption" value="constanciabanco"/>
+</field>
+<field id="fecharecibido"><phrase id="fldcaption" value="fecharecibido"/>
+</field>
+<field id="clase"><phrase id="fldcaption" value="clase"/>
+</field>
+<field id="nombreprograma"><phrase id="fldcaption" value="nombreprograma"/>
+</field>
+<field id="region"><phrase id="fldcaption" value="region"/>
+</field>
+<field id="departamento"><phrase id="fldcaption" value="departamento"/>
+</field>
+<field id="tramo_1"><phrase id="fldcaption" value="tramo 1"/>
+</field>
+<field id="tramo_2"><phrase id="fldcaption" value="tramo 2"/>
+</field>
+<field id="descripcif3n_tipo"><phrase id="fldcaption" value="descripción tipo"/>
+</field>
+<field id="proposito"><phrase id="fldcaption" value="proposito"/>
+</field>
+<field id="codigo_u"><phrase id="fldcaption" value="codigo u"/>
+</field>
+</table>
+<table id="v_proyectos_carrousel"><phrase id="tblcaption" value="v proyectos carrousel"/>
+<field id="idproyecto"><phrase id="fldcaption" value="id Proyecto"/>
+</field>
+<field id="nombre_proyecto"><phrase id="fldcaption" value="nombre proyecto"/>
+</field>
+<field id="descrip"><phrase id="fldcaption" value="descrip"/>
+</field>
+<field id="idcontratacion"><phrase id="fldcaption" value="id Contratacion"/>
+</field>
+<field id="ubicacion_img"><phrase id="fldcaption" value="ubicacion img"/>
+</field>
+</table>
+<table id="v_ubicacion_poridproyecto"><phrase id="tblcaption" value="v ubicacion poridproyecto"/>
+<field id="idproyecto"><phrase id="fldcaption" value="id Proyecto"/>
+</field>
+<field id="region"><phrase id="fldcaption" value="region"/>
+</field>
+<field id="departamento"><phrase id="fldcaption" value="departamento"/>
+</field>
+<field id="clase"><phrase id="fldcaption" value="clase"/>
+</field>
+</table>
+<table id="vadjudicacion"><phrase id="tblcaption" value="vadjudicacion"/>
+<field id="idadjudicacion"><phrase id="fldcaption" value="id Adjudicacion"/>
+</field>
+<field id="adjudicacion_numero"><phrase id="fldcaption" value="adjudicacion numero"/>
+</field>
+<field id="adjudicacion_nombre"><phrase id="fldcaption" value="adjudicacion nombre"/>
+</field>
+<field id="adjudicacion_consultores_nacionales"><phrase id="fldcaption" value="adjudicacion consultores nacionales"/>
+</field>
+<field id="adjudicacion_consultores_internacionales"><phrase id="fldcaption" value="adjudicacion consultores internacionales"/>
+</field>
+<field id="adjudicacion_costo"><phrase id="fldcaption" value="adjudicacion costo"/>
+</field>
+<field id="adjudicacion_estado_proceso"><phrase id="fldcaption" value="adjudicacion estado proceso"/>
+</field>
+<field id="adjudicacion_firmas_nacionales"><phrase id="fldcaption" value="adjudicacion firmas nacionales"/>
+</field>
+<field id="adjudicacion_firmas_internacionales"><phrase id="fldcaption" value="adjudicacion firmas internacionales"/>
+</field>
+<field id="adjudicacion_lista_corta"><phrase id="fldcaption" value="adjudicacion lista corta"/>
+</field>
+<field id="adjudicacion_fecha_registro"><phrase id="fldcaption" value="adjudicacion fecha registro"/>
+</field>
+<field id="adjudicacion_fecha_recibido"><phrase id="fldcaption" value="adjudicacion fecha recibido"/>
+</field>
+<field id="adjudicacion_estado"><phrase id="fldcaption" value="adjudicacion estado"/>
+</field>
+<field id="adj_acta_apertura"><phrase id="fldcaption" value="adj acta apertura"/>
+</field>
+<field id="adj_informe_acta"><phrase id="fldcaption" value="adj informe acta"/>
+</field>
+<field id="adj_resolucion"><phrase id="fldcaption" value="adj resolucion"/>
+</field>
+<field id="adj_otro"><phrase id="fldcaption" value="adj otro"/>
+</field>
+</table>
+<table id="vavances"><phrase id="tblcaption" value="vavances"/>
+<field id="codigo"><phrase id="fldcaption" value="codigo"/>
+</field>
+<field id="idcontratacion"><phrase id="fldcaption" value="id Contratacion"/>
+</field>
+<field id="porcentaje_programado"><phrase id="fldcaption" value="porcentaje programado"/>
+</field>
+<field id="porcentaje_real"><phrase id="fldcaption" value="porcentaje real"/>
+</field>
+<field id="financiero_programado"><phrase id="fldcaption" value="financiero programado"/>
+</field>
+<field id="financiero_real"><phrase id="fldcaption" value="financiero real"/>
+</field>
+<field id="estado"><phrase id="fldcaption" value="estado"/>
+</field>
+<field id="fecha_avance"><phrase id="fldcaption" value="fecha avance"/>
+</field>
+<field id="problemas"><phrase id="fldcaption" value="problemas"/>
+</field>
+<field id="temas_relevantes"><phrase id="fldcaption" value="temas relevantes"/>
+</field>
+<field id="adj_garantia"><phrase id="fldcaption" value="adj garantia"/>
+</field>
+<field id="adj_avance"><phrase id="fldcaption" value="adj avance"/>
+</field>
+<field id="adj_supervision"><phrase id="fldcaption" value="adj supervision"/>
+</field>
+<field id="adj_evaluacion"><phrase id="fldcaption" value="adj evaluacion"/>
+</field>
+<field id="adj_auditoria_tecnica"><phrase id="fldcaption" value="adj auditoria tecnica"/>
+</field>
+<field id="adj_auditoria_financiera"><phrase id="fldcaption" value="adj auditoria financiera"/>
+</field>
+<field id="adj_acta_recepcion"><phrase id="fldcaption" value="adj acta recepcion"/>
+</field>
+<field id="adj_disconformidad"><phrase id="fldcaption" value="adj disconformidad"/>
+</field>
+</table>
+<table id="vcalificacion"><phrase id="tblcaption" value="vcalificacion"/>
+<field id="idcalificacion"><phrase id="fldcaption" value="id Calificacion"/>
+</field>
+<field id="calificacion_numero"><phrase id="fldcaption" value="calificacion numero"/>
+</field>
+<field id="calificacion_nombre"><phrase id="fldcaption" value="calificacion nombre"/>
+</field>
+<field id="calificacion_fecha"><phrase id="fldcaption" value="calificacion fecha"/>
+</field>
+<field id="calificacion_estatus"><phrase id="fldcaption" value="calificacion estatus"/>
+</field>
+<field id="calificacion_proceso"><phrase id="fldcaption" value="calificacion proceso"/>
+</field>
+<field id="calificacion_tipocontrato"><phrase id="fldcaption" value="calificacion tipocontrato"/>
+</field>
+<field id="calificacion_entidad"><phrase id="fldcaption" value="calificacion entidad"/>
+</field>
+<field id="funcionario_nombre"><phrase id="fldcaption" value="funcionario nombre"/>
+</field>
+<field id="funcionario_puesto"><phrase id="fldcaption" value="funcionario puesto"/>
+</field>
+<field id="funcionario_telefono"><phrase id="fldcaption" value="funcionario telefono"/>
+</field>
+<field id="funcionario_correo"><phrase id="fldcaption" value="funcionario correo"/>
+</field>
+<field id="funcionario_ente"><phrase id="fldcaption" value="funcionario ente"/>
+</field>
+<field id="calificacion_tipo"><phrase id="fldcaption" value="calificacion tipo"/>
+</field>
+<field id="calificacion_siglas"><phrase id="fldcaption" value="calificacion siglas"/>
+</field>
+<field id="calificacion_fecha_registro"><phrase id="fldcaption" value="calificacion fecha registro"/>
+</field>
+<field id="calificacion_fecha_recibido"><phrase id="fldcaption" value="calificacion fecha recibido"/>
+</field>
+<field id="calificacion_estado"><phrase id="fldcaption" value="calificacion estado"/>
+</field>
+<field id="adj_invitacion_interesados"><phrase id="fldcaption" value="adj invitacion interesados"/>
+</field>
+<field id="adj_bases_precalificacion"><phrase id="fldcaption" value="adj bases precalificacion"/>
+</field>
+<field id="adj_resolucion"><phrase id="fldcaption" value="adj resolucion"/>
+</field>
+<field id="adj_antecedentes_empresas"><phrase id="fldcaption" value="adj antecedentes empresas"/>
+</field>
+<field id="adj_convocatoria"><phrase id="fldcaption" value="adj convocatoria"/>
+</field>
+<field id="adj_pliego_condiciones"><phrase id="fldcaption" value="adj pliego condiciones"/>
+</field>
+<field id="adj_aclaraciones"><phrase id="fldcaption" value="adj aclaraciones"/>
+</field>
+<field id="adj_acta_recepcion"><phrase id="fldcaption" value="adj acta recepcion"/>
+</field>
+<field id="adj_otro"><phrase id="fldcaption" value="adj otro"/>
+</field>
+</table>
+<table id="vcalificacion_empresa"><phrase id="tblcaption" value="vcalificacion empresa"/>
+<field id="idcalificacion"><phrase id="fldcaption" value="id Calificacion"/>
+</field>
+<field id="nombre_empresa"><phrase id="fldcaption" value="nombre empresa"/>
+</field>
+</table>
+<table id="vcalificacion_firma"><phrase id="tblcaption" value="vcalificacion firma"/>
+<field id="idcalificacion"><phrase id="fldcaption" value="id Calificacion"/>
+</field>
+<field id="nombre_firma"><phrase id="fldcaption" value="nombre firma"/>
+</field>
+</table>
+<table id="vcalificacion_oferente"><phrase id="tblcaption" value="vcalificacion oferente"/>
+<field id="idcalificacion"><phrase id="fldcaption" value="id Calificacion"/>
+</field>
+<field id="nombre_oferente"><phrase id="fldcaption" value="nombre oferente"/>
+</field>
+</table>
+<table id="vciudadano"><phrase id="tblcaption" value="vciudadano"/>
+<field id="idprograma"><phrase id="fldcaption" value="id Programa"/>
+</field>
+<field id="idproyecto"><phrase id="fldcaption" value="id Proyecto"/>
+</field>
+<field id="idcalificacion"><phrase id="fldcaption" value="id Calificacion"/>
+</field>
+<field id="idadjudicacion"><phrase id="fldcaption" value="id Adjudicacion"/>
+</field>
+<field id="idcontratacion"><phrase id="fldcaption" value="id Contratacion"/>
+</field>
+<field id="idejecucion"><phrase id="fldcaption" value="id Ejecucion"/>
+</field>
+<field id="estado_ejecucion"><phrase id="fldcaption" value="estado ejecucion"/>
+</field>
+<field id="programa_codigo"><phrase id="fldcaption" value="programa codigo"/>
+</field>
+<field id="programa_nombre"><phrase id="fldcaption" value="programa nombre"/>
+</field>
+<field id="programa_descripcion"><phrase id="fldcaption" value="programa descripcion"/>
+</field>
+<field id="programa_costo"><phrase id="fldcaption" value="programa costo"/>
+</field>
+<field id="programa_fecha"><phrase id="fldcaption" value="programa fecha"/>
+</field>
+<field id="bip"><phrase id="fldcaption" value="BIP"/>
+</field>
+<field id="programa_estado"><phrase id="fldcaption" value="programa estado"/>
+</field>
+<field id="programa_proposito"><phrase id="fldcaption" value="programa proposito"/>
+</field>
+<field id="programa_funcionario"><phrase id="fldcaption" value="programa funcionario"/>
+</field>
+<field id="proyecto_codigo"><phrase id="fldcaption" value="proyecto codigo"/>
+</field>
+<field id="proyecto_nombre"><phrase id="fldcaption" value="proyecto nombre"/>
+</field>
+<field id="proyecto_descripcion"><phrase id="fldcaption" value="proyecto descripcion"/>
+</field>
+<field id="proyecto_presupuesto"><phrase id="fldcaption" value="proyecto presupuesto"/>
+</field>
+<field id="proyecto_estado"><phrase id="fldcaption" value="proyecto estado"/>
+</field>
+<field id="proyecto_codigo_depto"><phrase id="fldcaption" value="proyecto codigo depto"/>
+</field>
+<field id="proyecto_depto"><phrase id="fldcaption" value="proyecto depto"/>
+</field>
+<field id="proyecto_codigo_muni"><phrase id="fldcaption" value="proyecto codigo muni"/>
+</field>
+<field id="proyecto_muni"><phrase id="fldcaption" value="proyecto muni"/>
+</field>
+<field id="proyecto_funcionario"><phrase id="fldcaption" value="proyecto funcionario"/>
+</field>
+<field id="proyecto_ubicacion"><phrase id="fldcaption" value="proyecto ubicacion"/>
+</field>
+<field id="calificacion_codigo"><phrase id="fldcaption" value="calificacion codigo"/>
+</field>
+<field id="calificacion_nombre"><phrase id="fldcaption" value="calificacion nombre"/>
+</field>
+<field id="calificacion_estatus"><phrase id="fldcaption" value="calificacion estatus"/>
+</field>
+<field id="calificacion_evaluacion"><phrase id="fldcaption" value="calificacion evaluacion"/>
+</field>
+<field id="calificacion_estado"><phrase id="fldcaption" value="calificacion estado"/>
+</field>
+<field id="calificacion_entidad"><phrase id="fldcaption" value="calificacion entidad"/>
+</field>
+<field id="calificacion_funcionario"><phrase id="fldcaption" value="calificacion funcionario"/>
+</field>
+<field id="adjudicacion_codigo"><phrase id="fldcaption" value="adjudicacion codigo"/>
+</field>
+<field id="adjudicacion_nombre"><phrase id="fldcaption" value="adjudicacion nombre"/>
+</field>
+<field id="adjudicacion_nacionales"><phrase id="fldcaption" value="adjudicacion nacionales"/>
+</field>
+<field id="adjudicacion_internacionales"><phrase id="fldcaption" value="adjudicacion internacionales"/>
+</field>
+<field id="adjudicacion_costo"><phrase id="fldcaption" value="adjudicacion costo"/>
+</field>
+<field id="adjudicacion_proceso"><phrase id="fldcaption" value="adjudicacion proceso"/>
+</field>
+<field id="adjudicacion_estado"><phrase id="fldcaption" value="adjudicacion estado"/>
+</field>
+<field id="contratacion_nombre"><phrase id="fldcaption" value="contratacion nombre"/>
+</field>
+<field id="contratacion_numero"><phrase id="fldcaption" value="contratacion numero"/>
+</field>
+<field id="contratacion_alcances"><phrase id="fldcaption" value="contratacion alcances"/>
+</field>
+<field id="contratacion_precio"><phrase id="fldcaption" value="contratacion precio"/>
+</field>
+<field id="contratacion_inicio"><phrase id="fldcaption" value="contratacion inicio"/>
+</field>
+<field id="contratacion_final"><phrase id="fldcaption" value="contratacion final"/>
+</field>
+<field id="contratacion_duracion"><phrase id="fldcaption" value="contratacion duracion"/>
+</field>
+<field id="contratacion_estado"><phrase id="fldcaption" value="contratacion estado"/>
+</field>
+</table>
+<table id="vcontratacion"><phrase id="tblcaption" value="vcontratacion"/>
+<field id="idcontratacion"><phrase id="fldcaption" value="id Contratacion"/>
+</field>
+<field id="contratacion_numero"><phrase id="fldcaption" value="contratacion numero"/>
+</field>
+<field id="contratacion_nombre"><phrase id="fldcaption" value="contratacion nombre"/>
+</field>
+<field id="contratacion_entidad"><phrase id="fldcaption" value="contratacion entidad"/>
+</field>
+<field id="contratacion_empresa"><phrase id="fldcaption" value="contratacion empresa"/>
+</field>
+<field id="contratacion_precio"><phrase id="fldcaption" value="contratacion precio"/>
+</field>
+<field id="contratacion_precio2"><phrase id="fldcaption" value="contratacion precio 2"/>
+</field>
+<field id="contratacion_alcances"><phrase id="fldcaption" value="contratacion alcances"/>
+</field>
+<field id="contratacion_fecha_inicio"><phrase id="fldcaption" value="contratacion fecha inicio"/>
+</field>
+<field id="contratacion_fecha_final"><phrase id="fldcaption" value="contratacion fecha final"/>
+</field>
+<field id="contratacion_duracion"><phrase id="fldcaption" value="contratacion duracion"/>
+</field>
+<field id="contratacion_fecha_registro"><phrase id="fldcaption" value="contratacion fecha registro"/>
+</field>
+<field id="contratacion_fecha_recibido"><phrase id="fldcaption" value="contratacion fecha recibido"/>
+</field>
+<field id="contratacion_estado"><phrase id="fldcaption" value="contratacion estado"/>
+</field>
+<field id="adj_contrato_condiciones"><phrase id="fldcaption" value="adj contrato condiciones"/>
+</field>
+<field id="adj_antecedentes"><phrase id="fldcaption" value="adj antecedentes"/>
+</field>
+<field id="adj_especificaciones_planos"><phrase id="fldcaption" value="adj especificaciones planos"/>
+</field>
+<field id="adj_otro"><phrase id="fldcaption" value="adj otro"/>
+</field>
+</table>
+<table id="vcontratos"><phrase id="tblcaption" value="vcontratos"/>
+<field id="idcontratos"><phrase id="fldcaption" value="id Contratos"/>
+</field>
+<field id="idcontratacion"><phrase id="fldcaption" value="id Contratacion"/>
+</field>
+<field id="estatuscontrato"><phrase id="fldcaption" value="estatuscontrato"/>
+</field>
+<field id="nmodifica"><phrase id="fldcaption" value="nmodifica"/>
+</field>
+<field id="fecha"><phrase id="fldcaption" value="fecha"/>
+</field>
+<field id="tipomodifica"><phrase id="fldcaption" value="tipomodifica"/>
+</field>
+<field id="justimodcontrato"><phrase id="fldcaption" value="justimodcontrato"/>
+</field>
+<field id="precioactual"><phrase id="fldcaption" value="precioactual"/>
+</field>
+<field id="fechatercontra"><phrase id="fldcaption" value="fechatercontra"/>
+</field>
+<field id="alcanceactucontrato"><phrase id="fldcaption" value="alcanceactucontrato"/>
+</field>
+<field id="detallesreadju"><phrase id="fldcaption" value="detallesreadju"/>
+</field>
+<field id="prograini"><phrase id="fldcaption" value="prograini"/>
+</field>
+<field id="adendas"><phrase id="fldcaption" value="adendas"/>
+</field>
+<field id="prograactu"><phrase id="fldcaption" value="prograactu"/>
+</field>
+<field id="estado"><phrase id="fldcaption" value="estado"/>
+</field>
+<field id="otro"><phrase id="fldcaption" value="otro"/>
+</field>
+<field id="fecharecibido"><phrase id="fldcaption" value="fecharecibido"/>
+</field>
+<field id="fechacreacion"><phrase id="fldcaption" value="fechacreacion"/>
+</field>
+</table>
+<table id="vcontratos_gestion"><phrase id="tblcaption" value="vcontratos gestion"/>
+<field id="idcontratacion"><phrase id="fldcaption" value="id Contratacion"/>
+</field>
+<field id="idcontratos"><phrase id="fldcaption" value="id Contratos"/>
+</field>
+<field id="contrato_estatus"><phrase id="fldcaption" value="contrato estatus"/>
+</field>
+<field id="contrato_numero_modificacion"><phrase id="fldcaption" value="contrato numero modificacion"/>
+</field>
+<field id="contrato_fecha_modificacion"><phrase id="fldcaption" value="contrato fecha modificacion"/>
+</field>
+<field id="contrato_tipo_modificacion"><phrase id="fldcaption" value="contrato tipo modificacion"/>
+</field>
+<field id="contrato_justificacion_modificacion"><phrase id="fldcaption" value="contrato justificacion modificacion"/>
+</field>
+<field id="contrato_precio_actual"><phrase id="fldcaption" value="contrato precio actual"/>
+</field>
+<field id="contrato_fecha_terminacion"><phrase id="fldcaption" value="contrato fecha terminacion"/>
+</field>
+<field id="contrato_alcance_actual"><phrase id="fldcaption" value="contrato alcance actual"/>
+</field>
+<field id="contrato_detalle"><phrase id="fldcaption" value="contrato detalle"/>
+</field>
+<field id="contrato_estado"><phrase id="fldcaption" value="contrato estado"/>
+</field>
+<field id="adj_alcance_actualizado"><phrase id="fldcaption" value="adj alcance actualizado"/>
+</field>
+<field id="adj_detalle_readjudicacion"><phrase id="fldcaption" value="adj detalle readjudicacion"/>
+</field>
+<field id="adj_programa_inicial_trabajo"><phrase id="fldcaption" value="adj programa inicial trabajo"/>
+</field>
+<field id="adj_adendas"><phrase id="fldcaption" value="adj adendas"/>
+</field>
+<field id="adj_programa_actualizado_trabajo"><phrase id="fldcaption" value="adj programa actualizado trabajo"/>
+</field>
+<field id="adj_otro"><phrase id="fldcaption" value="adj otro"/>
+</field>
+</table>
+<table id="vejecucion"><phrase id="tblcaption" value="vejecucion"/>
+<field id="idejecucion"><phrase id="fldcaption" value="id Ejecucion"/>
+</field>
+<field id="idcontratacion"><phrase id="fldcaption" value="id Contratacion"/>
+</field>
+<field id="diseno_nombre"><phrase id="fldcaption" value="diseno nombre"/>
+</field>
+<field id="diseno_direccion"><phrase id="fldcaption" value="diseno direccion"/>
+</field>
+<field id="diseno_telefono"><phrase id="fldcaption" value="diseno telefono"/>
+</field>
+<field id="diseno_celular"><phrase id="fldcaption" value="diseno celular"/>
+</field>
+<field id="diseno_email"><phrase id="fldcaption" value="diseno email"/>
+</field>
+<field id="contratista_nombre"><phrase id="fldcaption" value="contratista nombre"/>
+</field>
+<field id="contratista_direccion"><phrase id="fldcaption" value="contratista direccion"/>
+</field>
+<field id="contratista_telefono"><phrase id="fldcaption" value="contratista telefono"/>
+</field>
+<field id="contratista_celular"><phrase id="fldcaption" value="contratista celular"/>
+</field>
+<field id="contratista_email"><phrase id="fldcaption" value="contratista email"/>
+</field>
+<field id="supervision_nombre"><phrase id="fldcaption" value="supervision nombre"/>
+</field>
+<field id="supervision_direccion"><phrase id="fldcaption" value="supervision direccion"/>
+</field>
+<field id="supervision_telefono"><phrase id="fldcaption" value="supervision telefono"/>
+</field>
+<field id="supervision_celular"><phrase id="fldcaption" value="supervision celular"/>
+</field>
+<field id="supervision_email"><phrase id="fldcaption" value="supervision email"/>
+</field>
+<field id="garanatia1"><phrase id="fldcaption" value="garanatia 1"/>
+</field>
+<field id="garantia2"><phrase id="fldcaption" value="garantia 2"/>
+</field>
+<field id="garantia3"><phrase id="fldcaption" value="garantia 3"/>
+</field>
+<field id="monto_garantia1"><phrase id="fldcaption" value="monto garantia 1"/>
+</field>
+<field id="monto_garantia2"><phrase id="fldcaption" value="monto garantia 2"/>
+</field>
+<field id="monto_garantia3"><phrase id="fldcaption" value="monto garantia 3"/>
+</field>
+<field id="estado_garantia1"><phrase id="fldcaption" value="estado garantia 1"/>
+</field>
+<field id="estado_garantia2"><phrase id="fldcaption" value="estado garantia 2"/>
+</field>
+<field id="estado_garantia3"><phrase id="fldcaption" value="estado garantia 3"/>
+</field>
+<field id="vencimiento_garantia1"><phrase id="fldcaption" value="vencimiento garantia 1"/>
+</field>
+<field id="vencimiento_garantia2"><phrase id="fldcaption" value="vencimiento garantia 2"/>
+</field>
+<field id="vencimiento_garantia3"><phrase id="fldcaption" value="vencimiento garantia 3"/>
+</field>
+<field id="geo_latitud"><phrase id="fldcaption" value="geo latitud"/>
+</field>
+<field id="geo_longitud"><phrase id="fldcaption" value="geo longitud"/>
+</field>
+<field id="fecha_inicio"><phrase id="fldcaption" value="fecha inicio"/>
+</field>
+<field id="estado"><phrase id="fldcaption" value="estado"/>
+</field>
+</table>
+<table id="vidpaths"><phrase id="tblcaption" value="IDs del Sistema"/>
+<field id="idprograma"><phrase id="fldcaption" value="id Programa"/>
+</field>
+<field id="idproyecto"><phrase id="fldcaption" value="id Proyecto"/>
+</field>
+<field id="idadjudicacion"><phrase id="fldcaption" value="id Adjudicacion"/>
+</field>
+<field id="idcontratacion"><phrase id="fldcaption" value="id Contratacion"/>
+</field>
+<field id="idcontratos"><phrase id="fldcaption" value="id Contratos"/>
+</field>
+<field id="idavances"><phrase id="fldcaption" value="id Avances"/>
+</field>
+<field id="idcalificacion"><phrase id="fldcaption" value="id Calificacion"/>
+</field>
+<field id="idejecucion"><phrase id="fldcaption" value="id Ejecucion"/>
+</field>
+</table>
+<table id="vids"><phrase id="tblcaption" value="vids"/>
+<field id="idprograma"><phrase id="fldcaption" value="id Programa"/>
+</field>
+<field id="idproyecto"><phrase id="fldcaption" value="id Proyecto"/>
+</field>
+<field id="idcalificacion"><phrase id="fldcaption" value="id Calificacion"/>
+</field>
+<field id="idadjudicacion"><phrase id="fldcaption" value="id Adjudicacion"/>
+</field>
+<field id="idcontratacion"><phrase id="fldcaption" value="id Contratacion"/>
+</field>
+<field id="idejecucion"><phrase id="fldcaption" value="id Ejecucion"/>
+</field>
+<field id="nombre_programa"><phrase id="fldcaption" value="nombre programa"/>
+</field>
+<field id="nombre_proyecto"><phrase id="fldcaption" value="nombre proyecto"/>
+</field>
+<field id="codigo"><phrase id="fldcaption" value="codigo"/>
+</field>
+<field id="nombre_calificacion"><phrase id="fldcaption" value="nombre calificacion"/>
+</field>
+<field id="nombre_adjudicacion"><phrase id="fldcaption" value="nombre adjudicacion"/>
+</field>
+<field id="nombre_contrato"><phrase id="fldcaption" value="nombre contrato"/>
+</field>
+</table>
+<table id="vprograma"><phrase id="tblcaption" value="vprograma"/>
+<field id="idprograma"><phrase id="fldcaption" value="id Programa"/>
+</field>
+<field id="programa_codigo"><phrase id="fldcaption" value="programa codigo"/>
+</field>
+<field id="programa_bip"><phrase id="fldcaption" value="programa BIP"/>
+</field>
+<field id="programa_nombre"><phrase id="fldcaption" value="programa nombre"/>
+</field>
+<field id="programa_descripcion"><phrase id="fldcaption" value="programa descripcion"/>
+</field>
+<field id="programa_costo"><phrase id="fldcaption" value="programa costo"/>
+</field>
+<field id="programa_moneda"><phrase id="fldcaption" value="programa moneda"/>
+</field>
+<field id="programa_fecha"><phrase id="fldcaption" value="programa fecha"/>
+</field>
+<field id="programa_fecha_registro"><phrase id="fldcaption" value="programa fecha registro"/>
+</field>
+<field id="programa_fecha_recibido"><phrase id="fldcaption" value="programa fecha recibido"/>
+</field>
+<field id="entes_descripcion"><phrase id="fldcaption" value="entes descripcion"/>
+</field>
+<field id="programa_sector"><phrase id="fldcaption" value="programa sector"/>
+</field>
+<field id="programa_subsector"><phrase id="fldcaption" value="programa subsector"/>
+</field>
+<field id="funcionario_nombre"><phrase id="fldcaption" value="funcionario nombre"/>
+</field>
+<field id="funcionario_puesto"><phrase id="fldcaption" value="funcionario puesto"/>
+</field>
+<field id="funcionario_correo"><phrase id="fldcaption" value="funcionario correo"/>
+</field>
+<field id="funcionario_telefono"><phrase id="fldcaption" value="funcionario telefono"/>
+</field>
+<field id="funcionario_rol"><phrase id="fldcaption" value="funcionario rol"/>
+</field>
+<field id="adj_carta_convenio"><phrase id="fldcaption" value="adj carta convenio"/>
+</field>
+<field id="adj_plan_operativo"><phrase id="fldcaption" value="adj plan operativo"/>
+</field>
+<field id="adj_presupuesto"><phrase id="fldcaption" value="adj presupuesto"/>
+</field>
+<field id="adj_perfil_programa"><phrase id="fldcaption" value="adj perfil programa"/>
+</field>
+<field id="adj_otro"><phrase id="fldcaption" value="adj otro"/>
+</field>
+</table>
+<table id="vprograma_fuentes"><phrase id="tblcaption" value="vprograma fuentes"/>
+<field id="idprograma"><phrase id="fldcaption" value="id Programa"/>
+</field>
+<field id="idfuente"><phrase id="fldcaption" value="id Fuente"/>
+</field>
+<field id="fuente"><phrase id="fldcaption" value="fuente"/>
+</field>
+<field id="monto"><phrase id="fldcaption" value="monto"/>
+</field>
+<field id="idmoneda"><phrase id="fldcaption" value="id Moneda"/>
+</field>
+<field id="moneda"><phrase id="fldcaption" value="moneda"/>
+</field>
+<field id="tasa_cambio"><phrase id="fldcaption" value="tasa cambio"/>
+</field>
+</table>
+<table id="vprograma_proposito"><phrase id="tblcaption" value="vprograma proposito"/>
+<field id="idprograma"><phrase id="fldcaption" value="id Programa"/>
+</field>
+<field id="idproposito"><phrase id="fldcaption" value="idproposito"/>
+</field>
+</table>
+<table id="vproyecto"><phrase id="tblcaption" value="vproyecto"/>
+<field id="idproyecto"><phrase id="fldcaption" value="id Proyecto"/>
+</field>
+<field id="proyecto_codigo"><phrase id="fldcaption" value="proyecto codigo"/>
+</field>
+<field id="proyecto_nombre"><phrase id="fldcaption" value="proyecto nombre"/>
+</field>
+<field id="ubicacion_region"><phrase id="fldcaption" value="ubicacion region"/>
+</field>
+<field id="ubicacion_tramo"><phrase id="fldcaption" value="ubicacion tramo"/>
+</field>
+<field id="ubicacion_ruta"><phrase id="fldcaption" value="ubicacion ruta"/>
+</field>
+<field id="ubicacion_departamento"><phrase id="fldcaption" value="ubicacion departamento"/>
+</field>
+<field id="ubicacion_codigo"><phrase id="fldcaption" value="ubicacion codigo"/>
+</field>
+<field id="ubicacion_clase"><phrase id="fldcaption" value="ubicacion clase"/>
+</field>
+<field id="proyecto_descripcion"><phrase id="fldcaption" value="proyecto descripcion"/>
+</field>
+<field id="proyecto_presupuesto"><phrase id="fldcaption" value="proyecto presupuesto"/>
+</field>
+<field id="funcionario_nombre"><phrase id="fldcaption" value="funcionario nombre"/>
+</field>
+<field id="funcionario_puesto"><phrase id="fldcaption" value="funcionario puesto"/>
+</field>
+<field id="funcionario_telefono"><phrase id="fldcaption" value="funcionario telefono"/>
+</field>
+<field id="funcionario_correo"><phrase id="fldcaption" value="funcionario correo"/>
+</field>
+<field id="funcionario_ente"><phrase id="fldcaption" value="funcionario ente"/>
+</field>
+<field id="proyecto_aprobacion"><phrase id="fldcaption" value="proyecto aprobacion"/>
+</field>
+<field id="proyecto_fecha_registro"><phrase id="fldcaption" value="proyecto fecha registro"/>
+</field>
+<field id="proyecto_fecha_recibido"><phrase id="fldcaption" value="proyecto fecha recibido"/>
+</field>
+<field id="proyecto_estado"><phrase id="fldcaption" value="proyecto estado"/>
+</field>
+<field id="adj_especificaciones_planos"><phrase id="fldcaption" value="adj especificaciones planos"/>
+</field>
+<field id="adj_presupuesto_programa"><phrase id="fldcaption" value="adj presupuesto programa"/>
+</field>
+<field id="adj_estudio_factibilidad"><phrase id="fldcaption" value="adj estudio factibilidad"/>
+</field>
+<field id="adj_estudio_impacto"><phrase id="fldcaption" value="adj estudio impacto"/>
+</field>
+<field id="adj_licencia_ambiental"><phrase id="fldcaption" value="adj licencia ambiental"/>
+</field>
+<field id="adj_estudio_tierras"><phrase id="fldcaption" value="adj estudio tierras"/>
+</field>
+<field id="adj_plan_reasentamiento"><phrase id="fldcaption" value="adj plan reasentamiento"/>
+</field>
+<field id="adj_plan_anual_compras"><phrase id="fldcaption" value="adj plan anual compras"/>
+</field>
+<field id="adj_acuerdo_financiamiento"><phrase id="fldcaption" value="adj acuerdo financiamiento"/>
+</field>
+<field id="adj_nota_prioridad"><phrase id="fldcaption" value="adj nota prioridad"/>
+</field>
+<field id="adj_constancia_banco"><phrase id="fldcaption" value="adj constancia banco"/>
+</field>
+<field id="adj_otro"><phrase id="fldcaption" value="adj otro"/>
+</field>
+</table>
+<table id="vproyecto_beneficiario"><phrase id="tblcaption" value="vproyecto beneficiario"/>
+<field id="idproyecto"><phrase id="fldcaption" value="id Proyecto"/>
+</field>
+<field id="idbeneficiario"><phrase id="fldcaption" value="idbeneficiario"/>
+</field>
+<field id="codigo_depto"><phrase id="fldcaption" value="codigo depto"/>
+</field>
+<field id="codigo_muni"><phrase id="fldcaption" value="codigo muni"/>
+</field>
+<field id="departamento"><phrase id="fldcaption" value="departamento"/>
+</field>
+<field id="municipio"><phrase id="fldcaption" value="municipio"/>
+</field>
+<field id="km"><phrase id="fldcaption" value="km"/>
+</field>
+</table>
+<table id="vproyecto_fuente"><phrase id="tblcaption" value="vproyecto fuente"/>
+<field id="idproyecto"><phrase id="fldcaption" value="id Proyecto"/>
+</field>
+<field id="fuente"><phrase id="fldcaption" value="fuente"/>
+</field>
+<field id="abreviatura"><phrase id="fldcaption" value="abreviatura"/>
+</field>
+<field id="monto"><phrase id="fldcaption" value="monto"/>
+</field>
+<field id="moneda"><phrase id="fldcaption" value="moneda"/>
+</field>
+<field id="tasa_cambio"><phrase id="fldcaption" value="tasa cambio"/>
+</field>
+</table>
+</project>
+</ew-language>

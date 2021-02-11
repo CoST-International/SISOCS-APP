@@ -1,0 +1,389 @@
+@import url('./hover-min.css');
+@import url('./bootstrap.css');
+@import url('./buttons.css');
+@font-face {
+    font-family: Monst;
+    src: url("./font/monst.OTF") format("opentype");
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: Butler;
+    src: url("./font/Butler_Black.otf") format("opentype");
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: Aroma;
+    src: url("./font/AROMA-Bold.ttf") format("opentype");
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: Orkney_Bold;
+    src: url("./font/Orkney_Bold.ttf") format("opentype");
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: Orkney;
+    src: url("./font/Orkney Light.ttf") format("opentype");
+    font-weight: bold;
+    font-style: bold;
+}
+
+* {
+    font-family: Orkney;
+}
+/*
+START CUSTOM
+
+*/
+
+body,html{
+   
+    overflow-x: hidden;
+}
+
+/*.navbar .nav {
+    padding-top: 15px;
+}*/
+
+.navbar-inverse .navbar-inner {
+    color:#2980b9;
+	background:#ffffff;
+    text-transform: uppercase;
+    
+}
+
+.navbar-inverse .brand, .navbar-inverse .nav > li > a {
+    color: #404040;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    font-size: .8em;
+}
+
+.navbar-inverse .brand, .navbar-inverse .nav > li > a:hover{
+    color: #2980b9;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.navbar-inverse .nav .active > a, .navbar-inverse .nav .active > a:hover, .navbar-inverse .nav .active > a:focus {
+    color: #2980b9;
+    background: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow:none;
+    box-shadow: none;
+}
+
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle, .navbar-inverse .nav li.dropdown.active > .dropdown-toggle, .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
+    color: #404040;
+    background-color: #bdc3c7;
+}
+
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle, .navbar-inverse .nav li.dropdown.active > .dropdown-toggle, .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
+    color: #404040;
+    background: #ecf0f1;
+}
+
+.container-fluid-bar {
+    background: #404040;
+    height: 10px;
+    margin-top:-2px;
+}
+
+.item-test{
+    padding-top:14px;
+    padding-bottom: 14px;
+    overflow: visible;
+}
+
+.item-test:hover,.item-test:focus{
+    background: #ecf0f1;
+}
+
+.active.item-test.hvr-underline-from-center{
+    background: #ecf0f1;
+
+}
+
+.dropdown.item-test.hvr-underline-from-center.open{
+    background: #ecf0f1;
+}
+
+
+.dropdown-menu li > a {
+    width: 100%;
+    text-transform: none;
+}
+
+.dropdown-menu li > a:hover{
+    color:#2980b9;
+    background: transparent;
+}
+
+div.cont{
+    background: #fff;
+}
+
+.footer{
+    padding: 20px 0;
+    background-color: #2477a7;
+    color: #FFF;
+}
+
+.footerTitle{
+    font-family: Orkney_Bold;
+    font-weight: bold;
+}
+
+
+.lineOne{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(64, 64,64, 0.60), rgba(0, 0, 0, 0));
+ 
+}
+.code-box {
+    border: 1px solid #e9e9e9;
+    border-radius: 4px;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    padding: 30px 10px 10px 10px;
+    overflow: hidden;
+}
+
+#map_canvas {
+    width: 100%;
+    height: 500px;
+  }
+/*START TABLES*/
+
+
+.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td {
+    border: 0.1px solid #2477a7;
+}
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    column-span: 1;
+    text-align:center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.tg td {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 3px 3px;
+    border-style: solid;
+    border-width: 0px;
+    overflow: hidden;
+    word-break: normal;
+    font-family: "Lucida Sans Unicode", "Lucida Grande"
+}
+.tg th {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 3px 3px;
+    border-style: solid;
+    border-width: 0px;
+    overflow: hidden;
+    word-break: normal;
+    width: 33.3%;
+    ;
+    font-family: "Lucida Sans Unicode", "Lucida Grande"
+}
+.tg .tg-qp8u {
+    color: #ffffff;
+    text-align: center;
+    margin: 0px;
+}
+.tg .tg-header {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 36px;
+}
+.tg .tg-encabezados {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 23px;
+}
+.tg .tg-sub-encabezados {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 15px;
+}
+.tg .tg-spacer {
+    width: 20%
+}
+
+.tab_cont {
+
+    border-color: #2477a7;
+    margin: 0px;
+    margin-top:10px;
+    padding: 0px;
+    border: 1px solid #2477a7;
+    text-align: center;
+    height: 10%;
+    vertical-align:middle;
+
+}
+.tab_cont tr th {
+    background: #2477a7;
+    border-width: 2px;
+    white-space: nowrap;
+    font-size: 15px;
+    font-family: Orkney_Bold;
+    margin: 0px;
+    padding: 20px !important;
+    text-transform: uppercase;
+    vertical-align:middle;
+}
+.tab_cont th {
+    font-weight: bold;
+    color: #fff;
+    font-size: 1em;
+}
+.tab_cont tr td {
+    border-width: 1px;
+    background: #ffffff;
+    font-size: 12px;
+    margin: 0px;
+    padding: 3px;
+    text-align: center !important;
+    vertical-align:middle;
+}
+#styled_td {
+    border-width: 1px;
+    background: #FFF;
+    margin: 2px;
+    padding: 0px !important;
+}
+
+#LblMunicipio{
+    margin-top:10px;
+    text-transform: uppercase;
+    font-family: Orkney_Bold;
+    font-size: 1.2em;
+}
+
+
+#tableButton{
+    background: #2477a7;
+    color:#fff;
+    text-transform: uppercase;
+    padding: 10px 10px;
+}
+
+#backButton{
+    background: #27ae60;
+    color:#fff;
+    text-transform: none;
+    padding: 10px 10px;
+}
+/*END TABLES*/
+
+
+/*START CUSTOM BUTTONS*/
+
+
+
+/*END CUSTOM BUTTONS*/
+
+/*START CUSTOM MAP*/
+#mapdiv{
+    width: 50%;
+    height: 500px;
+}
+
+.ammapAlert 
+{
+    display:table-cell; 
+    vertical-align:middle; 
+    text-align:center; 
+    font-family:verdana,helvetica,arial,sans-serif;
+    font-size:12px;
+    color:#16a085;
+    
+}
+
+.ammapDescriptionWindow
+{
+   font-size:11px;
+   font-family:verdana,helvetica,arial,sans-serif;    
+   background-color:#FFFFFF;
+   border-style:solid;
+   border-color:#DADADA;
+   border-width:1px;
+   color:#000000;
+   padding:8px;  
+}
+
+.ammapDescriptionTitle
+{
+   font-size:12px;
+   font-weight:bold;
+   font-family:verdana,helvetica,arial,sans-serif;
+   padding-bottom:5px;    
+}
+
+.ammapDescriptionWindowCloseButton
+{
+    
+}
+
+.ammapObjectList ul 
+{
+    padding-left:20px; 
+    list-style:square outside; 
+    color:#999999;
+    font-family:verdana,helvetica,arial,sans-serif;
+    font-size: 12px;
+}
+
+.ammapObjectList ul ul 
+{
+    padding-left:14px;
+}
+
+.ammapObjectList a 
+{
+    color:#000000;
+}
+
+.ammapObjectList a 
+{
+    color:#000000;
+    text-decoration:none;
+    display:block;
+    padding:2px;
+}
+
+.ammapObjectList a:hover 
+{
+    color:#16a085;
+    text-decoration:none;
+    background:#FFFFFF;
+    cursor:pointer;
+    display:block;
+}
+
+.ammapDescriptionText 
+{
+	overflow: auto; 
+}
+
+
+.amChartsPlotArea
+{
+	
+}
+
+/*END MAP CUSTOM*/

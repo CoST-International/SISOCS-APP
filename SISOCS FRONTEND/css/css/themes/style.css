@@ -1,0 +1,28 @@
+.tg  {border-collapse:collapse;border-spacing:0; width:100%;column-span:1;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:3px 3px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;font-family:"Lucida Sans Unicode", "Lucida Grande"}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:3px 3px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;width:33.3%;;font-family:"Lucida Sans Unicode", "Lucida Grande"}
+.tg .tg-qp8u{color:#ffffff;text-align:center;margin:0px;}
+.tg .tg-header{font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;font-size:36px;}
+.tg .tg-encabezados{font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;font-size:23px;}
+.tg .tg-sub-encabezados{font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;font-size:15px;}
+.tg .tg-spacer{width:20%}
+
+#map_canvas {
+        width: 100%;
+        height: 500px;
+      }
+	  
+.slideshow { margin: auto;width:auto; height:auto; }
+.slideshow img { width: 100%; height: 100%; padding: 2px; }
+
+/*.tab_cont {border-color:#000;border-style:dashed;text-align:center;height:10%;font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;height:20px !important}
+.tab_cont tr th{background:#000;border-width:1px;font-size:20px;white-space:nowrap;}
+.tab_cont th{color:#FFF;font-size:18px;}
+.tab_cont tr td{border-width:1px;background:#FFCC33;font-size:12px}
+#styled_td {border-width:1px;background:#FFF;} */
+
+.tab_cont {border-color:#000;margin:0px;padding:0px;border-style:none;border:none;text-align:center;height:10%;font-family:Calibri, sans-serif;}
+.tab_cont tr th{background:#EAB200;border-width:1px;border-top:thin;border-left:thin;white-space:nowrap;border-right:thin;font-size:15px;font-weight:bold;margin:0px;padding:3px !important;}
+.tab_cont th{color:#000;font-size:15px;}
+.tab_cont tr td{border-width:1px;background:#E7E7FF;font-size:12px;margin:0px;padding:3px;text-align:center !important;}
+#styled_td {border-width:1px;background:#FFF;margin:2px;padding:0px !important;}

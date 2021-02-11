@@ -1,0 +1,339 @@
+body {
+      width: 90%;
+      margin: 100px auto 0 auto;
+      font-family: Calibri, sans-serif;
+      font-size: small;
+      background: #FFFFFF;
+  }
+  #InvitacionCalificacion tr td{
+    padding-left: 25px;
+  }
+  .general tr td{
+    padding-left: 25px;
+  }
+/* ------------------------------------------------- */
+
+#tabs {
+  overflow: hidden;
+  width: 100%;
+  margin: 1em;
+  padding: 0;
+  list-style: none;
+}
+
+#tabs li {
+  float: left;
+  margin: 0 .5em 0 0;
+}
+
+#tabs a {
+    background-position: 0% 0%;
+	position: relative;
+    padding: .7em 3.5em;
+	float: left;
+	text-decoration: none;
+	color: #231F20;
+	-webkit-border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+	border-radius: 5px 0 0;
+	box-shadow: 0 2px 2px rgba(0,0,0,.2);
+	background-image: linear-gradient(to bottom, #BBB, #EEE);
+	background-color: #19ABFF;
+	background-repeat: repeat;
+	background-attachment: scroll;
+}
+
+#tabs a:hover,
+#tabs a:hover::after,
+#tabs a:focus,
+#tabs a:focus::after {
+  background: #19ABFF;
+}
+
+#tabs a:focus {
+  outline: 0;
+}
+
+#tabs a::after {
+    background-position: 0% 0%;
+	content:'';
+    position:absolute;
+    z-index: 1;
+    top: 0;
+    right: -.5em;
+    bottom: 0;
+    width: 1em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+	-webkit-transform: skew(10deg);
+	-moz-transform: skew(10deg);
+	-ms-transform: skew(10deg);
+	-o-transform: skew(10deg);
+	transform: skew(10deg);
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+	border-radius: 0 5px 0 0;
+	background-image: linear-gradient(to bottom, #BBB, #EEE);
+	background-color: #EEE;
+	background-repeat: repeat;
+	background-attachment: scroll;
+}
+
+#tabs #current a {
+  background: #19ABFF;
+  z-index: 3;
+  font-weight: bold;
+}
+
+#tabs #current a::after {
+  background: #19ABFF;
+  z-index: 3;
+  font-weight: bold;
+}
+
+/* ------------------------------------------------- */
+
+#content {
+    background: #fff;
+    padding: 2em;
+    height: 220px;
+    position: relative;
+    z-index: 2;
+    -moz-border-radius: 0 5px 5px 5px;
+    -webkit-border-radius: 0 5px 5px 5px;
+    border-radius: 0 5px 5px 5px;
+    -moz-box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, .5);
+    box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, .5);
+    height:auto;
+}
+
+/* ------------------------------------------------- */
+
+#about {
+    color: #999;
+}
+
+#about a {
+    color: #eee;
+}
+/*--------------------------------------------------------*/
+/*--------------------------------------------------------*/
+
+.general  {
+    border-collapse:collapse;
+    border-spacing:0;
+    width:100%;
+    column-span:1;
+    }
+
+.general td {
+    /*
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    padding:3px 3px;
+    border-style:solid;
+    border-width:0px;
+    overflow:hidden;
+    word-break:normal;
+    font-family:"Lucida Sans Unicode", "Lucida Grande"
+    */
+
+    padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	/*text-align:justify;*/
+	border:none;
+	overflow:hidden;
+    white-space:normal;
+
+    }
+
+.general th {
+    /*
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    padding:3px 3px;
+    border-style:solid;
+    border-width:0px;
+    overflow:hidden;
+    word-break:normal;
+    width:33.3%;
+    font-family:"Lucida Sans Unicode", "Lucida Grande"
+    */
+
+    color:black;
+	font-size:11.0pt;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+
+	font-weight:700;
+	text-align:center !important;
+	vertical-align:middle;
+	border-top:none;
+	border-right:0.5pt solid #DBDBDB;
+	border-bottom:none;
+	border-left:0.5pt solid #DBDBDB;
+	background:#169AE5;
+	white-space:normal;
+    }
+
+
+.general-encabezados {
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size:23px;
+    }
+
+.general .general-sub-encabezados {
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size:15px;
+    }
+
+.general .general-spacer {width:20%}
+
+.slideshow { margin: auto;width:auto; height:auto; }
+.slideshow img { width: 100%; height: 100%; padding: 2px; }
+
+.tabla_interna {
+    border-color:#000;
+    margin:0px;
+    padding:0px;
+    border-style:solid;
+    border-width:1px;
+    text-align:center;
+    height:10%;
+    font-family:Calibri, sans-serif;
+    }
+
+.tabla_interna th {
+    /*
+    background:#169AE5;
+    border-width:1px;
+    border-top:thin;
+    border-left:thin;
+    white-space:nowrap;
+    border-right:thin;
+    font-size:15px;
+    font-weight:bold;
+    margin:0px;
+    padding:3px !important;
+    */
+
+    color:black;
+	font-size:11.0pt;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+
+	font-weight:700;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #DBDBDB;
+	border-bottom:none;
+	border-left:.5pt solid #DBDBDB;
+	background:#169AE5;
+	white-space:normal;
+    }
+
+.tabla_interna td {
+    /*
+    border-width:1px;
+    background:#E7E7FF;
+    font-size:12px;
+    margin:0px;
+    padding:3px;
+    text-align:center !important;
+    */
+
+    padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	/*text-align:justify;*/
+	vertical-align:bottom;
+	border:none;
+	white-space:nowrap;
+    text-align:center !important;
+
+    }
+
+.tabla_interna .fila_blanco {
+	color:black;
+	font-size:12.0px;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #DBDBDB;
+	border-bottom:none;
+	border-left:.5pt solid #DBDBDB;
+	white-space:normal;
+    background:transparent;
+}
+
+.tabla_interna .fila_azul	{
+	color:black;
+	/*font-size:12.0px;
+	font-weight:400;
+	font-style:normal;*/
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #DBDBDB;
+	border-bottom:none;
+	border-left:.5pt solid #DBDBDB;
+	background:#E7E7FF;
+	white-space:normal;
+}
+
+/* Mapa */
+.labels {
+   color: red;
+   background-color: white;
+   font-family: "Lucida Grande", "Arial", sans-serif;
+   font-size: 10px;
+   font-weight: bold;
+   text-align: center;
+   width: 40px;
+   border: 2px solid black;
+   white-space: nowrap;
+}
+
+/* Linea de tiempo */
+ol.progtrckr {
+    margin: 0;
+    padding: 0;
+    list-style-type none;
+}
+
+
+ol.progtrckr li.progtrckr-done:before {
+    content: "\2713";
+    color: white;
+    background-color: yellowgreen;
+    height: 1.2em;
+    width: 1.2em;
+    line-height: 1.2em;
+    border: none;
+    border-radius: 1.2em;
+}
