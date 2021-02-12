@@ -9,7 +9,7 @@
     - [Arquitectura](#arquitectura)
     - [Uso del sistema](#uso-del-sistema)
   - [Guía de instalación](#Guía-de-instalación)
-    - [Instalación del frontend](3instalación-del-frontend)
+    - [Instalación del frontend](#instalación-del-frontend)
     - [Instalación del componenete OCDS](#Instalación-del-componenete-OCDS)
        - [Agregar información al esquema de MongoDB](#Agregar-información-al-esquema-de-MongoDB)
        - [Archivo config.json para el módulo SISOCS](#Archivo-configjson-para-el-módulo-SISOCS)
