@@ -115,6 +115,15 @@ Además, tiene dos apartados adicionales donde se muestra los Hitos o acontecimi
 
 ## Guía de instalación
 
+### Intstalación del frontend
+
+Requerimientos para e frontend
+* APACHE 2
+* MySQL ( Ver 14.14 Distrib 5.7.29, for Linux (x86_64) using  EditLine wrapper)
+
+Indicaciones:
+-Instalarlo mediante el paquete XAMPP, que incluye Apache y la base de datos MySQL.
+
 ### Instalación del componenete OCDS
 
 Se debe proceder a instalar los siguientes programas y módulos con el fin de preparar el ambiente de desarrollo:
