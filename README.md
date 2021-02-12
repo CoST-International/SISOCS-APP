@@ -116,7 +116,7 @@ Además, tiene dos apartados adicionales donde se muestra los Hitos o acontecimi
 
 ## Guía de instalación
 
-### Intstalación del frontend
+### Instalación del frontend
 
 Requerimientos:
 * APACHE 2
