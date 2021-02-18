@@ -225,17 +225,17 @@ El resultado del Json en formato OCDS del aplicativo es el siguiente:
 
 ## Cómo contribuir
 
-La plataforma de divulgación para datos de infraestructura es el portal de [CoST -la Iniciativa de Transparencia en Infraestructura](https://infrastructuretransparency.org/https://infrastructuretransparency.org/)- en GitHub que permite explorar y reutilizar herramientas digitales de código abierto que pueden utilizarse en el diseño y la implementación de nuestra ruta de divulgación, con el objetivo de mejorar la transparencia y la responsabilidad en el sector de infraestructura en todo el mundo.  
+La plataforma de divulgación para datos de infraestructura es un esfuerso de [CoST -la Iniciativa de Transparencia en Infraestructura](https://infrastructuretransparency.org/https://infrastructuretransparency.org/)- que tiene como objetivo apoyar y guiar a los miembros y socios de CoST para contribuir, explorar y reutilizar herramientas digitales de código abierto publicadas en nuestro [Repositorio de GitHub](https://github.com/infrastructure-transparency). Estas herramientas se pueden utilizar en el diseño e implementación de procesos de divulgación con el objetivo de mejorar la transparencia y la rendición de cuentas en el sector de infraestructura en todo el mundo.
 
-Creemos que los códigos fuentes abiertos desarrollados por nuestros miembros y socios deben estar a disposición del público para ayudarnos a contribuir a proporcionar infraestructuras de calidad, fortalecer las economías y mejorar vidas. 
-Por ello, animamos a quienes contribuyen a la mejora de estas herramientas digitales a que compartan sus aportes con nosotros. 
+CoST cree que los códigos fuentes abiertos desarrollados por nuestros miembros y socios deben estar a disposición del público para ayudarnos a contribuir a proporcionar infraestructuras de calidad, fortalecer las economías y mejorar vidas. 
+Por ello, CoST anima a quienes contribuyen a la mejora de estas herramientas digitales a que compartan sus aportes con nosotros. 
 
 Si al reutilizar esta herramienta digital, consideras que
 * Has añadido alguna funcionalidad nueva con la que aportas valor para que más personas la reutilicen,
 * Has hecho la herramienta más versátil para respaldar nuevas actualizaciones,
 * Has corregido algunos errores existentes,
 * O simplemente has mejorado la interfaz de usuario o la documentación de la misma.
-Te animamos a que devuelvas los progresos realizados al repositorio. Sigue estos pasos para contribuir a la herramienta:
+Te invitamos a que devuelvas los progresos realizados al repositorio. Sigue estos pasos para contribuir a la herramienta:
 
 1.	Haz una división del repositorio. 
 2.	Desarrolla la nueva funcionalidad o realiza los cambios que crees que añaden valor a la herramienta.
