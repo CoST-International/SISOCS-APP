@@ -7,11 +7,14 @@
   - [Description and Context](#description-and-context)
   - [User Guide](#user-guide)
     - [Application Architecture](#application-architecture)
+    - [Using the system](#using-the-system)
   - [Installation Guide](#instalation-guide)
-    - [Adding information to the MongoDB schema](#adding-information-to-the-MongoDB-schema)
-    - [config.json File for SISOCS module](#configjson-File-for-SISOCS-module)
-    - [config.json File for server](#configjson-File-for-server)
-    - [OCDS Json file](#ocds-json-file)
+    - [Installing the frontend application](#Installing-the-frontend-application)
+    - [Installing the OCDS component](#Installing-the-OCDS-component)
+      - [Adding information to the MongoDB schema](#adding-information-to-the-MongoDB-schema)
+      - [config.json File for SISOCS module](#configjson-File-for-SISOCS-module)
+      - [config.json File for server](#configjson-File-for-server)
+      - [OCDS Json file](#ocds-json-file)
   - [How to Contribute](#how-to-contribute)
     - [Attributions](#attributions)
   - [Code of Conduct](#code-of-conduct)
@@ -37,17 +40,92 @@ identifying, screening, structuring, contracting, and overseeing PPPs in Hondura
 [The CoST Infrastructure Data Standard](https://infrastructuretransparency.org/resource/cost-infrastructure-data-standard/), and the [PPP Extension of the Open Contracting Data Standard (OCDS)](https://extensions.open-contracting.org/fr/extensions/ppp/master/).
 
 ## User Guide
-SISOCS APP is a portal that contains data about Public Private Partnerships projects. The [SISOCS - OCDS](https://app.sisocs.org/protected/ocdsShow/) component was built in NodeJS, in its LTS version to date (v8.9). This application server allows us to mount an API Server which is used by SISOCS - PHP to store the information of the projects in MongoDB. The projects can then be viewed in PPP format
+SISOCS APP is a portal that contains data about Public Private Partnerships projects. Currently the application is running at the link: https://app.sisocs.org/
+
+The [SISOCS - OCDS](https://app.sisocs.org/protected/ocdsShow/) component was built in NodeJS, in its LTS version to date (v8.9). This application server allows us to mount an API Server which is used by SISOCS - PHP to store the information of the projects in MongoDB. The projects can then be viewed in PPP format
 
 SISOCS – PHP
-* [Download](https://engineersagainstpoverty-my.sharepoint.com/:f:/g/personal/opencode_infrastructuretransparency_org/El3iGdykD75GoEttwljs178BVxZssm6FM7wxQvlPUW4Dww?e=9N5grv) - Source code (PHP-MySQL)
+[Source code (PHP-MySQL)](https://github.com/infrastructure-transparency/SISOCS-APP/tree/main/SISOCS%20FRONTEND)
+
 
 
 ### Application Architecture
 
 <p align="center"><img src="https://infras-hn.org/images/Arquitectura%20SISCOS%20APP.png"></p>
 
+### Using the system
+
+#### Access
+There are two ways to access the system, the first is by typing Sisocs App the search engine in your trusted browser, and the second way is by writing the address (app.sisocs.org) into the address bar located in the browser.
+
+#### Homepage
+
+#### A)	Menu Bar
+The menu bar contains the following options:
+
+<p align="center"><img src="https://infras-hn.org/images/sisocsapp/sisocsapp-menu.png"></p>
+
+1. Home: this button allows you to go back to the introductory page of the website.
+2. Projects Maps: Shows the geographical location where the infrastructure projects are located.
+3. Reports: Includes two options, in the first one you can visualize or download in pdf the World Bank’s PPP Disclosure Diagnostic Report in Honduras. This report aims to help policy makers and PPP specialists to assess the state of PPP disclosure in the jurisdiction, and to identify customized solutions for all types of PPPs to enable a maximum disclosure of information on PPPs in Honduras. In the Second option you can download the data of all disclosed projects in XLS format.
+4.	OCDS (Open Contracting Data Standard): This tab allows you to access the module to access the project data under the [Open Contracting Data Standard (OCDS).](https://standard.open-contracting.org/latest/en/)This standard enables disclosure of data and documents from all stages of the contracting process by defining a common data model.
+
+<p align="center"><img src="https://infras-hn.org/images/sisocsapp/Sisocsapp-ocds.png"></p>
+
+#### B) Project Section
+This section shows a list of the projects published in the system and indicates the total number of projects disclosed and the total investment in Honduran lempiras and American dollars. It also presents a search bar which can be refined with different filters located on the left side of the project list. 
+
+<p align="center"><img src="https://infras-hn.org/images/sisocsapp/Sisocsapp-proyectos.png"></p>
+
+The next section following the list of projects presents two indicators constructed from the data entered into the system: 
+a) The number of projects by infrastructure subsector, represented by a bar chart; 
+b) The percentage of total progress according to project stage, represented by a pie chart.
+
+<p align="center"><img src="https://infras-hn.org/images/sisocsapp/sisocsapp1.png"></p>
+
+The last section of the home screen contains a summary of all projects and a section with announcements of the latest changes and news about published projects.
+
+<p align="center"><img src="https://infras-hn.org/images/sisocsapp/sisocsapp2.png"></p>
+
+#### Project search
+This can be done in two ways:
+* Through the search bar.
+Once you find the project in the list, the next step is to select "VIEW DETAIL" to see all the project information found within the system.
+* Through the map
+The map function is to search for project information according to its location or, in the case of Honduras, by department.
+
+If you wish to search other projects located in other departments you must make sure to delete in "active filters" the previously selected department, another option to remove the filter is to click on 'X' located next to the name of the  elected department.
+
+<p align="left"><img src="https://infras-hn.org/images/sisocsapp/sisocsapp4.png" height="223" width="650"></p>
+
+#### Detailed project information
+
+The information is structured according to the stages of the PPP project cycle:
+* Basic Project Information
+* Contracting Process
+* Financial Information
+* Implementation
+* Location
+* Related Contracts
+
+The page also has two additional sections that show the milestones or significant events that occur during the development of the project and a summary of the project.
+
+<p align="left"><img src="https://infras-hn.org/images/sisocsapp/sisocsapp3.png"></p>
+
+
 ## Instalation Guide
+
+### Installing the frontend application
+
+##### Requirements:
+* APACHE 2
+* MySQL (Ver 14.14 Distrib 5.7.29, for Linux (x86_64) using  EditLine wrapper)
+
+#### Setting-up:
+
+Install it using the XAMPP package, which includes Apache and the MySQL database.
+
+### Installing the OCDS component
 
 The following programs and modules must be installed in order to prepare the development environment:
 
