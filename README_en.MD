@@ -141,27 +141,25 @@ The result of the Json in OCDS format of the application is the following:
 * [JSON](https://infras-hn.org/images/sisocsapp/json_100121.json) - GENERATED 10/JAN/21
 
 ## How to contribute
-Infrastructure Disclosure Platforms is CoST- [the Infrastructure Transparency Initiative](https://infrastructuretransparency.org)- portal 
-in GitHub that allows you to explore and reuse open-source digital tools, which can be used in the design and implementation of our 
-disclosure journey aiming to improve transparency and accountability in the infrastructure sector around the world.  
+Infrastructure Disclosure Platforms is CoST- [the Infrastructure Transparency Initiative](https://infrastructuretransparency.org)- effort aiming to support and guide members and partners to contribute, explore and reuse open-source digital tools published in our @CoST GitHub Repository. These tools can be used in the design and implementation of disclosure processes aiming to improve transparency and accountability in the infrastructure sector around the world.  
 
-We believe that open-source codes developed by our members and partners should be publicly available to help us to contribute to delivering
+CoST believes that open-source codes developed by our members and partners should be publicly available to help us to contribute to delivering
 quality infrastructure, strengthening economies, and improving lives. 
 
-Therefore, we encourage those who contribute to the improvement of these digital tools, to share them with us. If when reusing this digital tool, 
-you consider that:
-* You have added some new functionality with which you add value for more people to reuse,
-* You have made the tool more versatile to support new updates,
-* You have fixed some existing bugs,
-* Or you have simply improved the user interface or documentation of it.
+Therefore, CoST encourages those who contribute to the improvement of these digital tools, to share them with us. If when reusing this digital tool, 
+you consider that you:
+* have added some new functionality with which you add value for more people to reuse,
+* have made the tool more versatile to support new updates,
+* have fixed some existing bugs,
+* or you have simply improved the user interface or documentation of it
 
 We encourage you to return the progress made to the repository. Follow these steps to contribute to the digital tool:
 1.	Fork the repository.
 2.	Develop the new functionality or make the changes you create that add value to the tool.
 3.	Make a "pull request" documenting in detail the proposed changes in the repository.
 4.	In such case, your name will be registered in the list of attributions.
-If you have not contributed to the repository, but the tool has been helpful to you, we would love to hear the experience. 
-Tell us about your experience in an Issue or via email to opencode@infrastructuretransparency.org
+
+If you have not contributed to the repository, but the tool has been helpful to you, we would love to hear about your experience. Tell us about it in an Issue or via email to opencode@infrastructuretransparency.org.
 
 ### Attributions
 Tell us in the "pull request" your username and organization to add it to the list of contributions in the Readme.md. files.
