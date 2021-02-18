@@ -219,7 +219,7 @@ The result of the Json in OCDS format of the application is the following:
 * [JSON](https://infras-hn.org/images/sisocsapp/json_100121.json) - GENERATED 10/JAN/21
 
 ## How to contribute
-Infrastructure Disclosure Platforms is CoST- [the Infrastructure Transparency Initiative](https://infrastructuretransparency.org)- effort aiming to support and guide members and partners to contribute, explore and reuse open-source digital tools published in our @CoST GitHub Repository. These tools can be used in the design and implementation of disclosure processes aiming to improve transparency and accountability in the infrastructure sector around the world.  
+Infrastructure Disclosure Platforms is CoST- [the Infrastructure Transparency Initiative](https://infrastructuretransparency.org)- effort aiming to support and guide members and partners to contribute, explore and reuse open-source digital tools published in our [CoST GitHub Repository](https://github.com/infrastructure-transparency). These tools can be used in the design and implementation of disclosure processes aiming to improve transparency and accountability in the infrastructure sector around the world.  
 
 CoST believes that open-source codes developed by our members and partners should be publicly available to help us to contribute to delivering
 quality infrastructure, strengthening economies, and improving lives. 
