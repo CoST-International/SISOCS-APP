@@ -62,7 +62,7 @@ La barra de menú contiene las siguientes opciones:
 1.	Inicio: Permite que el usuario pueda regresar a la pantalla inicial del sistema.
 2.	Mapas del proyecto: Muestra la ubicación geográfica donde se están desarrollando los proyectos de infraestructura.
 3.	Informes: Incluye dos opciones, en la primera podrá visualizar o descargar en pdf el “Informe de diagnóstico de divulgación: Honduras” , este informe tiene el objetivo de ayudar a los formuladores de políticas y a los profesionales de las APP a evaluar el estado de la divulgación de la APP en la jurisdicción, y a identificar soluciones personalizadas para todos los tipos de APP con el fin de permitir mayor divulgación de información sobre las APP. En la Segunda opción puede descargar los datos de todos los proyectos divulgados en formato XLS.
-4.	OCDS (Open Contracting Data Standard): Esta pestaña permite visualizar el módulo donde se encuentran los datos de los proyectos bajo el Estándar de Datos para las Contrataciones Abiertas (OCDS). Este estándar permite la divulgación de datos y documentos de todas las etapas del proceso de contratación mediante la definición de un modelo de datos común 
+4.	OCDS (Open Contracting Data Standard): Esta pestaña permite visualizar el módulo donde se encuentran los datos de los proyectos bajo el [Estándar de Datos para las Contrataciones Abiertas (OCDS).](https://standard.open-contracting.org/latest/es/) Este estándar permite la divulgación de datos y documentos de todas las etapas del proceso de contratación mediante la definición de un modelo de datos común 
 
 <p align="center"><img src="https://infras-hn.org/images/sisocsapp/Sisocsapp-ocds.png"></p>
 
@@ -96,7 +96,7 @@ La función del mapa es de buscar la información de los proyectos de acuerdo co
 Pasos: 
   1.	Seleccionar el departamento donde se desarrolla el proyecto de interés
   2.	Buscar en la lista el proyecto de interés para ver a detalle 
-  3. Si desea buscar en más departamentos debe asegurarse de eliminar en “filtros activos” el departamento seleccionado anteriormente, otra opción es hacer clic encima del departamento seleccionado anteriormente.
+  3. Si desea buscar en más departamentos debe asegurarse de eliminar en “filtros activos” el departamento seleccionado anteriormente, otra opción para eliminar el filtro es hacer click en el nombre del departamento seleccionado anteriormente.
   
   <p align="left"><img src="https://infras-hn.org/images/sisocsapp/sisocsapp4.png" height="223" width="650"></p>
 
@@ -126,7 +126,7 @@ Además, tiene dos apartados adicionales donde se muestra los Hitos o acontecimi
 
 Instalarlo mediante el paquete XAMPP, que incluye Apache y la base de datos MySQL.
 
-### Instalación del componenete OCDS
+### Instalación del componente OCDS
 
 Se debe proceder a instalar los siguientes programas y módulos con el fin de preparar el ambiente de desarrollo:
 
