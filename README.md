@@ -298,7 +298,9 @@ El Gobierno de Honduras y el Grupo del Banco Mundial son los autores originales 
 * [Herramientas y estándares de CoST](https://infrastructuretransparency.org/cost-tools-and-standards/#SISOCS-APP)
 
 ## Licencia
-GNU GPLv3
+
+#### [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.html)
+
 Los permisos de esta licencia copyleft están condicionados a poner a disposición el código fuente completo de los trabajos con licencia y las modificaciones, que incluyen trabajos mayores que utilizan una obra con licencia, bajo la misma licencia. Las notificaciones de derechos de autor y de licencia deben conservarse. Los colaboradores proporcionan una concesión expresa de derechos de patente.
 
 ## Limitación de responsabilidades
