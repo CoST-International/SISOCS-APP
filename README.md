@@ -31,10 +31,10 @@
 
 ## Descripción y contexto
 
-SISOCS APP es una herramienta de divulgación digital para las Asociaciones Público Privadas (APP). SISOCS APP fue desarrollado por el Gobierno de Honduras y el Grupo del Banco Mundial entre 2017 y 2018. Este sistema fue diseñado siguiendo el marco de divulgación recomendado para Honduras, basado en las recomendaciones del [Informe de Diagnóstico de Divulgación](https://costhonduras.hn/wp-content/uploads/2018/12/diagnostico_divulgacion.pdf) en el que [CoST Honduras](https://costhonduras.hn/) jugó un papel importante como socio en este proyecto. Este sistema es utilizado por las 2 entidades públicas encargadas de identificar, seleccionar, estructurar, contratar y supervisar las APP en Honduras. El sistema cumple con el Marco de Divulgación del Banco Mundial, el [Estándar de Datos de Infraestructura de CoST](https://infrastructuretransparency.org/resource/cost-infrastructure-data-standard/) y la [Extensión del Estándar de Datos de Contrataciones Abiertas para el perfil de Asociaciones Público Privadas](https://extensions.open-contracting.org/es/extensions/ppp/master/).
+SISOCS APP es una herramienta de divulgación digital para las Asociaciones Público Privadas (APP). SISOCS APP fue desarrollado por el Gobierno de Honduras y el Grupo del Banco Mundial entre 2017 y 2018. Este sistema fue diseñado siguiendo el marco de divulgación recomendado para Honduras, basado en las recomendaciones del [Informe de Diagnóstico de Divulgación](https://costhonduras.hn/wp-content/uploads/2018/12/diagnostico_divulgacion.pdf) en el que [CoST Honduras](https://costhonduras.hn/) jugó un papel importante como socio del proyecto. Este sistema es utilizado por las 2 entidades públicas encargadas de identificar, seleccionar, estructurar, contratar y supervisar las APP en Honduras. El sistema cumple con el Marco de Divulgación del Banco Mundial, el [Estándar de Datos de Infraestructura de CoST](https://infrastructuretransparency.org/resource/cost-infrastructure-data-standard/) y la [Extensión del Estándar de Datos de Contrataciones Abiertas para el perfil de Asociaciones Público Privadas](https://extensions.open-contracting.org/es/extensions/ppp/master/).
 
 ## Guía del usuario
-SISOCS APP es un portal que permite conocer acerca de los proyectos de las Alianzas Público Privadas. Actualmente el aplicativo se encuentra ejecutando en el link: https://app.sisocs.org/
+SISOCS APP es un portal que permite conocer acerca de los proyectos de las Alianzas Público Privadas. Actualmente el aplicativo se encuentra ejecutando en el enlace: https://app.sisocs.org/
 
 El componenete [SISOCS – OCDS](https://app.sisocs.org/protected/ocdsShow/) fue construido en NodeJS, en su versión LTS a la fecha (v8.9). 
 Dicho servidor de aplicaciones nos permite montar un API Server el cual es usado por SISOCS – PHP para almacenar la información de los proyectos en MongoDB. 
@@ -148,8 +148,7 @@ npm start
 ```
 #### Agregar información al esquema de MongoDB 
 
-En la carpeta “schema” se encuentran los esquemas que se almacenan en MongoDB y luego son
-mostrados en formato OCID PPP.
+En la carpeta `schema` se encuentran los esquemas que se almacenan en MongoDB y luego son mostrados en formato OCID PPP.
 Cada esquema hace referencia a un objeto OCID PPP del mismo nombre. 
 
 Para más información acerca de los esquemas de Mongoose referirse a:
@@ -234,7 +233,8 @@ Si al reutilizar esta herramienta digital, consideras que
 * Has añadido alguna funcionalidad nueva con la que aportas valor para que más personas la reutilicen,
 * Has hecho la herramienta más versátil para respaldar nuevas actualizaciones,
 * Has corregido algunos errores existentes,
-* O simplemente has mejorado la interfaz de usuario o la documentación de la misma.
+* O simplemente has mejorado la interfaz de usuario o la documentación de la misma, 
+
 Te invitamos a que devuelvas los progresos realizados al repositorio. Sigue estos pasos para contribuir a la herramienta:
 
 1.	Haz una división del repositorio. 
@@ -242,11 +242,11 @@ Te invitamos a que devuelvas los progresos realizados al repositorio. Sigue esto
 3.	Haz una “solicitud de eliminar” documentando en detalle los cambios propuestos en el repositorio.
 4.	En ese caso, tu nombre quedará registrado en la lista de atribuciones.
 
-Si no has contribuido al repositorio, pero la herramienta te ha resultado útil, nos encantaría conocer tu experiencia. Cuéntanos tu experiencia en un “Issue” o por correo electrónico a opencode@infrastructuretransparency.org
+Si no has contribuido al repositorio, pero la herramienta te ha resultado útil, nos encantaría conocer tu experiencia. Cuéntanos tu experiencia en un “Issue” o por correo electrónico a opencode@infrastructuretransparency.org.
 
 
 ### Atribuciones
-Al enviar una solicitud de adhesión de nuevo código (“pull requests”), puedes compartirnos tu nombre de usuario y organización para añadirlo a la lista de contribuciones en el Readme.md.
+Al enviar una solicitud de adhesión de nuevo código (`pull requests`), puedes compartirnos tu nombre de usuario y organización para añadirlo a la lista de contribuciones en el Readme.md.
 
 ## Código de conducta
 
@@ -270,14 +270,14 @@ Ejemplos de comportamiento inaceptable por parte de los participantes son:
 
 ### Nuestras responsabilidades
 
-Los que dan mantenimiento y colaboradores del proyecto son responsables de aclarar las normas de comportamiento aceptable y se espera que tomen medidas correctivas adecuadas y justas en respuesta a cualquier caso de comportamiento inaceptable.
+Las personas a cargo del mantenimiento y los colaboradores del proyecto son responsables de aclarar las normas de comportamiento aceptable y se espera que tomen medidas correctivas adecuadas y justas en respuesta a cualquier caso de comportamiento inaceptable.
 Los responsables del mantenimiento de las Plataformas de Divulgación de datos sobre Infraestructura, tienen el derecho y la responsabilidad de eliminar, editar o rechazar comentarios, confirmaciones, códigos, ediciones wiki, cuestiones y otras contribuciones que no se ajusten a este Código de Conducta, o prohibir temporal o permanentemente a cualquier colaborador por otros comportamientos que consideren inapropiados, amenazantes, ofensivos o perjudiciales.
 
 ### Ámbito de aplicación
 
 Este Código de Conducta se aplica tanto en los espacios de la Plataforma de Transparencia en Infraestructura como en los espacios públicos cuando una persona representa a CoST o a su comunidad. Ejemplos de representación de CoST o de la comunidad incluyen el uso de una dirección de correo electrónico oficial, la publicación a través de una cuenta oficial en las redes sociales o la actuación como representante designado en un evento en línea o fuera de línea. La representación de un CoST puede ser definida y aclarada por los responsables de la Plataforma de Transparencia en Infraestructura.
 
-### Aplicación de este código
+### Aplicación de este código de conducta
 
 Los casos de comportamiento abusivo, acosador o inaceptable pueden denunciarse poniéndose en contacto con el responsable de este repositorio o en opencode@infrastructuretransparency.org.
 Todas las denuncias serán revisadas e investigadas y darán lugar a una respuesta que se considere necesaria y adecuada a las circunstancias. El equipo de CoST está obligado a mantener la confidencialidad sobre el denunciante de un incidente.
