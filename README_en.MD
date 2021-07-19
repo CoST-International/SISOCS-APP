@@ -40,9 +40,7 @@ identifying, screening, structuring, contracting, and overseeing PPPs in Hondura
 [The CoST Infrastructure Data Standard](https://infrastructuretransparency.org/resource/cost-infrastructure-data-standard/), and the [PPP Extension of the Open Contracting Data Standard (OCDS)](https://extensions.open-contracting.org/fr/extensions/ppp/master/).
 
 
-### Application Architecture
 
-<p align="center"><img src="https://infras-hn.org/images/Arquitectura%20SISCOS%20APP.png"></p>
 
 ### Using the system
 
@@ -112,6 +110,10 @@ The [SISOCS - OCDS](https://app.sisocs.org/protected/ocdsShow/) component was bu
 
 SISOCS – PHP
 [Source code (PHP-MySQL)](https://github.com/infrastructure-transparency/SISOCS-APP/tree/main/SISOCS%20FRONTEND)
+
+### Application Architecture
+
+<p align="center"><img src="https://infras-hn.org/images/Arquitectura%20SISCOS%20APP.png"></p>
 
 ### Installing the frontend application
 
