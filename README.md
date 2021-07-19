@@ -1,3 +1,7 @@
+Infras-edit
+
+Infras
+
 <img src="https://app.sisocs.org/themes/blackboot/assets/img/logo_sisocs.png"></p>
 
 # [SISOCS APP - OCDS](https://app.sisocs.org/index.php?r=Ciudadano/index)
@@ -33,18 +37,7 @@
 
 SISOCS APP es una herramienta de divulgación digital para las Asociaciones Público Privadas (APP). SISOCS APP fue desarrollado por el Gobierno de Honduras y el Grupo del Banco Mundial entre 2017 y 2018. Este sistema fue diseñado siguiendo el marco de divulgación recomendado para Honduras, basado en las recomendaciones del [Informe de Diagnóstico de Divulgación](https://costhonduras.hn/wp-content/uploads/2018/12/diagnostico_divulgacion.pdf) en el que [CoST Honduras](https://costhonduras.hn/) jugó un papel importante como socio del proyecto. Este sistema es utilizado por las 2 entidades públicas encargadas de identificar, seleccionar, estructurar, contratar y supervisar las APP en Honduras. El sistema cumple con el Marco de Divulgación del Banco Mundial, el [Estándar de Datos de Infraestructura de CoST](https://infrastructuretransparency.org/resource/cost-infrastructure-data-standard/) y la [Extensión del Estándar de Datos de Contrataciones Abiertas para el perfil de Asociaciones Público Privadas](https://extensions.open-contracting.org/es/extensions/ppp/master/).
 
-## Guía del usuario
-SISOCS APP es un portal que permite conocer acerca de los proyectos de las Alianzas Público Privadas. Actualmente el aplicativo se encuentra ejecutando en el enlace: https://app.sisocs.org/
 
-El componente [SISOCS – OCDS](https://app.sisocs.org/protected/ocdsShow/) fue construido en NodeJS, en su versión LTS a la fecha (v8.9). 
-Dicho servidor de aplicaciones nos permite montar un API Server el cual es usado por SISOCS – PHP para almacenar la información de los proyectos en MongoDB. 
-
-SISOCS – PHP
-[Código Fuente PHP-MySQL](https://github.com/infrastructure-transparency/SISOCS-APP/tree/main/SISOCS%20FRONTEND)
-
-### Arquitectura 
-
-<p align="center"><img src="https://infras-hn.org/images/Arquitectura%20SISCOS%20APP.png"></p>
 
 ### Uso del sistema
 
@@ -115,6 +108,20 @@ Además, tiene dos apartados adicionales donde se muestra los Hitos o acontecimi
 <p align="left"><img src="https://infras-hn.org/images/sisocsapp/sisocsapp3.png"></p>
 
 ## Guía de instalación
+
+## Guía del usuario
+
+SISOCS APP es un portal que permite conocer acerca de los proyectos de las Alianzas Público Privadas. Actualmente el aplicativo se encuentra ejecutando en el enlace: https://app.sisocs.org/
+
+El componente [SISOCS – OCDS](https://app.sisocs.org/protected/ocdsShow/) fue construido en NodeJS, en su versión LTS a la fecha (v8.9). 
+Dicho servidor de aplicaciones nos permite montar un API Server el cual es usado por SISOCS – PHP para almacenar la información de los proyectos en MongoDB. 
+
+SISOCS – PHP
+[Código Fuente PHP-MySQL](https://github.com/infrastructure-transparency/SISOCS-APP/tree/main/SISOCS%20FRONTEND)
+
+### Arquitectura 
+
+<p align="center"><img src="https://infras-hn.org/images/Arquitectura%20SISCOS%20APP.png"></p>
 
 ### Instalación del frontend
 
