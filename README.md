@@ -36,7 +36,7 @@ SISOCS APP es una herramienta de divulgación digital para las Asociaciones Púb
 ## Guía del usuario
 SISOCS APP es un portal que permite conocer acerca de los proyectos de las Alianzas Público Privadas. Actualmente el aplicativo se encuentra ejecutando en el enlace: https://app.sisocs.org/
 
-El componenete [SISOCS – OCDS](https://app.sisocs.org/protected/ocdsShow/) fue construido en NodeJS, en su versión LTS a la fecha (v8.9). 
+El componente [SISOCS – OCDS](https://app.sisocs.org/protected/ocdsShow/) fue construido en NodeJS, en su versión LTS a la fecha (v8.9). 
 Dicho servidor de aplicaciones nos permite montar un API Server el cual es usado por SISOCS – PHP para almacenar la información de los proyectos en MongoDB. 
 
 SISOCS – PHP
