@@ -39,15 +39,6 @@ between 2017 and 2018. This system was designed following the disclosure framewo
 identifying, screening, structuring, contracting, and overseeing PPPs in Honduras. The system complies with the WB Disclosure Framework, 
 [The CoST Infrastructure Data Standard](https://infrastructuretransparency.org/resource/cost-infrastructure-data-standard/), and the [PPP Extension of the Open Contracting Data Standard (OCDS)](https://extensions.open-contracting.org/fr/extensions/ppp/master/).
 
-## User Guide
-SISOCS APP is a portal that contains data about Public Private Partnerships projects. Currently the application is running at the link: https://app.sisocs.org/
-
-The [SISOCS - OCDS](https://app.sisocs.org/protected/ocdsShow/) component was built in NodeJS, in its LTS version to date (v8.9). This application server allows us to mount an API Server which is used by SISOCS - PHP to store the information of the projects in MongoDB. The projects can then be viewed in PPP format
-
-SISOCS – PHP
-[Source code (PHP-MySQL)](https://github.com/infrastructure-transparency/SISOCS-APP/tree/main/SISOCS%20FRONTEND)
-
-
 
 ### Application Architecture
 
@@ -114,6 +105,13 @@ The page also has two additional sections that show the milestones or significan
 
 
 ## Instalation Guide
+
+SISOCS APP is a portal that contains data about Public Private Partnerships projects. Currently the application is running at the link: https://app.sisocs.org/
+
+The [SISOCS - OCDS](https://app.sisocs.org/protected/ocdsShow/) component was built in NodeJS, in its LTS version to date (v8.9). This application server allows us to mount an API Server which is used by SISOCS - PHP to store the information of the projects in MongoDB. The projects can then be viewed in PPP format
+
+SISOCS – PHP
+[Source code (PHP-MySQL)](https://github.com/infrastructure-transparency/SISOCS-APP/tree/main/SISOCS%20FRONTEND)
 
 ### Installing the frontend application
 
