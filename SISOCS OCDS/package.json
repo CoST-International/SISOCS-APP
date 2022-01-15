@@ -44,7 +44,7 @@
     "request": "^2.81.0",
     "require-dir": "^0.3.2",
     "run-sequence": "^2.2.0",
-    "shelljs": "^0.7.8",
+    "shelljs": "^0.8.5",
     "simple-line-icons": "^2.4.1",
     "soap": "^0.20.0",
     "sybase": "^1.2.1",
