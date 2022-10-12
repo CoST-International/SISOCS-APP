@@ -46,7 +46,7 @@
     "run-sequence": "^2.2.0",
     "shelljs": "^0.7.8",
     "simple-line-icons": "^2.4.1",
-    "soap": "^0.20.0",
+    "soap": "^0.45.0",
     "sybase": "^1.2.1",
     "tmp": "0.0.33",
     "toastr": "^2.1.2",
