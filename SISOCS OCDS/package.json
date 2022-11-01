@@ -25,7 +25,7 @@
     "font-awesome": "^4.7.0",
     "fs": "0.0.1-security",
     "generic-pool": "^3.1.7",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-cssmin": "^0.2.0",
     "gulp-rename": "^1.2.2",
