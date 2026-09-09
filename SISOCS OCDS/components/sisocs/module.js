@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 const shell = require('shelljs');
 const jsonfile = require('jsonfile')
 const tmp = require('tmp');
+const ocdsUrl = (process.env.SISOCS_OCDS_URL || config.ocid_url).replace(/\/$/, '') + '/';
 
 let schema = {};
 let initSchema = function(path) {
@@ -239,7 +240,7 @@ let retreiveReleasePackageData = (ocid,callback) => {
                 extensions:config.extensions,
                 license:config.license,
                 version:config.version,
-                uri:config.ocid_url + "releases",
+                uri:ocdsUrl + "releases",
                 releases:finalReleases,
                 publisher: config.publisher,
                 publishedDate: releases[releases.length - 1].date
@@ -290,6 +291,10 @@ let retreiveRecordPackageData = (ocid,callback) => {
                 callback(true, err);
                 return
             }
+            if (records.length === 0) {
+                callback(false, {});
+                return;
+            }
             let finalRecords = [];
             let publishedDate = records[records.length - 1].publishedDate;
             finalRecords = records.map((object) => {
@@ -300,15 +305,11 @@ let retreiveRecordPackageData = (ocid,callback) => {
                 delete returnObject.publisher;
                 return removeEmpty(returnObject);
             })
-            if (finalRecords.length === 0 ){
-                callback(false,{});
-                return;
-            }
             retVal = {
                 extensions:config.extensions,
                 license:config.license,
                 version:config.version,
-                uri:config.ocid_url + "records",
+                uri:ocdsUrl + "records",
                 records:finalRecords,
                 publisher: config.publisher,
                 publishedDate: publishedDate
@@ -435,18 +436,34 @@ module.exports = {
                         "description": data
                     })
                 } else {
-                    const name = tmp.tmpNameSync({
+                    const name = path.basename(tmp.tmpNameSync({
                         "prefix":"sisocs-"
+                    }));
+                    const jsonFile = path.join(__dirname, name+".json");
+                    const outputBase = path.join(__dirname, name);
+                    const file = outputBase + ".xlsx";
+                    jsonfile.writeFileSync(jsonFile, data);
+                    const flattenResult = shell.exec(
+                        'flatten-tool flatten ' + JSON.stringify(jsonFile) +
+                        ' --root-id=ocid --main-sheet-name releases --output-format xlsx' +
+                        ' --output-name ' + JSON.stringify(file) +
+                        ' --root-list-path=' + JSON.stringify('releases')
+                    );
+                    shell.rm("-rf", jsonFile);
+                    if (flattenResult.code !== 0) {
+                        shell.rm("-rf", file);
+                        res.status(500).json({
+                            "error": true,
+                            "description": "Unable to create the spreadsheet export"
+                        });
+                        return;
+                    }
+                    res.download(file, (downloadError) => {
+                        shell.rm("-rf", file);
+                        if (downloadError) {
+                            console.error(downloadError);
+                        }
                     });
-                    shell.rm("-rf", path.join(__dirname, name+".json"));
-                    jsonfile.writeFileSync(path.join(__dirname, name+".json"), data);
-                    shell.rm("-rf", path.join(__dirname, name+".xlsx"));
-                    shell.exec('flatten-tool flatten ' + path.join(__dirname, name+".json") + ' --root-id=ocid --main-sheet-name releases --output-name ' + path.join(__dirname, ""+name+"") + ' --root-list-path=\'releases\'');
-                    let file = path.join(__dirname, name+".xlsx");
-                    res.download(file); // Set disposition and send it.
-                    shell.rm("-rf", path.join(__dirname, name));
-                    shell.rm("-rf", path.join(__dirname, name+".json"));
-                    //shell.rm("-rf", path.join(__dirname, name+".xlsx"));
                 }
             });
         }
@@ -500,7 +517,7 @@ module.exports = {
             dataRetrieve.getObject(object.ocid, (retreiveObject) => {
                 retreiveObject.ocid = object.preOcid + "-" + object.ocid;
                 saveRecord(object.preOcid + "-" + object.ocid, object.ocid, retreiveObject);
-                res.status(400).json({
+                res.status(200).json({
                     success: true
                 })
             });

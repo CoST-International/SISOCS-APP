@@ -176,12 +176,11 @@ class CiudadanoController extends Controller
 
         $this->PageTitle = "Busqueda $criterio";
 
-        $sql = "SELECT DISTINCT `vCiudadano`.`idProyecto`,
-                    `vCiudadano`.`proyecto_codigo`,
-                    `vCiudadano`.`proyecto_nombre`,
-                    `vCiudadano`.`proyecto_descripcion`,
-                    `vCiudadano`.`proyecto_proposito`,
-                    `vCiudadano`.`proyecto_ente`
+        // Listaproyecto renders the stage, sector, budget, location, and
+        // relationship columns as well as the search-result labels. Returning
+        // only the six search fields made the public search endpoint fail at
+        // render time with undefined array keys.
+        $sql = "SELECT DISTINCT `vCiudadano`.*
                 FROM `vCiudadano`
                 WHERE
                     (`vCiudadano`.`proyecto_codigo` like :criterio) OR
@@ -879,7 +878,7 @@ class CiudadanoController extends Controller
 
             case 'Contratacion':
                 $proyecto=Yii::app()->db->createCommand('SELECT * FROM vProyecto WHERE idProyecto='.$ids[0]['idProyecto'])->queryAll();
-                $proyecto_beneficiario=Yii::app()->db->createCommand('SELECT * FROM vproyecto_municipio WHERE idProyecto='.$ids[0]['idProyecto'])->queryAll();
+                $proyecto_beneficiario=Yii::app()->db->createCommand('SELECT * FROM vproyecto_beneficiario WHERE idProyecto='.$ids[0]['idProyecto'])->queryAll();
                 $proyecto_fuente=Yii::app()->db->createCommand('SELECT * FROM vproyecto_fuente WHERE idProyecto='.$ids[0]['idProyecto'])->queryAll();
 
                 $calificacion=Yii::app()->db->createCommand('SELECT * FROM vCalificacion WHERE idCalificacion='.$ids[0]['idCalificacion'])->queryAll();

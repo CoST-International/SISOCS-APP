@@ -330,7 +330,7 @@ class CrugeFactory
     public function isAuthMethodAvailable($authName)
     {
         foreach (CrugeUtil::config()->availableAuthMethods as $key => $val) {
-            if ($key == $authName) {
+            if ($val == $authName) {
                 return true;
             }
         }

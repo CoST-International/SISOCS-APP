@@ -2824,8 +2824,12 @@ class Controller extends CController
         //echo $actual_link . '<-  esto esta en Compoments/Controller.php';
         //throw new Exception('link: '.$actual_link);
         $curl = curl_init($actual_link);
-        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($curl, CURLOPT_POST, true);
+        curl_setopt_array($curl, array(
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_POST => true,
+            CURLOPT_CONNECTTIMEOUT => 2,
+            CURLOPT_TIMEOUT => 10,
+        ));
         //   curl_setopt($curl, CURLOPT_POSTFIELDS, $curl_post_data);
         $curl_response = curl_exec($curl);
         curl_close($curl);

@@ -8,8 +8,33 @@
 Yii::setPathOfAlias('editable', dirname(__FILE__) . '/../extensions/editable');
 Yii::setPathOfAlias('bootstrap', dirname(__FILE__) . '/../extensions/bootstrap');
 
-// Variable para galeria
-$current_domain = 'http://localhost/sisocs/';
+// Local mode is selected by the local launcher. Shared defaults remain unchanged
+// unless an operator explicitly supplies the corresponding environment values.
+$localMode = getenv('SISOCS_LOCAL_MODE') === '1';
+$current_domain = getenv('SISOCS_BASE_URL') ?: ($localMode ? 'http://127.0.0.1:8000/' : 'http://localhost/sisocs/');
+$dbHost = getenv('SISOCS_DB_HOST') ?: ($localMode ? '127.0.0.1' : 'localhost');
+$dbName = getenv('SISOCS_DB_NAME') ?: ($localMode ? 'sisocs_local' : 'produccion');
+$dbUser = getenv('SISOCS_DB_USER') ?: ($localMode ? 'sisocs_app' : 'root');
+$dbPassword = getenv('SISOCS_DB_PASSWORD');
+$nodeUrl = getenv('SISOCS_NODE_URL') ?: ($localMode ? 'http://127.0.0.1:8080/' : 'http://localhost:8080/');
+$crugeBaseUrl = getenv('SISOCS_CRUGE_BASE_URL') ?: ($localMode ? $current_domain : 'http://localhost/');
+$guestUserId = getenv('SISOCS_GUEST_USER_ID');
+if ($guestUserId === false || trim($guestUserId) === '') {
+    $guestUserId = $localMode ? 0 : 2;
+} else {
+    $guestUserId = (int) $guestUserId;
+}
+$useEncryptedPassword = getenv('SISOCS_USE_ENCRYPTED_PASSWORD');
+if ($useEncryptedPassword === false || trim($useEncryptedPassword) === '') {
+    $useEncryptedPassword = $localMode;
+} else {
+    $useEncryptedPassword = $useEncryptedPassword === '1';
+}
+$crugeHash = getenv('SISOCS_CRUGE_HASH') ?: ($localMode ? 'sha256' : 'md5');
+$giiPassword = getenv('SISOCS_GII_PASSWORD');
+$giiEnabled = getenv('SISOCS_ENABLE_GII') === '1'
+    && $giiPassword !== false
+    && trim($giiPassword) !== '';
 
 return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
@@ -118,11 +143,13 @@ return array(
 
         'gii'=>array(
         'class'=>'system.gii.GiiModule',
-        'password'=>'ClA34rt978!"#',
+        // Gii is disabled unless the operator opts in with a non-empty password.
+        'enabled'=>$giiEnabled,
+        'password'=>$giiPassword === false ? '' : $giiPassword,
 
-        // If removed, Gii defaults to localhost only. Edit carefully to taste.
+        // Keep the development generator bound to loopback when explicitly enabled.
 
-        'ipFilters'=>array('localhost',$_SERVER['REMOTE_ADDR']),
+        'ipFilters'=>array('127.0.0.1','::1'),
         'generatorPaths' => array(
 
         // 'bootstrap.gii',
@@ -133,6 +160,9 @@ return array(
       ),
         'cruge' => array(
             'tableprefix' => 'cruge_',
+
+            // Keep the synthetic local accounts (starting at id 1) distinct from guests.
+            'guestUserId' => $guestUserId,
 
             // para que utilice a protected.modules.cruge.models.auth.CrugeAuthDefault.php
             //
@@ -149,7 +179,7 @@ return array(
             ) ,
 
             // url base para los links de activacion de cuenta de usuario
-            'baseUrl' => 'http://localhost/',
+            'baseUrl' => $crugeBaseUrl,
 
             // NO OLVIDES PONER EN FALSE TRAS INSTALAR
 
@@ -161,12 +191,12 @@ return array(
             // lee mas abajo respecto a 'Encriptando las claves'
             //
 
-            'useEncryptedPassword' => false,
+            'useEncryptedPassword' => $useEncryptedPassword,
 
             // Algoritmo de la funciÃ³n hash que deseas usar
             // Los valores admitidos estÃ¡n en: http://www.php.net/manual/en/function.hash-algos.php
 
-            'hash' => 'md5',
+            'hash' => $crugeHash,
             /*  'session' => array(
             'timeout' => 300,
             ),*/
@@ -351,9 +381,10 @@ return array(
             'charset' => 'utf8',
             'tablePrefix' => 'cs_',*/
 
-         'connectionString' => 'mysql:host=localhost;dbname=produccion',
+         'connectionString' => 'mysql:host='.$dbHost.';dbname='.$dbName,
 			'emulatePrepare' => true,
-			'username' => 'root',
+			'username' => $dbUser,
+			'password' => $dbPassword === false ? '' : $dbPassword,
 			'charset' => 'utf8',
 			'tablePrefix' => 'cs_',
         ) ,
@@ -404,7 +435,7 @@ return array(
                 'countryCode' => 'HND',
                 'ORG_ID' => 'coalianza',
                 'OCDS_Prefix' => 'ocds-mfx54g',
-                'NODE_URL' => 'http://localhost:8080/',
+                'NODE_URL' => $nodeUrl,
 		'adminEmail'=>'webmaster@example.com',
                 'carpetaimg'=> YII::app()->basePath."/images",
                 'maintenance' => false,

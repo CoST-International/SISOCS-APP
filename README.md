@@ -13,6 +13,7 @@ Infras
     - [Arquitectura](#arquitectura)
     - [Uso del sistema](#uso-del-sistema)
   - [Guía de instalación](#Guía-de-instalación)
+    - [Reproducción local](#reproducción-local)
     - [Instalación del frontend](#instalación-del-frontend)
     - [Instalación del componenete OCDS](#Instalación-del-componenete-OCDS)
        - [Agregar información al esquema de MongoDB](#Agregar-información-al-esquema-de-MongoDB)
@@ -109,14 +110,52 @@ Además, tiene dos apartados adicionales donde se muestra los Hitos o acontecimi
 
 ## Guía de instalación
 
+### Reproducción local
+
+El repositorio incluye un entorno local aislado para reproducir y reutilizar la
+plataforma con datos ficticios. No conecta con la base de datos histórica ni
+publica cambios.
+
+Requisitos: PHP con PDO MySQL y cURL, MySQL, MongoDB con `mongosh`, Node.js 22,
+npm y Python 3.9. Desde la raíz del repositorio:
+
+```sh
+python3 -m venv .local/venv
+. .local/venv/bin/activate
+python -m pip install -r requirements-local.txt
+cd "SISOCS OCDS"
+npm ci --ignore-scripts --no-audit
+cd ..
+./scripts/local/start-local.sh
+```
+
+El script crea el esquema MySQL local, las cuentas ficticias y la configuración
+local, y arranca PHP, Node/OCDS y MongoDB en puertos locales dedicados cuando
+están disponibles. Rechaza un proceso Mongo no perteneciente al entorno local.
+Las rutas principales son `http://127.0.0.1:8000/`,
+`http://127.0.0.1:8080/` y `http://127.0.0.1:8000/protected/ocdsShow/`.
+
+Para detener o reiniciar los datos de demostración:
+
+```sh
+./scripts/local/stop-local.sh
+./scripts/local/reset-local.sh --yes
+```
+
+Consulta [LOCAL-SETUP.md](LOCAL-SETUP.md) para la configuración completa y
+[WORKFLOW-VERIFICATION.md](WORKFLOW-VERIFICATION.md) para la evidencia de los
+flujos probados localmente.
+
 ## Guía del usuario
 
-SISOCS APP es un portal que permite conocer acerca de los proyectos de las Alianzas Público Privadas. Actualmente el aplicativo se encuentra ejecutando en el enlace: https://app.sisocs.org/
+SISOCS APP es un portal que permite conocer acerca de los proyectos de las Alianzas Público Privadas. La URL pública del aplicativo es https://app.sisocs.org/
 
-El componente [SISOCS – OCDS](https://app.sisocs.org/protected/ocdsShow/) fue construido en NodeJS, en su versión LTS a la fecha (v8.9). 
-Dicho servidor de aplicaciones nos permite montar un API Server el cual es usado por SISOCS – PHP para almacenar la información de los proyectos en MongoDB. 
+El componente [SISOCS - OCDS](https://app.sisocs.org/protected/ocdsShow/) fue
+construido originalmente con NodeJS. El entorno local reproducible actual usa
+Node.js 22 y permite que SISOCS - PHP almacene la información de los proyectos
+en MongoDB.
 
-SISOCS – PHP
+SISOCS - PHP
 [Código Fuente PHP-MySQL](https://github.com/infrastructure-transparency/SISOCS-APP/tree/main/SISOCS%20FRONTEND)
 
 ### Arquitectura 
@@ -137,14 +176,14 @@ Instalarlo mediante el paquete XAMPP, que incluye Apache y la base de datos MySQ
 
 Se debe proceder a instalar los siguientes programas y módulos con el fin de preparar el ambiente de desarrollo:
 
-* Instalar Node JS.
+* Instalar Node.js 22.
 * Instalar MongoDB.
 
 Con todas las dependencias anteriores instaladas se puede proceder a ejecutar el comando para descargar los paquetes locales de SISOCS y sus respectivas dependencias, 
 esto se hace a través del comando:
 
 ```
-npm install
+npm ci --ignore-scripts --no-audit
 ```
 
 Después de ejecutar exitosamente el comando anterior, se estará listo para iniciar el desarrollo. 
@@ -315,4 +354,3 @@ CoST no se hace responsable, bajo ninguna circunstancia, de los daños e indemni
 
 * Bajo ningún concepto de propiedad intelectual, negligencia o en detrimento de otra parte de la teoría.
 * Como consecuencia del uso de esta herramienta digital, incluyendo, pero sin limitarse a los defectos de la herramienta digital, o la pérdida o inexactitud de datos de cualquier tipo. Lo anterior incluye los gastos o daños asociados a fallas de comunicación y/o mal funcionamiento de los ordenadores vinculados al uso de esta herramienta digital.
-

@@ -154,13 +154,13 @@
 								</div>
 
 								<div class="form-group">
-									<?php echo $form->labelEx($model,'Proposito'); ?>
+									<?php echo $form->labelEx($model,'proposito'); ?>
 								</div>
                 				<div class="form-group">
-									<?php echo $form->textArea($model,'Proposito',array('size'=>60,'rows'=>5,'cols'=>60)); ?>
+									<?php echo $form->textArea($model,'proposito',array('size'=>60,'rows'=>5,'cols'=>60)); ?>
 								</div>
 								<div class="form-group">
-									<?php echo $form->error($model,'Proposito'); ?>
+									<?php echo $form->error($model,'proposito'); ?>
 								</div>
 								<div class="form-group form-group">
 															<?php
