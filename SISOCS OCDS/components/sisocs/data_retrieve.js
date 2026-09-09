@@ -3,11 +3,22 @@ let coreConfig = require("../../config.json");
 const configFile = require("./config.json");
 const fs = require('fs');
 const path = require("path");
-const mysql = require("mysql");
+const mysql = require("mysql2");
+const withTrailingSlash = (value) => value.endsWith('/') ? value : value + '/';
+const documentUrl = withTrailingSlash(process.env.SISOCS_BASE_URL || configFile.document_url);
+const ocdsUrl = withTrailingSlash(process.env.SISOCS_OCDS_URL || configFile.ocid_url);
+
+const dateToISO = (value) => {
+    if (value === null || value === undefined || value === "" || value === "0000-00-00" || value === "0000-00-00 00:00:00") {
+        return null;
+    }
+    const date = new Date(value);
+    return Number.isNaN(date.getTime()) ? null : date.toISOString();
+};
 
 let checkDocument = (url) => {
     if (url === null || url === "") {
-        return configFile.document_url;
+        return documentUrl;
     }
     url = url.trim();
     if (url.indexOf("www.") === 0){
@@ -15,7 +26,7 @@ let checkDocument = (url) => {
     }
     let retVal = "";
     if (url.indexOf("adjuntos") === 0) {
-        retVal = configFile.document_url + url;
+        retVal = documentUrl + url;
     } else {
         retVal = url;
     }
@@ -42,7 +53,7 @@ let checkURL = (url) => {
     }
     let retVal = "";
     if (url.indexOf("adjuntos") === 0) {
-        retVal = configFile.document_url + url;
+        retVal = documentUrl + url;
     } else {
         retVal = url;
     }
@@ -88,18 +99,28 @@ let retreiveParties = (id, callback) => {
 
     let connection = getConnection();
     connection.connect();
-    let cont=0;
+    let pending = 3;
+    let finished = false;
+    let finish = () => {
+        pending--;
+        if (pending !== 0 || finished) {
+            return;
+        }
+        finished = true;
+        connection.end(() => callback(retVal));
+    };
     let query = "SELECT DISTINCT cs_parties.* FROM cs_proyecto JOIN cs_calificacion ON cs_proyecto.idProyecto = cs_calificacion.idProyecto JOIN cs_adjudicacion ON cs_calificacion.idCalificacion = cs_adjudicacion.idCalificacion JOIN cs_contratacion ON cs_adjudicacion.idAdjudicacion = cs_contratacion.idAdjudicacion JOIN (SELECT parties_id, idContratacion FROM cs_contracts_signatories UNION ALL SELECT parties_id, idContratacion FROM cs_contracts_organization_details UNION ALL SELECT parties_id, idContratacion FROM cs_preferredBidders) B ON cs_contratacion.idContratacion = B.idContratacion JOIN (SELECT idCalificacion,idOferente FROM cs_calificacion_oferente ) C ON cs_calificacion.idCalificacion = C.idCalificacion JOIN cs_parties ON (B.parties_id = cs_parties.id OR C.idOferente = cs_parties.id) WHERE cs_proyecto.idProyecto = ?";
     query = mysql.format(query, [id]);
     connection.query(query, function (error, results) {
-        if (results.length === 0) {
-            //callback(null);
-            //return;
-        }else{
         if (error) {
-            console.error(error)
-        } else {
-            cont=cont+1;
+            console.error(error);
+            finish();
+            return;
+        }
+        if (results.length === 0) {
+            finish();
+            return;
+        }else{
             results.forEach((obj => {
                 let tempObject = {};
                 tempObject.id = obj.id+"0";
@@ -129,22 +150,23 @@ let retreiveParties = (id, callback) => {
                 tempObject.shareHolders = [];
                 retVal.push(tempObject);
             }));
-			
-		}
-    }
+        }
+        finish();
 	});
     
     query = "SELECT a.idEnte, b.descripcion as 'publicAuthorithyName',c.nombre,c.puesto,c.telefono,c.correo FROM cs_proyecto a, cs_entes b,cs_funcionarios c WHERE  a.idEnte = b.idEnte and a.idEnte=c.idEnte and a.idProyecto = ?";
     query = mysql.format(query, [id]);
     //console.info(query);
     connection.query(query, function (error, results) {
-        if (results.length === 0) {
-
-        }else{
         if (error) {
-            console.error(error)
-        } else {
-                cont=cont+1;
+            console.error(error);
+            finish();
+            return;
+        }
+        if (results.length === 0) {
+            finish();
+            return;
+        }else{
                 let tempObject = {};
                 tempObject.id = results[0].idEnte+'1';
                 tempObject.name=results[0].publicAuthorithyName;
@@ -172,20 +194,22 @@ let retreiveParties = (id, callback) => {
                 tempObject.shareHolders = [];
                 retVal.push(tempObject);  
         }
-}
+        finish();
 
     });
     query = "select a.idEnte,a.nombre,a.puesto,a.correo,a.telefono,c.descripcion FROM cs_funcionarios a,cs_calificacion b, cs_entes c where b.idProyecto=? and a.idEnte=b.idEnte and a.idFuncionario=b.idFuncionario and a.idEnte=c.idEnte limit 1";
     query = mysql.format(query, [id]);
     //console.info(query);
     connection.query(query, function (error, results) {
-        if (results.length === 0) {
-
-        }else{
         if (error) {
-            console.error(error)
-         } else {
-                cont=cont+1;
+            console.error(error);
+            finish();
+            return;
+        }
+        if (results.length === 0) {
+            finish();
+            return;
+        }else{
                 let tempObject = {};
                 tempObject.id = results[0].idEnte+'3';
                 tempObject.name=results[0].descripcion;
@@ -213,17 +237,9 @@ let retreiveParties = (id, callback) => {
                 tempObject.shareHolders = [];
                 retVal.push(tempObject);  
         }
-    }
-    if(cont>0){
-        callback(retVal);
-            return;
-    }
+        finish();
 
     });
-
-
-	 connection.end();
-    
 };
 
 let retreivePlanning = (id, callback) => {
@@ -250,8 +266,8 @@ let retreivePlanning = (id, callback) => {
                 tempDocObj.title = documentObj.title;
                 tempDocObj.description = documentObj.description;
                 tempDocObj.url = checkDocument(documentObj.url);
-                tempDocObj.datePublished = new Date(documentObj.datePublished).toISOString();
-                tempDocObj.dateModified = new Date(documentObj.dateModified).toISOString();
+                tempDocObj.datePublished = dateToISO(documentObj.datePublished);
+                tempDocObj.dateModified = dateToISO(documentObj.dateModified);
                 tempDocObj.pageStart = documentObj.pageStart;
                 tempDocObj.pageEnd = documentObj.pageEnd;
                 if(checkBlank(documentObj.accessDetails)===1){//valida valor vacio
@@ -307,8 +323,8 @@ let retreivePlanning = (id, callback) => {
                 tempMilestoneObj.id = milestoneObj.id;
                 tempMilestoneObj.title = milestoneObj.title;
                 tempMilestoneObj.description = milestoneObj.description;
-                tempMilestoneObj.dateMet = new Date(milestoneObj.dateMet).toISOString();
-                tempMilestoneObj.dueDate = new Date(milestoneObj.dueDate).toISOString();
+                tempMilestoneObj.dateMet = dateToISO(milestoneObj.dateMet);
+                tempMilestoneObj.dueDate = dateToISO(milestoneObj.dueDate);
                 retVal.milestones.push(tempMilestoneObj);
             })
         }
@@ -331,7 +347,7 @@ let retreivePlanning = (id, callback) => {
                 tempMilestoneObj.id = "9";
                 tempMilestoneObj.title = "approval";
                 tempMilestoneObj.description = "Fecha de Aprobación";
-                tempMilestoneObj.dateMet = new Date(milestoneObj.fechaaprob).toISOString();
+                tempMilestoneObj.dateMet = dateToISO(milestoneObj.fechaaprob);
                 //tempMilestoneObj.dueDate = new Date(milestoneObj.dueDate).toISOString();
                 retVal.milestones.push(tempMilestoneObj);
             })
@@ -562,8 +578,8 @@ let retreivePlanning = (id, callback) => {
                 tempBudget.description = tempObj.description;
                 tempBudget.id = tempObj.id;
                 tempBudget.period = {
-                    startDate: new Date(tempObj.startDate).toISOString(),
-                    endDate: new Date(tempObj.endDate).toISOString()
+                    startDate: dateToISO(tempObj.startDate),
+                    endDate: dateToISO(tempObj.endDate)
                 }
                 retVal.budget.budgetBreakdown.push(tempBudget);
             });
@@ -599,27 +615,27 @@ let retreiveTender = (id, callback) => {
             retVal.description = calificacion.nomprocesoproyecto;
             retVal.status = calificacion.estado === "PUBLICADO" ? "complete" : "planning";
             retVal.contractPeriod = {
-                startDate: new Date(calificacion["contract_startDate"]).toISOString(),
-                endDate: new Date(calificacion["contract_endDate"]).toISOString(),
-                    maxExtentDate: new Date(calificacion["contract_maxExtentDate"]).toISOString(),
+                startDate: dateToISO(calificacion["contract_startDate"]),
+                endDate: dateToISO(calificacion["contract_endDate"]),
+                    maxExtentDate: dateToISO(calificacion["contract_maxExtentDate"]),
                     durationInDays: calificacion["contract_durationInDays"]
             }
             retVal.tenderPeriod = {
-                startDate: new Date(calificacion["tender_startDate"]).toISOString(),
-                endDate: new Date(calificacion["tender_endDate"]).toISOString(),
-                    maxExtentDate: new Date(calificacion["tender_maxExtentDate"]).toISOString(),
+                startDate: dateToISO(calificacion["tender_startDate"]),
+                endDate: dateToISO(calificacion["tender_endDate"]),
+                    maxExtentDate: dateToISO(calificacion["tender_maxExtentDate"]),
                     durationInDays: calificacion["tender_durationInDays"]
             }
             retVal.enquiryPeriod = {
-                startDate: new Date(calificacion["enquiry_startDate"]).toISOString(),
-                endDate: new Date(calificacion["enquiry_endDate"]).toISOString(),
-                    maxExtentDate: new Date(calificacion["enquiry_maxExtentDate"]).toISOString(),
+                startDate: dateToISO(calificacion["enquiry_startDate"]),
+                endDate: dateToISO(calificacion["enquiry_endDate"]),
+                    maxExtentDate: dateToISO(calificacion["enquiry_maxExtentDate"]),
                     durationInDays: calificacion["enquiry_durationInDays"]
             }
             retVal.awardPeriod = {
-                startDate: new Date(calificacion["award_startDate"]).toISOString(),
-                endDate: new Date(calificacion["award_endDate"]).toISOString(),
-                    maxExtentDate: new Date(calificacion["award_maxExtentDate"]).toISOString(),
+                startDate: dateToISO(calificacion["award_startDate"]),
+                endDate: dateToISO(calificacion["award_endDate"]),
+                    maxExtentDate: dateToISO(calificacion["award_maxExtentDate"]),
                     durationInDays: calificacion["award_durationInDays"]
             }
             retVal.items = [];
@@ -647,8 +663,8 @@ let retreiveTender = (id, callback) => {
                     tempDocObj.title = documentObj.title;
                     tempDocObj.description = documentObj.description;
                     tempDocObj.url = checkDocument(documentObj.url);
-                    tempDocObj.datePublished = new Date(documentObj.datePublished).toISOString();
-                    tempDocObj.dateModified = new Date(documentObj.dateModified).toISOString();
+                    tempDocObj.datePublished = dateToISO(documentObj.datePublished);
+                    tempDocObj.dateModified = dateToISO(documentObj.dateModified);
                     tempDocObj.pageStart = documentObj.pageStart;
                     tempDocObj.pageEnd = documentObj.pageEnd;                  
 					if(checkBlank(documentObj.accessDetails)===1){//valida valor vacio
@@ -712,7 +728,7 @@ let retrieveRelatedProcess = (id, callback) => {
                 let innerRetVal = {};
                 innerRetVal.id = index;
                 innerRetVal.scheme = "ocid";
-                innerRetVal.uri = configFile.ocid_url + '?ocid=' + configFile.preOCID + '-' + relatedProcess.idProyecto
+                innerRetVal.uri = ocdsUrl + '?ocid=' + configFile.preOCID + '-' + relatedProcess.idProyecto
                 innerRetVal.identifier = configFile.preOCID + '-' + relatedProcess.idProyecto;
                 innerRetVal.relationship = ["subContract"];
                 innerRetVal.title = relatedProcess.proyecto_nombre;
@@ -773,8 +789,8 @@ let retreiveAwards = (id, callback) => {
                             tempDocObj.title = documentObj.title;
                             tempDocObj.description = documentObj.description;
                             tempDocObj.url = checkDocument(documentObj.url);
-                            tempDocObj.datePublished = new Date(documentObj.datePublished).toISOString();
-                            tempDocObj.dateModified = new Date(documentObj.dateModified).toISOString();
+                            tempDocObj.datePublished = dateToISO(documentObj.datePublished);
+                            tempDocObj.dateModified = dateToISO(documentObj.dateModified);
                             tempDocObj.pageStart = documentObj.pageStart;
                             tempDocObj.pageEnd = documentObj.pageEnd;
                             if(checkBlank(documentObj.accessDetails)===1){//valida valor vacio
@@ -856,8 +872,8 @@ let retreiveContracts = (id, callback) => {
                 retVal.description = contrato.alcances;
                 retVal.status = contrato.estado.toUpperCase() === "PUBLICADO" ? "terminated" : "active";
                 retVal.period = {
-                    startDate: new Date(contrato.fechainicio).toISOString(),
-                    endDate: new Date(contrato.fechafinal).toISOString(),
+                    startDate: dateToISO(contrato.fechainicio),
+                    endDate: dateToISO(contrato.fechafinal),
                 }
                 retVal.value = {
                     amount: contrato.precioUSD,
@@ -881,8 +897,8 @@ let retreiveContracts = (id, callback) => {
                                 tempDocObj.title = documentObj.title;
                                 tempDocObj.description = documentObj.description;
                                 tempDocObj.url = checkDocument(documentObj.url);
-                                tempDocObj.datePublished = new Date(documentObj.datePublished).toISOString();
-                                tempDocObj.dateModified = new Date(documentObj.dateModified).toISOString();
+                                tempDocObj.datePublished = dateToISO(documentObj.datePublished);
+                                tempDocObj.dateModified = dateToISO(documentObj.dateModified);
                                 tempDocObj.pageStart = documentObj.pageStart;
                                 tempDocObj.pageEnd = documentObj.pageEnd;
                                 if(checkBlank(documentObj.accessDetails)===1){//valida valor vacio
@@ -913,8 +929,8 @@ let retreiveContracts = (id, callback) => {
                                 tempDocObj.title = documentObj1.title;
                                 tempDocObj.description = documentObj1.description;
                                 tempDocObj.url = checkDocument(documentObj1.url);
-                                tempDocObj.datePublished = new Date(documentObj1.datePublished).toISOString();
-                                tempDocObj.dateModified = new Date(documentObj1.dateModified).toISOString();
+                                tempDocObj.datePublished = dateToISO(documentObj1.datePublished);
+                                tempDocObj.dateModified = dateToISO(documentObj1.dateModified);
                                 tempDocObj.pageStart = documentObj1.pageStart;
                                 tempDocObj.pageEnd = documentObj1.pageEnd;
                                 if(checkBlank(documentObj1.accessDetails)===1){//valida valor vacio
@@ -943,8 +959,8 @@ let retreiveContracts = (id, callback) => {
                                 tempMilestoneObj.id = milestoneObj.id;
                                 tempMilestoneObj.title = milestoneObj.title;
                                 tempMilestoneObj.description = milestoneObj.description;
-                                tempMilestoneObj.dateMet = new Date(milestoneObj.dateMet).toISOString();
-                                tempMilestoneObj.dueDate = new Date(milestoneObj.dueDate).toISOString();
+                                tempMilestoneObj.dateMet = dateToISO(milestoneObj.dateMet);
+                                tempMilestoneObj.dueDate = dateToISO(milestoneObj.dueDate);
                                 retVal.milestones.push(tempMilestoneObj);
                             })
                         }
@@ -1028,7 +1044,7 @@ let retreiveContracts = (id, callback) => {
                         if (results.length !== 0) {
                             results.forEach((amendmentsObj) => {
                                 let tmpAmendments = {}
-                                tmpAmendments.date =new Date(amendmentsObj["fecha"]).toISOString();
+                                tmpAmendments.date = dateToISO(amendmentsObj["fecha"]);
                                 tmpAmendments.rationale = amendmentsObj["tipo"];
                                 tmpAmendments.id = amendmentsObj["nmodifica"];
                                 tmpAmendments.description = amendmentsObj["justimodcontrato"];
@@ -1071,8 +1087,8 @@ let retreiveContracts = (id, callback) => {
                                 }
                                 tmpFinanceObj.repaymentFrequency = financeObject["repaymentFrequency"];
                                 tmpFinanceObj.period = {
-                                    startDate: new Date(financeObject["startDate"]).toISOString(),
-                                    endDate: new Date(financeObject["endDate"]).toISOString()
+                                    startDate: dateToISO(financeObject["startDate"]),
+                                    endDate: dateToISO(financeObject["endDate"])
                                 };
                                 retVal.finance.push(tmpFinanceObj);
                             })
@@ -1143,7 +1159,7 @@ let retreiveContracts = (id, callback) => {
                             results.forEach((riskObject) => {
                                 let tmpRiskObj = {}
                                 tmpRiskObj.id = riskObject["id"];
-                                tmpRiskObj.date = new Date(riskObject["date"]).toISOString(),
+                                tmpRiskObj.date = dateToISO(riskObject["date"]),
                                     tmpRiskObj.rationale = riskObject["rationale"];
                                 tmpRiskObj.amendsReleaseId = riskObject["amendsReleaseId"];
                                 retVal.amendments.push(tmpRiskObj);
@@ -1208,8 +1224,8 @@ let retreiveImplementation = (id, contractObject, callback) => {
                                 tempMilestoneObj.id = milestoneObj.id;
                                 tempMilestoneObj.title = milestoneObj.title;
                                 tempMilestoneObj.description = milestoneObj.description;
-                                tempMilestoneObj.dateMet = new Date(milestoneObj.dateMet).toISOString();
-                                tempMilestoneObj.dueDate = new Date(milestoneObj.dueDate).toISOString();
+                                tempMilestoneObj.dateMet = dateToISO(milestoneObj.dateMet);
+                                tempMilestoneObj.dueDate = dateToISO(milestoneObj.dueDate);
                                 retVal.milestones.push(tempMilestoneObj);
                             })
                         }
@@ -1234,8 +1250,8 @@ let retreiveImplementation = (id, contractObject, callback) => {
                                 tempDocObj.title = documentObj.title;
                                 tempDocObj.description = documentObj.description;
                                 tempDocObj.url = checkURL(documentObj.url);
-                                tempDocObj.datePublished = new Date(documentObj.datePublished).toISOString();
-                                tempDocObj.dateModified = new Date(documentObj.dateModified).toISOString();
+                                tempDocObj.datePublished = dateToISO(documentObj.datePublished);
+                                tempDocObj.dateModified = dateToISO(documentObj.dateModified);
                                 tempDocObj.pageStart = documentObj.pageStart;
                                 tempDocObj.pageEnd = documentObj.pageEnd;
                                 tempDocObj.accessDetails = documentObj.accessDetails;
@@ -1261,9 +1277,9 @@ let retreiveImplementation = (id, contractObject, callback) => {
                                 tempDocObj.id = documentObj["id"];
                                 tempDocObj.title = documentObj["tittle"];
                                 tempDocObj.period = {
-                                    startDate: new Date(documentObj["startDate"]).toISOString(),
-                                    endDate: new Date(documentObj["endDate"]).toISOString(),
-                                    maxExtentDate: new Date(documentObj["maxExtentDate"]).toISOString(),
+                                    startDate: dateToISO(documentObj["startDate"]),
+                                    endDate: dateToISO(documentObj["endDate"]),
+                                    maxExtentDate: dateToISO(documentObj["maxExtentDate"]),
                                     durationinDays: documentObj["durationinDays"]
                                 };
                                 tempDocObj.notes = documentObj["notes"];
@@ -1300,8 +1316,8 @@ let retreiveImplementation = (id, contractObject, callback) => {
                             let tempobservation={};                            
                             tempobservation.id = investmentsObj.idDesembolso;
                             tempobservation.period = {
-                                    startDate: new Date(investmentsObj.fecha_desembolso).toISOString(),
-                                    endDate: new Date(investmentsObj.fecha_desembolso).toISOString()
+                                    startDate: dateToISO(investmentsObj.fecha_desembolso),
+                                    endDate: dateToISO(investmentsObj.fecha_desembolso)
                                     };
                             tempobservation.value = {
                                     amount: investmentsObj.monto,
@@ -1327,7 +1343,7 @@ let retreiveImplementation = (id, contractObject, callback) => {
                             results.forEach((documentObj) => {
                                 let tempDocObj = {}
                                 tempDocObj.id = documentObj["id"];
-                                tempDocObj.date = new Date(documentObj["date"]).toISOString();
+                                tempDocObj.date = dateToISO(documentObj["date"]);
                                 //tempDocObj.source = documentObj["source"];
                                 tempDocObj.value = {
                                     amount: documentObj["amount"],
@@ -1377,17 +1393,17 @@ let retreivePreQualification = (id, callback) => {
         } else {
             retVal.id = results[0].id;
             retVal.period = {
-                startDate: new Date(results[0]["startDate"]).toISOString(),
-                endDate: new Date(results[0]["endDate"]).toISOString(),
+                startDate: dateToISO(results[0]["startDate"]),
+                endDate: dateToISO(results[0]["endDate"]),
                 durationinDays: results[0]["durationinDays"]
             };
             retVal.qualificationPeriod = {
-                startDate: new Date(results[0]["qualificationPeriod_startDate"]).toISOString(),
-                endDate: new Date(results[0]["qualificationPeriod_endDate"]).toISOString()
+                    startDate: dateToISO(results[0]["qualificationPeriod_startDate"]),
+                    endDate: dateToISO(results[0]["qualificationPeriod_endDate"])
             }
             retVal.enquiryPeriod = {
-                startDate: new Date(results[0]["enquiryPeriod_startDate"]).toISOString(),
-                endDate: new Date(results[0]["enquiryPeriod_endDate"]).toISOString()
+                startDate: dateToISO(results[0]["enquiryPeriod_startDate"]),
+                endDate: dateToISO(results[0]["enquiryPeriod_endDate"])
             }
             retVal.eligibilityCriteria = results[0]["eligibilityCriteria"];
             callback(retVal);
@@ -1401,18 +1417,37 @@ let retreiveRelease = (id, callback) => {
 
     let connection = getConnection();
     connection.connect();
+    let pending = 3;
+    let finished = false;
+    let finish = () => {
+        pending--;
+        if (pending !== 0 || finished) {
+            return;
+        }
+        finished = true;
+        connection.end(() => {
+            if (Object.keys(retVal).length <= 1) {
+                callback(null);
+                return;
+            }
+            callback(retVal);
+        });
+    };
 
     let query = "SELECT cs_proyecto.idEnte,cs_proyecto.fecha_publicacion as 'date', cs_proyecto.descrip as 'description', cs_proyecto.idProyecto as 'id' , cs_proyecto.nombre_proyecto 'title', cs_entes.descripcion as 'publicAuthorithyName' FROM cs_proyecto JOIN cs_entes ON cs_proyecto.idEnte = cs_entes.idEnte WHERE cs_proyecto.idProyecto = ?"
     query = mysql.format(query, [id]);
 
     connection.query(query, function (error, results) {
-        console.info(results.length);
-        if (results.length === 0) {
+        if (error) {
+            console.error(error);
+            finish();
             return;
         }
-        if (error) {
-            console.error(error)
-        } else {
+        if (!results || results.length === 0) {
+            finish();
+            return;
+        }
+        {
             retVal.date = new Date().toISOString();
             retVal.description = results[0].description;
             retVal.initiationType = 'ppp'; //only ppp supported
@@ -1424,11 +1459,18 @@ let retreiveRelease = (id, callback) => {
                 name: results[0].publicAuthorithyName
             }
         }
+        finish();
     });
     query = "select idProyecto, COUNT(idContratacion) as countContratacion , COUNT(idInicioEjecucion) as countImplementacion FROM vidpaths WHERE idProyecto = ?"
     query = mysql.format(query, [id]);
     connection.query(query, function (error, results) {
-        if (results.length === 0) {
+        if (error) {
+            console.error(error);
+            finish();
+            return;
+        }
+        if (!results || results.length === 0) {
+            finish();
             return;
         }
         if (results[0].countImplementacion != 0) {
@@ -1438,11 +1480,18 @@ let retreiveRelease = (id, callback) => {
         } else {
             retVal.tag = ["planning"];
         }
+        finish();
     });
     query = "select a.contrato from cs_calificacion b, cs_tipocontrato a where b.idProyecto=? and a.idTipoContrato=b.idTipoContrato limit 1"
     query = mysql.format(query, [id]);
     connection.query(query, function (error, results) {
-        if (results.length === 0) {
+        if (error) {
+            console.error(error);
+            finish();
+            return;
+        }
+        if (!results || results.length === 0) {
+            finish();
             return;
         }
         if (results[0].contrato === "Contrato de Diseño") {
@@ -1473,16 +1522,7 @@ let retreiveRelease = (id, callback) => {
             retVal.nature=["design","financing","construction"];
             retVal.natureDetails=["Contrato de Concesión / DFBT (Diseño, Financiamiento, Construcción y Transferencia)"];
         }
-
-
-    });
-    //console.info(JSON.stringify(retVal));
-    connection.end(() => {
-        if (Object.keys(retVal).length <= 1) {
-            callback(null);
-            return;
-        }
-        callback(retVal);
+        finish();
     });
 };
 
@@ -1516,7 +1556,7 @@ let retreiveRecordMetaData = (id, callback) => {
             });
             return;
         } else {
-            retVal.publishedDate = new Date(results[0]["fecha_publicacion"]).toISOString();
+            retVal.publishedDate = dateToISO(results[0]["fecha_publicacion"]);
             retVal.publisher = {
                 name: results[0]["email"],
                 uid: results[0]["iduser"]
@@ -1527,11 +1567,12 @@ let retreiveRecordMetaData = (id, callback) => {
 }
 
 let getConnection = () => {
+    let configured = coreConfig.DBConfig.MYSQL[coreConfig.appType];
     let connection = mysql.createConnection({
-        host: coreConfig.DBConfig.MYSQL[coreConfig.appType].host,
-        user: coreConfig.DBConfig.MYSQL[coreConfig.appType].user,
-        password: coreConfig.DBConfig.MYSQL[coreConfig.appType].password,
-        database: coreConfig.DBConfig.MYSQL[coreConfig.appType].database
+        host: process.env.SISOCS_DB_HOST || configured.host,
+        user: process.env.SISOCS_DB_USER || configured.user,
+        password: process.env.SISOCS_DB_PASSWORD || configured.password,
+        database: process.env.SISOCS_DB_NAME || configured.database
     });
 
     return connection;
@@ -1545,6 +1586,10 @@ module.exports = {
         } else {
             retreiveRelease(id, (object) => {
                 console.info("release");
+                if (object === null) {
+                    callback({});
+                    return;
+                }
                 retreiveParties(id, (partyObject) => {
                     console.info("party");
                     object.parties = partyObject;

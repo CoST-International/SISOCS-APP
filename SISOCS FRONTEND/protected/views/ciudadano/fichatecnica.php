@@ -637,7 +637,7 @@ Yii::import('ext.EWideImage.*');
                             <!-- ****************** ANUNCIOS  ****************** -->
                             <?php
                                 $anuncios = Yii::app()->db->createCommand('SELECT * FROM cs_announcement WHERE idProyecto='.$proyecto[0]['idProyecto'])->queryRow();
-                                if (count($anuncios)>0) {
+                                if (!empty($anuncios)) {
                             ?>
                                     <div class="componentTab" id="tab13">
                                         <h4>Anuncios</h4>

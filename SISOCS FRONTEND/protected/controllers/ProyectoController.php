@@ -192,12 +192,17 @@ class ProyectoController extends Controller {
 		}
         if (isset($_POST['Proyecto'])) {
             $model->attributes = $_POST['Proyecto'];
-			$model->Proposito= Yii::app()->request->getPost('Proyecto')['Proposito'];
+			$model->proposito= Yii::app()->request->getPost('Proyecto')['proposito'];
 			$model->descambiental= Yii::app()->request->getPost('Proyecto')['descambiental'];
 			$model->descreasentamiento= Yii::app()->request->getPost('Proyecto')['descreasentamiento'];
 
 			if (!$model->fechaaprob) {
 				$model->fechaaprob=null;
+			}
+			foreach (array('idSector', 'idSubSector', 'idEnte', 'idUnidad', 'idFuncionario', 'idRol', 'presupuesto', 'lat1', 'lon1', 'lat2', 'lon2') as $attribute) {
+				if ($model->$attribute === '') {
+					$model->$attribute = null;
+				}
 			}
             if ($model->save()) {
                 try {
@@ -295,11 +300,16 @@ class ProyectoController extends Controller {
 
 
             $model->attributes = $_POST['Proyecto'];
-			$model->Proposito= Yii::app()->request->getPost('Proyecto')['Proposito'];
+			$model->proposito= Yii::app()->request->getPost('Proyecto')['proposito'];
 			$model->descambiental= Yii::app()->request->getPost('Proyecto')['descambiental'];
 			$model->descreasentamiento= Yii::app()->request->getPost('Proyecto')['descreasentamiento'];
 			if (!$model->fechaaprob) {
 				$model->fechaaprob=null;
+			}
+			foreach (array('idSector', 'idSubSector', 'idEnte', 'idUnidad', 'idFuncionario', 'idRol', 'presupuesto', 'lat1', 'lon1', 'lat2', 'lon2') as $attribute) {
+				if ($model->$attribute === '') {
+					$model->$attribute = null;
+				}
 			}
             if ($model->save()) {
                 try {
@@ -580,7 +590,7 @@ class ProyectoController extends Controller {
         if (Yii::app()->user->isSuperAdmin) {
             $criteria->condition = "idProyecto = $id";
         } elseif (Yii::app()->user->isInRole(Yii::app()->user->id, 'Publicador')) {
-            $criteria->condition = "idProyecto = $id AND (estado = 'BORRADOR' OR estado = 'REVISION' OR estado = 'REVISÓN')";
+            $criteria->condition = "idProyecto = $id AND (estado = 'BORRADOR' OR estado = 'REVISION' OR estado = 'REVISIÓN' OR estado = 'REVISÓN')";
         } else {
             $criteria->condition = "idProyecto = $id AND (estado = 'BORRADOR')";
         }

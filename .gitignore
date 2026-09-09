@@ -1,0 +1,15 @@
+.local/
+
+# Local runtime state and generated uploads/logs
+SISOCS OCDS/logs/
+SISOCS OCDS/components/sisocs/files/
+SISOCS FRONTEND/protected/runtime/*
+SISOCS FRONTEND/assets/*
+!SISOCS FRONTEND/assets/.gitignore
+SISOCS FRONTEND/images/uploads/
+SISOCS FRONTEND/images/adjuntos/
+
+# Generated local QA artifacts and installed dependencies
+.playwright-cli/
+output/
+SISOCS OCDS/node_modules/

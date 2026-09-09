@@ -104,11 +104,50 @@ The page also has two additional sections that show the milestones or significan
 
 ## Instalation Guide
 
-SISOCS APP is a portal that contains data about Public Private Partnerships projects. Currently the application is running at the link: https://app.sisocs.org/
+### Reproducible local setup
 
-The [SISOCS - OCDS](https://app.sisocs.org/protected/ocdsShow/) component was built in NodeJS, in its LTS version to date (v8.9). This application server allows us to mount an API Server which is used by SISOCS - PHP to store the information of the projects in MongoDB. The projects can then be viewed in PPP format
+The repository includes an isolated local environment for reproducing and
+reusing the platform with fictional data. It does not connect to the historic
+production database or publish changes.
 
-SISOCS – PHP
+Prerequisites: PHP with PDO MySQL and cURL, MySQL, MongoDB with `mongosh`,
+Node.js 22, npm, and Python 3.9. From the repository root:
+
+```sh
+python3 -m venv .local/venv
+. .local/venv/bin/activate
+python -m pip install -r requirements-local.txt
+cd "SISOCS OCDS"
+npm ci --ignore-scripts --no-audit
+cd ..
+./scripts/local/start-local.sh
+```
+
+The launcher creates the local MySQL schema, fictional accounts, and local
+configuration, then starts PHP, Node/OCDS, and MongoDB on dedicated local ports
+when they are available. It refuses an unowned Mongo process. The main local routes are `http://127.0.0.1:8000/`,
+`http://127.0.0.1:8080/`, and
+`http://127.0.0.1:8000/protected/ocdsShow/`.
+
+Stop or reset the demonstration data with:
+
+```sh
+./scripts/local/stop-local.sh
+./scripts/local/reset-local.sh --yes
+```
+
+See [LOCAL-SETUP.md](LOCAL-SETUP.md) for the complete setup and
+[WORKFLOW-VERIFICATION.md](WORKFLOW-VERIFICATION.md) for the evidence of
+locally tested workflows.
+
+SISOCS APP is a portal that contains data about Public Private Partnerships projects. The public application URL is https://app.sisocs.org/
+
+The [SISOCS - OCDS](https://app.sisocs.org/protected/ocdsShow/) component was
+originally built with NodeJS. The reproducible local environment uses
+Node.js 22 and allows SISOCS - PHP to store project information in MongoDB.
+Projects can then be viewed in PPP format.
+
+SISOCS - PHP
 [Source code (PHP-MySQL)](https://github.com/infrastructure-transparency/SISOCS-APP/tree/main/SISOCS%20FRONTEND)
 
 ### Application Architecture
@@ -129,14 +168,14 @@ Install it using the XAMPP package, which includes Apache and the MySQL database
 
 The following programs and modules must be installed in order to prepare the development environment:
 
-* Install Node JS.
+* Install Node.js 22.
 * Install MongoDB.
 
 Once all the previous dependencies are installed, you can proceed to execute the command to download the local SISOCS packages and their respective dependencies,
 this is done through the command:
 
 ```
-npm install
+npm ci --ignore-scripts --no-audit
 ```
 After successfully executing the command above, you are ready to start development.
 To raise the api server use the command:

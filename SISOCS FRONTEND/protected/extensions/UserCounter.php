@@ -220,7 +220,10 @@ class UserCounter extends CComponent
 	 */
 	protected function insertOrUpdateIpAddress()
 	{
-		$ipAddress = isset($_SERVER['HTTP_X_FORWARDED_FOR']) ? $_SERVER['HTTP_X_FORWARDED_FOR'] : $_SERVER['REMOTE_ADDR'];
+		// CLI requests and some local health checks do not populate REMOTE_ADDR.
+		$ipAddress = isset($_SERVER['HTTP_X_FORWARDED_FOR'])
+			? $_SERVER['HTTP_X_FORWARDED_FOR']
+			: (isset($_SERVER['REMOTE_ADDR']) ? $_SERVER['REMOTE_ADDR'] : '127.0.0.1');
 		$hashedIpAddress = md5($ipAddress);
 		$currentTimestamp = time();
 

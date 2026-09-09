@@ -78,7 +78,7 @@ class Proyecto extends CActiveRecord {
             array('image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12', 'file', 'types' => 'jpg, png, pdf, doc, docx, txt, xlsx, xls', 'allowEmpty' => true, 'maxSize' => 1024 * 1024 * 200, 'tooLarge' => 'El archivo es mas largo de 200MB, por favor seleccione un archivo mas pequeño.'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
-            array('image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, idProyecto, codigo, nombre_proyecto,usuario_creacion, usuario_publicacion, Proposito, descrip, idSector, idSubSector, idEnte,idUnidad, idFuncionario, idRol, presupuesto, 
+            array('image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, idProyecto, codigo, nombre_proyecto,usuario_creacion, usuario_publicacion, proposito, descrip, idSector, idSubSector, idEnte,idUnidad, idFuncionario, idRol, presupuesto,
             fechaaprob, codsefin, proposito,descambiental, descreasentamiento, especiplano, presuprogra, estudiofact, estudioimpact, licambi, planreasea, acuerdofinan, notaprioridad, otro, lat1, lon1, lat2, lon2, estado, fecha_creacion, fecha_publicacion', 'safe', 'on' => 'search, published'),
         );
     }
@@ -108,7 +108,7 @@ class Proyecto extends CActiveRecord {
             'idProyecto' => 'Id Proyecto',
             'codigo' => 'Código',
             'nombre_proyecto' => 'Nombre del Proyecto',
-            'Proposito' => 'Proposito u Objetivo',
+            'proposito' => 'Proposito u Objetivo',
             'descrip' => 'Descripción detallada y alcances del proyecto',
             'idSector' => 'Sector',
             'idSubSector' => 'Sub sector',
@@ -162,7 +162,7 @@ class Proyecto extends CActiveRecord {
         $criteria->compare('idProyecto', $this->idProyecto);
         $criteria->compare('codigo', $this->codigo, true);
         $criteria->compare('nombre_proyecto', $this->nombre_proyecto, true);
-        $criteria->compare('Proposito', $this->Proposito, true);
+        $criteria->compare('proposito', $this->proposito, true);
         $criteria->compare('descrip', $this->descrip, true);
         $criteria->compare('idSector', $this->idSector);
         $criteria->compare('idSubSector', $this->idSubSector);
@@ -368,7 +368,7 @@ class Proyecto extends CActiveRecord {
       $criteria->condition = '1';
       if (!Yii::app()->user->isSuperAdmin) {
         if (!Yii::app()->user->isInRole(Yii::app()->user->id, 'Publicador')) {
-          $criteria->condition = "(estado = 'BORRADOR' OR estado = 'REVISION' OR estado = 'REVISÓN')";
+          $criteria->condition = "(estado = 'BORRADOR' OR estado = 'REVISION' OR estado = 'REVISIÓN' OR estado = 'REVISÓN')";
         }
       }
 
